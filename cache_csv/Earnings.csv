@@ -1,0 +1,57 @@
+,Ticker,Next Earnings Date,Sector,Index
+0,TSM,,Technology,XLK
+1,JPM,2023-07-14,Financial Services,XLF
+2,KMI,2023-07-18,Energy,XLE
+3,SCHW,2023-07-17,Financial Services,XLF
+4,GPC,2023-07-25,Consumer Cyclical,XLY
+5,SLB,2023-07-20,Energy,XLE
+6,BKR,2023-07-18,Energy,XLE
+7,CDNS,2023-07-24,Technology,XLK
+8,GLW,2023-07-24,Technology,XLK
+9,HAL,2023-07-17,Energy,XLE
+10,JNJ,2023-07-20,Healthcare,XLV
+11,KO,2023-07-24,Consumer Defensive,XLP
+12,LMT,2023-07-17,Industrials,XLI
+13,MMM,2023-07-24,Industrials,XLI
+14,MSFT,2023-07-24,Technology,XLK
+15,TRV,2023-07-19,Financial Services,XLF
+16,UPS,2023-07-24,Industrials,XLI
+17,V,2023-07-24,Financial Services,XLF
+18,ADP,2023-07-25,Industrials,XLI
+19,BSX,2023-07-25,Healthcare,XLV
+20,HLT,2023-07-25,Consumer Cyclical,XLY
+21,LRCX,2023-07-25,Technology,XLK
+22,NOW,2023-07-25,Technology,XLK
+23,ORLY,2023-07-25,Consumer Cyclical,XLY
+24,TMO,2023-07-26,Healthcare,XLV
+25,BX,2023-07-19,Financial Services,XLF
+26,FISV,2023-07-24,Technology,XLK
+27,HCA,2023-07-20,Healthcare,XLV
+28,HON,2023-07-26,Industrials,XLI
+29,LH,2023-07-26,Healthcare,XLV
+30,RMD,2023-04-27,Healthcare,XLV
+31,AON,2023-07-27,Financial Services,XLF
+32,CVX,2023-07-27,Energy,XLE
+33,XOM,2023-07-27,Energy,XLE
+34,GPN,2023-07-31,Industrials,XLI
+35,ON,2023-07-31,Technology,XLK
+36,KKR,2023-05-01,Financial Services,XLF
+37,LLY,2023-04-27,Healthcare,XLV
+38,SPOT,2023-07-25,Communication Services,XLC
+39,ZBRA,2023-08-01,Technology,XLK
+40,ALB,2023-08-01,Basic Materials,XLB
+41,CVS,2023-08-01,Healthcare,XLV
+42,GSK,2017-02-01,Healthcare,XLV
+43,HUM,2023-08-02,Healthcare,XLV
+44,SU,2023-05-09,Energy,XLE
+45,Z,,Communication Services,XLC
+46,LNG,2023-08-02,Energy,XLE
+47,MAR,2023-07-31,Consumer Cyclical,XLY
+48,PWR,2023-08-02,Industrials,XLI
+49,SBUX,2023-08-02,Consumer Cyclical,XLY
+50,OXY,2023-05-09,Energy,XLE
+51,PEP,2023-07-10,Consumer Defensive,XLP
+52,ZTS,2023-08-02,Healthcare,XLV
+53,NVDA,2023-05-25,Technology,XLK
+54,LULU,2023-05-31,Consumer Cyclical,XLY
+55,ORCL,2023-06-12,Technology,XLK
