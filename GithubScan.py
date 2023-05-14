@@ -1,5 +1,6 @@
 import streamlit as st
 import plotly.express as px
+import plotly.graph_objects as go
 import pandas as pd
 import numpy
 import datetime
@@ -8,6 +9,7 @@ import time
 import pickle
 import yfinance as yf
 import requests
+import yahooquery
 
 st.set_page_config(page_title='Stock scan', page_icon=':bar_chart:',layout="wide")
 
@@ -21,11 +23,29 @@ hide_dataframe_row_index = """
 # Inject CSS with Markdown
 st.markdown(hide_dataframe_row_index, unsafe_allow_html=True)
 
-today=datetime.datetime.now()
 
 #################################
-######## Functions uncached #######
+######## Global variables #######
 #################################
+
+start_date = datetime.datetime(2022, 1, 1, 0, 0, 0, 0)
+today=datetime.datetime.now()
+
+namesSec = {'Communication Services': 'XLC',
+     'Consumer Cyclical': 'XLY',
+     'Consumer Defensive': 'XLP',
+     'Energy': 'XLE',
+     'Financial Services': 'XLF',
+     'Healthcare': 'XLV',
+     'Industrials': 'XLI',
+     'Basic Materials': 'XLB',
+     'Real Estate': 'XLRE',
+     'Technology': 'XLK',
+     'Utilities': 'XLU'}
+
+###################################
+######## Functions uncached #######
+###################################
 def getabove50sma(stock):
     if stock in dic_scaned.keys():
         if dic_scaned[stock]['Close'].iloc[-1]>dic_scaned[stock]['SMA_50'].iloc[-1]: return '✔'
@@ -78,7 +98,7 @@ def STPhaseIndices(SeriesPrice, Series200SMA, Series8Ema, Series21Ema):
             if (SeriesPrice.iloc[-2]<Series21Ema.iloc[-1]): phase = 'BEAR phase - Strong Downtrend'
             else: phase = 'BEAR phase - Downtrend'
             
-    if LTtrend=='Uptrend':
+    if LTtrend=='UPTREND':
         if phase in ['BULL phase - Strong Uptrend','BULL phase - Uptrend']: focus = 'Almost exclusively on long trades (buy the dip).'
         elif phase in ['BEAR phase - Strong Downtrend', 'BEAR phase - Downtrend']: focus = 'Get some hedges. Be on the lookout for 1 or 2 bear trades. Wait for deeper pullbacks on bull setups (eg. 50SMA). Avoid getting too bearish'    
         else: focus = 'Avoid getting too bearish'
@@ -87,7 +107,7 @@ def STPhaseIndices(SeriesPrice, Series200SMA, Series8Ema, Series21Ema):
             focus = 'We can expect a countertrend rally, could last days/weeks. Be cautious about being completely bearish in portfolio. Be sure to take some bullish trades. The strongest rallies occur in bear markets (short-covering).'
         elif phase in ['BEAR phase - Strong Downtrend', 'BEAR phase - Downtrend']: 
             focus = 'Want to be focused on bearish trades. Buy puts on rallies. Bullish trades are less likely to work well. '
-    
+
     return LTtrend, phase, focus  
 
 def LTemoji(index):
@@ -103,6 +123,42 @@ def STemoji(index):
     elif phase in ['BEAR phase - Strong Downtrend', 'BEAR phase - Downtrend']: emoj = '🟥'
     else: emoj = '⬜'
     return emoj
+
+
+#################################
+######## Dispplay functions #####
+#################################
+
+def displayStockListoptions():
+    c1, c2 = st.columns(2)
+    with c1:
+        totaloptions = st.multiselect('**Scan from:**', options=['Mega-cap','Large-cap','Mid-cap','Small-cap'],
+                default=['Mega-cap','Large-cap','Mid-cap'],key='totalstocks')
+    with c2:
+        st.write('')
+        st.write('')    
+        nonUS = st.checkbox('Include non-US stocks')
+    
+
+    caps_dic, capslist = {'Mega-cap':'Mega','Large-cap':'Large','Mid-cap':'Mid','Small-cap':'Small'}, []
+    for opt in ['Mega-cap','Large-cap','Mid-cap','Small-cap']:
+        if opt in totaloptions:
+            capslist += [caps_dic[opt]]
+    return totaloptions, nonUS, capslist
+
+def displayTrend():
+    if LTtrend=='UPTREND':
+        st.write(f"S&P500 (vs its 200SMA) is in a long-term: :green[{LTtrend}]. Is market overextended: ... ")
+    else:
+        st.write(f"S&P500 (vs its 200SMA) is in a long-term: :red[{LTtrend}].")
+
+    if phase in ['BULL phase - Strong Uptrend','BULL phase - Uptrend']:
+        st.write(f"Short-term (8 vs 21 EMAs): :green[{phase}].  "+f' The focus is: :green[{focus}]')
+    elif phase in ['BEAR phase - Strong Downtrend', 'BEAR phase - Downtrend']:
+        st.write(f"Short-term (8 vs 21 EMAs): :red[{phase}]"+f' The focus is: :red[{focus}]')
+    else: 
+        st.write(f"Short-term (8 vs 21 EMAs): {phase}"+f' The focus is: {focus}')
+
 
 #################################
 ######## Functions cached #######
@@ -131,6 +187,19 @@ def getEcCalendar(today):
     df = df[['indicator','date']]
     df['date'] = df['date'].apply(lambda text: text[:10])
 
+    return df
+
+@st.cache_data
+def getSP500(today):    
+    path = './cache_csv/'+'Mkt'+today.strftime("%m-%d-%Y")+'.csv'
+    check_file = os.path.isfile(path)
+    if check_file:
+        df=pd.read_csv(path,index_col=0)
+    else: 
+        df = yf.download('^GSPC', start_date, today)
+        df['200SMA']= round(df['Close'].rolling(200).mean(), 2)
+        for x in [8,21]: df["EMA_"+str(x)] = round( df['Close'].ewm(span=x).mean() , 2)
+        df.to_csv(path)
     return df
 
 @st.cache_data
@@ -188,7 +257,8 @@ def getEarnings(today):
     check_file = os.path.isfile(path2)
     if check_file:
         dee = pd.read_csv(path2,index_col=0)
-        return dee
+        lse = list(dee['Ticker'])
+        return dee, lse
     
     path = './cache_csv/'+'Earnings.csv'
     df = pd.read_csv(path,index_col=0)
@@ -208,8 +278,127 @@ def getEarnings(today):
     dee = dee[['Ticker','Days to earnings','Next Earnings Date','Sector','Sector LT','Sector ST','Above 34EMA','Above 50SMA','Rainbow logic','< +1ATR vs 21EMA','Pullback','Overextended']] 
 
     dee.to_csv(path2)
+
+    lse = list(dee['Ticker'])
+    return dee, lse
+
+@st.cache_data
+def getTrendPhaseFocus(today):
+    return STPhaseIndices(dm['Close'],dm['200SMA'],dm['EMA_8'],dm['EMA_21'])
+
+@st.cache_data
+def get_earn(stock):
+        rez = yahooquery.Ticker(stock).calendar_events[stock]['earnings']['earningsDate']
+        if not rez: return '-'
+        rez = rez[0].split(' ')[0]
+        return rez[5:]  # i.e. don't return year    
+
+@st.cache_data
+def createScanTables(today,capslist,nonUS):
+    path = './cache_csv/'+'CandInfoTot'+today.strftime("%m-%d-%Y")+'.csv'
+    check_file = os.path.isfile(path)
+    if check_file:
+        dff = pd.read_csv(path,index_col=0)
+    else:   
+        df = pd.read_csv('./ListOfStocks/'+'AllProcessed.csv', index_col=0)
+        list_scanned = dic_lists['bull']+dic_lists['bull_rsi']+dic_lists['bull_vol']+dic_lists['bear']+dic_lists['bear_rsi']+dic_lists['bear_vol'] 
+        dff = df[df['Symbol'].isin(list_scanned)]
+        dff['Bull Cost cond.'] = dff['Symbol'].apply(lambda stock: '✔' if stock in dic_lists['bull'] else ' ')
+        dff['Bullish RSI'] = dff['Symbol'].apply(lambda stock: '✔' if stock in dic_lists['bull_rsi'] else ' ')
+        dff['Bear Cost cond.'] = dff['Symbol'].apply(lambda stock: '✔' if stock in dic_lists['bear'] else ' ')
+        dff['Bearish RSI'] = dff['Symbol'].apply(lambda stock: '✔' if stock in dic_lists['bear_rsi'] else ' ')
+
+        dff['Earnings']=dff['Symbol'].apply(get_earn)
+        dff['Index']=dff['Sector'].apply(lambda x: namesSec[x])
+        dff['Sector LT'] = dff['Index'].apply(lambda symbol: sectorsTrends[symbol][0])
+        dff['Sector ST'] = dff['Index'].apply(lambda symbol: sectorsTrends[symbol][1])
+        dff['Sector LT'] = dff['Index'].apply(LTemoji)
+        dff['Sector ST'] = dff['Index'].apply(STemoji)
+        dff['Company Name'] = dff['Company Name'].apply(lambda name: name[:20])
+        dff.to_csv(path)
     
-    return dee
+    dff = dff[dff['Cap'].isin(capslist)]
+    if not nonUS: dff = dff[dff['Loc'] == 'US']
+    return dff
+
+@st.cache_data
+def make_charts(df, ticker):
+    fig1 = go.Figure(data=[go.Candlestick(x=df['Date'],
+            open=df['Open'],
+            high=df['High'],
+            low=df['Low'],
+            close=df['Close'])
+            ,go.Scatter(x=df.Date, y=df['EMA_8'], line=dict(color='red', width=1), name="EMA8")               
+            ,go.Scatter(x=df.Date, y=df['EMA_21'], line=dict(color='orange', width=1), name="EMA21")               
+            ,go.Scatter(x=df.Date, y=df['EMA_34'], line=dict(color='yellow', width=1), name="EMA34")               
+                          
+            ,go.Scatter(x=df.Date, y=df['SMA_50'], line=dict(color='green', width=1), name="SMA50")               
+            ,go.Scatter(x=df.Date, y=df['SMA_100'], line=dict(color='blue', width=1), name="SMA100")               
+            ,go.Scatter(x=df.Date, y=df['SMA_200'], line=dict(color='violet', width=2), name="SMA200")            
+            ])
+    fig1.update_layout(height=800, title=ticker)
+
+    fig2=go.Figure(data=[go.Scatter(
+         x=df.Date,
+         y=df["%K"], line=dict(color='blue', width=2), name="%K (Fast)"), 
+         go.Scatter(
+         x=df.Date,
+         y=df["%D"], line=dict(color='orange', width=2), name="%D (Slow)")               
+                        ])
+    fig2.add_hline(y=60, line_width=2, line_dash="dash", line_color="red")
+    fig2.add_hline(y=40, line_width=2, line_dash="dash", line_color="green")
+    fig2.update_layout(height=400)
+
+    fig3=go.Figure(data=[go.Scatter(
+         x=df.Date,
+         y=df["RSI"], line=dict(color='blue', width=2), name="RSI")               ])
+    fig3.add_hline(y=90, line_width=2, line_dash="dash", line_color="red", name='90')
+    fig3.add_hline(y=10, line_width=2, line_dash="dash", line_color="green", name='10')
+    fig3.update_layout(height=400)
+
+    fig4 = go.Figure(data=[go.Candlestick(x=df['Date'],
+            open=df['Open'],
+            high=df['High'],
+            low=df['Low'],
+            close=df['Close'])              
+            ,go.Scatter(x=df.Date, y=df['EMA_21'], line=dict(color='gray', width=1), name="EMA21")
+            ,go.Scatter(x=df.Date, y=df['LowerBand1'], line=dict(color='violet', width=1), name="Lower Band") 
+            ,go.Scatter(x=df.Date, y=df['UpperBand1'], line=dict(color='violet', width=1), name="Upper Band")               
+                          
+            ,go.Scatter(x=df.Date, y=df['UpperBand2'], line=dict(color='cyan', width=1), name="Upper 2 Band")               
+            ,go.Scatter(x=df.Date, y=df['LowerBand2'], line=dict(color='cyan', width=1), name="Lower 2 Band")               
+            ,go.Scatter(x=df.Date, y=df['UpperBand3'], line=dict(color='red', width=2), name="Upper 3 Band")
+            ,go.Scatter(x=df.Date, y=df['LowerBand3'], line=dict(color='green', width=2), name="Lower 3 Band") 
+            ])
+    fig4.update_layout(height=800)
+
+    return fig1, fig2, fig3, fig4
+
+
+#Do not cache
+def display_charts(scanlist,i):
+    if scanlist:
+        totaloptions = st.multiselect('**Plot stocks:**', options=scanlist, default=scanlist, key='plotstocks'+i*' ')
+
+        c1, c2, c3 = st.columns(3)
+        with c1: stochindcb = st.checkbox('Show Stochastic indicator'+i*' ')
+        with c2: rsicb = st.checkbox('Show RSI'+i*' ')
+        with c3: keltnercb = st.checkbox('Show Keltner channels'+i*' ')
+
+        for ticker in totaloptions:
+            df = dic_scaned[ticker]
+            df.reset_index(inplace=True)
+
+            fig1, fig2, fig3, fig4 = make_charts(df,ticker)
+
+            #st.button(ticker + " - Add to watchlist")
+                
+            st.plotly_chart(fig1,theme=None, use_container_width=True)
+
+            if stochindcb: st.plotly_chart(fig2,theme=None, use_container_width=True)
+            if rsicb: st.plotly_chart(fig3,theme=None, use_container_width=True)
+            if keltnercb: st.plotly_chart(fig4,theme=None, use_container_width=True)
+
 
 
 ##########################
@@ -237,8 +426,42 @@ data, symbols, names = getSectors(today)
 sectorsTrends = getSectorsTrends(today)
 
 # Get Earnings information
-dee = getEarnings(today)
+dee, lse = getEarnings(today)
 
-st.write(dee)
+#Get S&P500, market trend and focus
+dm = getSP500(today)
+LTtrend, phase, focus = getTrendPhaseFocus(today)
 
-with st.expander("Economic calendar"): st.table(dfcal.head())
+# Display Market trend
+displayTrend()
+
+#Display Stock Universe options
+totaloptions, nonUS, capslist = displayStockListoptions()
+
+
+
+#Get scan results tables
+dff = createScanTables(today,capslist,nonUS)
+
+
+
+# Display
+
+
+Bullishscan, Bearishscan, Earningsscan = st.tabs(['Bullish scan', 'Bearish scan', 'Earnings'])
+
+with Bullishscan:
+    st.table(dff[dff['Symbol'].isin(dic_lists['bull']+dic_lists['bull_rsi'])][['Symbol','Loc','Bull Cost cond.','Bullish RSI','Earnings','Cap','Sector','Sector LT','Sector ST']])
+
+    chartlistbullnow = list(dff[dff['Symbol'].isin(dic_lists['bull']+dic_lists['bull_rsi'])]['Symbol'])
+    display_charts(chartlistbullnow,0)
+    
+with Bearishscan:
+
+    st.table(dff[dff['Symbol'].isin(dic_lists['bear']+dic_lists['bear_rsi'])][['Symbol','Loc','Company Name','Bear Cost cond.','Bearish RSI','Earnings','Cap','Sector','Sector LT','Sector ST']])
+
+
+with Earningsscan:
+    st.table(dee)
+    display_charts(lse,4)
+
