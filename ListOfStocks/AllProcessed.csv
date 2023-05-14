@@ -1,0 +1,1720 @@
+,Symbol,Company Name,Market Cap,Cap,Sector,Country,Loc
+0,AAPL,Apple Inc.,2746207144120,Mega,Technology,United States,US
+1,MSFT,Microsoft Corporation,2309834903885,Mega,Technology,United States,US
+2,GOOGL,Alphabet Inc.,1343156634817,Mega,Communication Services,United States,US
+3,AMZN,"Amazon.com, Inc.",1084062575524,Mega,Consumer Cyclical,United States,US
+4,BRK.B,Berkshire Hathaway Inc.,721339055161,Mega,Financial Services, , 
+5,NVDA,NVIDIA Corporation,708396036710,Mega,Technology,United States,US
+6,META,"Meta Platforms, Inc.",602115698345,Mega,Communication Services,United States,US
+7,TSLA,"Tesla, Inc.",539005153674,Mega,Consumer Cyclical,United States,US
+8,V,Visa Inc.,487586318508,Mega,Financial Services,United States,US
+9,UNH,UnitedHealth Group Incorporated,460472734794,Mega,Healthcare,United States,US
+10,TSM,Taiwan Semiconductor Manufacturing Company Limited,440661195848,Mega,Technology,Taiwan,TW
+11,XOM,Exxon Mobil Corporation,439393246956,Mega,Energy,United States,US
+12,JNJ,Johnson & Johnson,422761393797,Mega,Healthcare,United States,US
+13,WMT,Walmart Inc.,409376792502,Mega,Consumer Defensive,United States,US
+14,LLY,Eli Lilly and Company,406108492397,Mega,Healthcare,United States,US
+15,JPM,JPMorgan Chase & Co.,399595288873,Mega,Financial Services,United States,US
+16,PG,The Procter & Gamble Company,367758026604,Mega,Consumer Defensive,United States,US
+17,NVO,Novo Nordisk A/S,362884160236,Mega,Healthcare,Denmark,DK
+18,MA,Mastercard Incorporated,361649626491,Mega,Financial Services,United States,US
+19,CVX,Chevron Corporation,303540274400,Mega,Energy,United States,US
+20,MRK,"Merck & Co., Inc.",298635372380,Mega,Healthcare,United States,US
+21,HD,"The Home Depot, Inc.",293289490034,Mega,Consumer Cyclical,United States,US
+22,KO,The Coca-Cola Company,276859601357,Mega,Consumer Defensive,United States,US
+23,PEP,"PepsiCo, Inc.",267643833192,Mega,Consumer Defensive,United States,US
+24,AVGO,Broadcom Inc.,262712150880,Mega,Technology,United States,US
+25,ORCL,Oracle Corporation,261799612206,Mega,Technology,United States,US
+26,ABBV,AbbVie Inc.,261145648937,Mega,Healthcare,United States,US
+27,ASML,ASML Holding N.V.,256609779205,Mega,Technology,Netherlands,NL
+28,AZN,AstraZeneca PLC,233313665096,Mega,Healthcare,United Kingdom,GB
+29,NVS,Novartis AG,221965557524,Mega,Healthcare,Switzerland,CH
+30,COST,Costco Wholesale Corporation,221324629972,Mega,Consumer Defensive,United States,US
+31,BAC,Bank of America Corporation,220825145170,Mega,Financial Services,United States,US
+32,BHP,BHP Group Limited,218215436263,Mega,Basic Materials,Australia,AU
+33,PFE,Pfizer Inc.,217252960927,Mega,Healthcare,United States,US
+34,SHEL,Shell plc,217148442265,Mega,Energy,United Kingdom,GB
+35,MCD,McDonald's Corporation,216527491200,Mega,Consumer Cyclical,United States,US
+36,BABA,Alibaba Group Holding Limited,215331752663,Mega,Consumer Cyclical,China,CN
+37,TMO,Thermo Fisher Scientific Inc.,210737664498,Mega,Healthcare,United States,US
+38,NKE,"NIKE, Inc.",195365072998,Large,Consumer Cyclical,United States,US
+39,CRM,"Salesforce, Inc.",193445149828,Large,Technology,United States,US
+40,ABT,Abbott Laboratories,193364311660,Large,Healthcare,United States,US
+41,CSCO,"Cisco Systems, Inc.",189431676480,Large,Technology,United States,US
+42,TM,Toyota Motor Corporation,186575751997,Large,Consumer Cyclical,Japan,JP
+43,DIS,The Walt Disney Company,183630939592,Large,Communication Services,United States,US
+44,LIN,Linde plc,179373649959,Large,Basic Materials,United Kingdom,GB
+45,DHR,Danaher Corporation,178896235500,Large,Healthcare,United States,US
+46,FMX,"Fomento Económico Mexicano, SAB de CV",175386454868,Large,Consumer Defensive,Mexico,MX
+47,TMUS,"T-Mobile US, Inc.",172256215291,Large,Communication Services,United States,US
+48,CMCSA,Comcast Corporation,168163732106,Large,Communication Services,United States,US
+49,ACN,Accenture plc,167766484301,Large,Technology,Ireland,IE
+50,TTE,TotalEnergies SE,161375906539,Large,Energy,France,FR
+51,ADBE,Adobe Inc.,159811080000,Large,Technology,United States,US
+52,AMD,"Advanced Micro Devices, Inc.",159274644753,Large,Technology,United States,US
+53,VZ,Verizon Communications Inc.,159036942305,Large,Communication Services,United States,US
+54,SAP,SAP SE,157281091200,Large,Technology,Germany,DE
+55,UPS,"United Parcel Service, Inc.",154245606491,Large,Industrials,United States,US
+56,NEE,"NextEra Energy, Inc.",152788446616,Large,Utilities,United States,US
+57,HSBC,HSBC Holdings plc,152637645722,Large,Financial Services,United Kingdom,GB
+58,TXN,Texas Instruments Incorporated,150507188933,Large,Technology,United States,US
+59,PM,Philip Morris International Inc.,148328225884,Large,Consumer Defensive,United States,US
+60,WFC,Wells Fargo & Company,145454369572,Large,Financial Services,United States,US
+61,NFLX,"Netflix, Inc.",143480050578,Large,Communication Services,United States,US
+62,BMY,Bristol-Myers Squibb Company,143151922271,Large,Healthcare,United States,US
+63,MS,Morgan Stanley,141749600000,Large,Financial Services,United States,US
+64,RTX,Raytheon Technologies Corporation,141116898109,Large,Industrials,United States,US
+65,UL,Unilever PLC,140277333289,Large,Consumer Defensive,United Kingdom,GB
+66,SNY,Sanofi,139287811154,Large,Healthcare,France,FR
+67,RY,Royal Bank of Canada,136132676132,Large,Financial Services,Canada,CA
+68,HON,Honeywell International Inc.,132083628753,Large,Industrials,United States,US
+69,INTC,Intel Corporation,129259291983,Large,Technology,United States,US
+70,BUD,Anheuser-Busch InBev SA/NV,128605866275,Large,Consumer Defensive,Belgium,BE
+71,AMGN,Amgen Inc.,126384367202,Large,Healthcare,United States,US
+72,HDB,HDFC Bank Limited,124734269783,Large,Financial Services,India,IN
+73,SBUX,Starbucks Corporation,123216449569,Large,Consumer Cyclical,United States,US
+74,LOW,"Lowe's Companies, Inc.",122736021774,Large,Consumer Cyclical,United States,US
+75,UNP,Union Pacific Corporation,122688920020,Large,Industrials,United States,US
+76,T,AT&T Inc.,122462373289,Large,Communication Services,United States,US
+77,COP,ConocoPhillips,121636389176,Large,Energy,United States,US
+78,QCOM,QUALCOMM Incorporated,121289706962,Large,Technology,United States,US
+79,MDT,Medtronic plc,119817622318,Large,Healthcare,Ireland,IE
+80,INTU,Intuit Inc.,119498561885,Large,Technology,United States,US
+81,BA,The Boeing Company,119320150787,Large,Industrials,United States,US
+82,PLD,"Prologis, Inc.",117511046464,Large,Real Estate,United States,US
+83,LMT,Lockheed Martin Corporation,115943588904,Large,Industrials,United States,US
+84,SONY,Sony Group Corporation,115870166996,Large,Technology,Japan,JP
+85,TD,The Toronto-Dominion Bank,113918743008,Large,Financial Services,Canada,CA
+86,SPGI,S&P Global Inc.,113624152000,Large,Financial Services,United States,US
+87,AXP,American Express Company,113455742314,Large,Financial Services,United States,US
+88,DE,Deere & Company,112925344883,Large,Industrials,United States,US
+89,IBM,International Business Machines Corporation,112279763261,Large,Technology,United States,US
+90,CAT,Caterpillar Inc.,111060858559,Large,Industrials, , 
+91,ELV,Elevance Health Inc.,110105400320,Large,Healthcare,United States,US
+92,GE,General Electric Company,109289660785,Large,Industrials,United States,US
+93,GS,"The Goldman Sachs Group, Inc.",109157643516,Large,Financial Services,United States,US
+94,BP,BP p.l.c.,109063801341,Large,Energy,United Kingdom,GB
+95,SYK,Stryker Corporation,107939820065,Large,Healthcare,United States,US
+96,ISRG,"Intuitive Surgical, Inc.",106829347118,Large,Healthcare,United States,US
+97,DEO,Diageo plc,105745686968,Large,Consumer Defensive,United Kingdom,GB
+98,MDLZ,"Mondelez International, Inc.",105625084759,Large,Consumer Defensive,United States,US
+99,RIO,Rio Tinto Group,103275290875,Large,Basic Materials,United Kingdom,GB
+100,GILD,"Gilead Sciences, Inc.",99528000000,Large,Healthcare,United States,US
+101,BX,Blackstone Inc.,99272288169,Large,Financial Services,United States,US
+102,AMAT,"Applied Materials, Inc.",98084396937,Large,Technology,United States,US
+103,BLK,"BlackRock, Inc.",96610769244,Large,Financial Services,United States,US
+104,BKNG,Booking Holdings Inc.,95352632390,Large,Consumer Cyclical,United States,US
+105,SCHW,The Charles Schwab Corporation,93412713225,Large,Financial Services,United States,US
+106,ADI,"Analog Devices, Inc.",92768380203,Large,Technology,United States,US
+107,EQNR,Equinor ASA,91906027709,Large,Energy,Norway,NO
+108,AMT,American Tower Corporation,91693961824,Large,Real Estate,United States,US
+109,CVS,CVS Health Corporation,90458385531,Large,Healthcare,United States,US
+110,TJX,"The TJX Companies, Inc.",90391968768,Large,Consumer Cyclical,United States,US
+111,C,Citigroup Inc.,90160028682,Large,Financial Services,United States,US
+112,VRTX,Vertex Pharmaceuticals Incorporated,89664152225,Large,Healthcare,United States,US
+113,ADP,"Automatic Data Processing, Inc.",89100980000,Large,Industrials,United States,US
+114,MMC,"Marsh & McLennan Companies, Inc.",88733157125,Large,Financial Services,United States,US
+115,NOW,"ServiceNow, Inc.",88586152000,Large,Technology,United States,US
+116,ZTS,Zoetis Inc.,86142364060,Large,Healthcare,United States,US
+117,PYPL,"PayPal Holdings, Inc.",84177064500,Large,Financial Services,United States,US
+118,PDD,PDD Holdings Inc.,83780882373,Large,Consumer Cyclical,Ireland,IE
+119,MO,"Altria Group, Inc.",83343517600,Large,Consumer Defensive,United States,US
+120,CB,Chubb Limited,82388651461,Large,Financial Services,Switzerland,CH
+121,REGN,"Regeneron Pharmaceuticals, Inc.",81931084700,Large,Healthcare,United States,US
+122,SO,The Southern Company,81714576000,Large,Utilities,United States,US
+123,ENB,Enbridge Inc.,80814958216,Large,Energy,Canada,CA
+124,CNI,Canadian National Railway Company,80693568000,Large,Industrials,Canada,CA
+125,IBN,ICICI Bank Limited,80148056602,Large,Financial Services,India,IN
+126,SHOP,Shopify Inc.,80060257619,Large,Technology,Canada,CA
+127,BTI,British American Tobacco p.l.c.,79612992000,Large,Consumer Defensive,United Kingdom,GB
+128,MUFG,"Mitsubishi UFJ Financial Group, Inc.",78682241044,Large,Financial Services,Japan,JP
+129,CI,Cigna Corporation,77448382334,Large,Healthcare,United States,US
+130,ABNB,"Airbnb, Inc.",76648955358,Large,Consumer Cyclical,United States,US
+131,DUK,Duke Energy Corporation,76571585280,Large,Utilities,United States,US
+132,HCA,"HCA Healthcare, Inc.",76491245116,Large,Healthcare,United States,US
+133,UBER,"Uber Technologies, Inc.",76023590688,Large,Technology,United States,US
+134,PGR,The Progressive Corporation,75816606392,Large,Financial Services,United States,US
+135,CP,Canadian Pacific Railway Limited,75397158468,Large,Industrials,Canada,CA
+136,GSK,GSK plc,74921480000,Large,Healthcare,United Kingdom,GB
+137,FISV,"Fiserv, Inc.",74262394925,Large,Technology,United States,US
+138,BSX,Boston Scientific Corporation,74079990674,Large,Healthcare,United States,US
+139,EL,The Estée Lauder Companies Inc.,72708554729,Large,Consumer Defensive,United States,US
+140,TGT,Target Corporation,72140732650,Large,Consumer Defensive,United States,US
+141,BDX,"Becton, Dickinson and Company",72014585379,Large,Healthcare,United States,US
+143,LRCX,Lam Research Corporation,71167958400,Large,Technology,United States,US
+144,PBR,Petróleo Brasileiro S.A. - Petrobras,70569124424,Large,Energy,Brazil,BR
+145,ITW,Illinois Tool Works Inc.,70203322668,Large,Industrials,United States,US
+146,EQIX,"Equinix, Inc.",69200880960,Large,Real Estate,United States,US
+147,WM,"Waste Management, Inc.",68520185963,Large,Industrials,United States,US
+148,ETN,Eaton Corporation plc,68165647282,Large,Industrials,Ireland,IE
+149,NOC,Northrop Grumman Corporation,67852123364,Large,Industrials,United States,US
+150,EOG,"EOG Resources, Inc.",67107072767,Large,Energy,United States,US
+151,AON,Aon plc,67074386400,Large,Financial Services,Ireland,IE
+152,MU,"Micron Technology, Inc.",67009500680,Large,Technology,United States,US
+153,ABB,ABB Ltd,66933481048,Large,Industrials,Switzerland,CH
+154,AMX,"América Móvil, SAB de CV",66888876677,Large,Communication Services,Mexico,MX
+155,CL,Colgate-Palmolive Company,66854885120,Large,Consumer Defensive,United States,US
+156,HUM,Humana Inc.,66848073900,Large,Healthcare,United States,US
+157,CME,CME Group Inc.,66598666200,Large,Financial Services,United States,US
+158,APD,"Air Products & Chemicals, Inc.",65892028474,Large,Basic Materials,United States,US
+159,SLB,Schlumberger Limited,65208849696,Large,Energy,United States,US
+160,CSX,CSX Corporation,64772972490,Large,Industrials,United States,US
+161,CNQ,Canadian Natural Resources Limited,63342822088,Large,Energy,Canada,CA
+162,INFY,Infosys Limited,63077966464,Large,Technology,India,IN
+163,MELI,"MercadoLibre, Inc.",62437669284,Large,Consumer Cyclical,Uruguay,UY
+164,MNST,Monster Beverage Corporation,62386200289,Large,Consumer Defensive,United States,US
+165,BMO,Bank of Montreal,62166730033,Large,Financial Services, , 
+166,VALE,Vale S.A.,61834565888,Large,Basic Materials,Brazil,BR
+167,UBS,UBS Group AG,61284434022,Large,Financial Services,Switzerland,CH
+168,SCCO,Southern Copper Corporation,61237410687,Large,Basic Materials,United States,US
+169,RELX,RELX PLC,60979940425,Large,Communication Services,United Kingdom,GB
+170,ICE,"Intercontinental Exchange, Inc.",60620999556,Large,Financial Services,United States,US
+171,ATVI,"Activision Blizzard, Inc.",59745120000,Large,Communication Services,United States,US
+172,BNS,The Bank of Nova Scotia,59623752800,Large,Financial Services,Canada,CA
+173,SHW,The Sherwin-Williams Company,59531327600,Large,Basic Materials,United States,US
+174,GD,General Dynamics Corporation,58137285120,Large,Industrials,United States,US
+175,KKR,KKR & Co. Inc.,57809677533,Large,Financial Services,United States,US
+176,FDX,FedEx Corporation,57635013600,Large,Industrials,United States,US
+177,ORLY,"O'Reilly Automotive, Inc.",57424176342,Large,Consumer Cyclical,United States,US
+178,NTES,"NetEase, Inc.",57329783280,Large,Communication Services,China,CN
+179,MMM,3M Company,57015301200,Large,Industrials,United States,US
+180,SNPS,"Synopsys, Inc.",56589331120,Large,Technology,United States,US
+181,JD,"JD.com, Inc.",56471891374,Large,Consumer Cyclical,China,CN
+182,TRI,Thomson Reuters Corporation,56403725522,Large,Industrials,Canada,CA
+183,HSY,The Hershey Company,56277177496,Large,Consumer Defensive,United States,US
+184,SAN,"Banco Santander, S.A.",56142194227,Large,Financial Services,Spain,ES
+185,CDNS,"Cadence Design Systems, Inc.",55965664160,Large,Technology,United States,US
+186,CMG,"Chipotle Mexican Grill, Inc.",55957908258,Large,Consumer Cyclical,United States,US
+187,MCO,Moody's Corporation,55901440000,Large,Financial Services,United States,US
+188,EPD,Enterprise Products Partners L.P.,55667458048,Large,Energy,United States,US
+189,PANW,"Palo Alto Networks, Inc.",55658689440,Large,Technology,United States,US
+190,SMFG,"Sumitomo Mitsui Financial Group, Inc.",55196652314,Large,Financial Services,Japan,JP
+191,MAR,"Marriott International, Inc.",54539647880,Large,Consumer Cyclical,United States,US
+192,OXY,Occidental Petroleum Corporation,54506599836,Large,Energy,United States,US
+193,RACE,Ferrari N.V.,53891198080,Large,Consumer Cyclical,Italy,IT
+194,NGG,National Grid plc,53866259896,Large,Utilities,United Kingdom,GB
+195,EW,Edwards Lifesciences Corporation,53795783900,Large,Healthcare,United States,US
+196,VMW,"VMware, Inc.",53183310953,Large,Technology,United States,US
+197,KLAC,KLA Corporation,52912169425,Large,Technology,United States,US
+198,MRNA,"Moderna, Inc.",52853315313,Large,Healthcare,United States,US
+199,CHTR,"Charter Communications, Inc.",52829241557,Large,Communication Services,United States,US
+200,GIS,"General Mills, Inc.",52750261303,Large,Consumer Defensive,United States,US
+201,TAK,Takeda Pharmaceutical Company Limited,52652620680,Large,Healthcare,Japan,JP
+202,E,Eni S.p.A.,52386655140,Large,Energy,Italy,IT
+203,FCX,Freeport-McMoRan Inc.,52270629251,Large,Basic Materials,United States,US
+204,PSA,Public Storage,52019500817,Large,Real Estate,United States,US
+205,CCI,Crown Castle Inc.,51429000000,Large,Real Estate,United States,US
+206,STLA,Stellantis N.V.,51175807565,Large,Consumer Cyclical,Netherlands,NL
+207,ITUB,Itaú Unibanco Holding S.A.,51153805763,Large,Financial Services,Brazil,BR
+208,KHC,The Kraft Heinz Company,50699642644,Large,Consumer Defensive,United States,US
+209,FTNT,"Fortinet, Inc.",50662717693,Large,Technology,United States,US
+210,ANET,"Arista Networks, Inc.",50162903028,Large,Technology,United States,US
+211,SNOW,Snowflake Inc.,50105250000,Large,Technology,United States,US
+212,MCK,McKesson Corporation,50101874857,Large,Healthcare,United States,US
+213,KVUE,Kenvue Inc.,50057772840,Large,Consumer Defensive,United States,US
+214,PXD,Pioneer Natural Resources Company,49603453920,Large,Energy,United States,US
+215,AZO,"AutoZone, Inc.",49518881366,Large,Consumer Cyclical,United States,US
+216,ECL,Ecolab Inc.,49438641679,Large,Basic Materials,United States,US
+217,BN,Brookfield Corporation,49128555996,Large,Financial Services,Canada,CA
+218,KMB,Kimberly-Clark Corporation,48980972419,Large,Consumer Defensive,United States,US
+219,LULU,Lululemon Athletica Inc.,48931187786,Large,Consumer Cyclical,Canada,CA
+220,ROP,"Roper Technologies, Inc.",48805814200,Large,Industrials,United States,US
+221,SRE,Sempra,48745575521,Large,Utilities,United States,US
+222,EMR,Emerson Electric Co.,48226160000,Large,Industrials,United States,US
+223,MPC,Marathon Petroleum Corporation,48199072748,Large,Energy,United States,US
+224,DG,Dollar General Corporation,47973696600,Large,Consumer Defensive,United States,US
+225,NSC,Norfolk Southern Corporation,47513020800,Large,Industrials,United States,US
+226,CTAS,Cintas Corporation,47430761740,Large,Industrials,United States,US
+227,AEP,"American Electric Power Company, Inc.",47382029507,Large,Utilities,United States,US
+228,D,"Dominion Energy, Inc.",47183329442,Large,Utilities,United States,US
+229,USB,U.S. Bancorp,47124418033,Large,Financial Services,United States,US
+230,LVS,Las Vegas Sands Corp.,47117305670,Large,Consumer Cyclical,United States,US
+231,MSI,"Motorola Solutions, Inc.",47090910000,Large,Technology,United States,US
+232,WDAY,"Workday, Inc.",47003320363,Large,Technology,United States,US
+233,F,Ford Motor Company,46944807276,Large,Consumer Cyclical,United States,US
+234,DXCM,"DexCom, Inc.",46834181520,Large,Healthcare,United States,US
+235,KDP,Keurig Dr Pepper Inc.,46647608337,Large,Consumer Defensive,United States,US
+236,PNC,"The PNC Financial Services Group, Inc.",46435052901,Large,Financial Services,United States,US
+237,GM,General Motors Company,46235389071,Large,Consumer Cyclical,United States,US
+238,RSG,"Republic Services, Inc.",46132890186,Large,Industrials,United States,US
+239,BIIB,Biogen Inc.,46036640520,Large,Healthcare,United States,US
+240,AJG,Arthur J. Gallagher & Co.,45810079720,Large,Financial Services,United States,US
+241,ABEV,Ambev S.A.,45505939630,Large,Consumer Defensive,Brazil,BR
+242,APH,Amphenol Corporation,45071599673,Large,Technology,United States,US
+243,ING,ING Groep N.V.,44946755899,Large,Financial Services,Netherlands,NL
+244,WDS,Woodside Energy Group Ltd,44826333811,Large,Energy,Australia,AU
+245,HMC,"Honda Motor Co., Ltd.",44545705856,Large,Consumer Cyclical,Japan,JP
+246,BIDU,"Baidu, Inc.",44476566370,Large,Communication Services,China,CN
+247,SE,Sea Limited,44439571308,Large,Consumer Cyclical,Singapore,SG
+248,BCE,BCE Inc.,43902211515,Large,Communication Services,Canada,CA
+249,NXPI,NXP Semiconductors N.V.,43328994035,Large,Technology,Netherlands,NL
+250,PSX,Phillips 66,43067709972,Large,Energy,United States,US
+251,TT,Trane Technologies plc,42775999042,Large,Industrials,Ireland,IE
+252,PH,Parker-Hannifin Corporation,42751057800,Large,Industrials,United States,US
+253,JCI,Johnson Controls International plc,42666634653,Large,Industrials,Ireland,IE
+254,EXC,Exelon Corporation,42605712493,Large,Utilities,United States,US
+255,MET,"MetLife, Inc.",42326626045,Large,Financial Services,United States,US
+256,BSBR,Banco Santander (Brasil) S.A.,42144076728,Large,Financial Services,Brazil,BR
+257,TRV,"The Travelers Companies, Inc.",42107105642,Large,Financial Services,United States,US
+258,TDG,TransDigm Group Incorporated,41887116339,Large,Industrials,United States,US
+259,ADSK,"Autodesk, Inc.",41869799580,Large,Technology,United States,US
+260,HES,Hess Corporation,41851052390,Large,Energy,United States,US
+261,TRP,TC Energy Corporation,41800000000,Large,Energy,Canada,CA
+262,BBVA,"Banco Bilbao Vizcaya Argentaria, S.A.",41729320858,Large,Financial Services,Spain,ES
+263,PUK,Prudential plc,41655917937,Large,Financial Services,United Kingdom,GB
+264,O,Realty Income Corporation,41579798461,Large,Real Estate,United States,US
+265,CTVA,"Corteva, Inc.",41509240784,Large,Basic Materials,United States,US
+266,ADM,Archer-Daniels-Midland Company,41370475208,Large,Consumer Defensive,United States,US
+267,MCHP,Microchip Technology Incorporated,41183300874,Large,Technology,United States,US
+268,SPG,"Simon Property Group, Inc.",40976956538,Large,Real Estate,United States,US
+269,STZ,"Constellation Brands, Inc.",40941358080,Large,Consumer Defensive,United States,US
+270,AFL,Aflac Incorporated,40839703471,Large,Financial Services,United States,US
+271,HLN,Haleon plc,40585981210,Large,Healthcare,United Kingdom,GB
+272,IDXX,"IDEXX Laboratories, Inc.",40497481866,Large,Healthcare,United States,US
+273,YUM,"Yum! Brands, Inc.",40064445898,Large,Consumer Cyclical,United States,US
+274,AIG,"American International Group, Inc.",39463999999,Large,Financial Services,United States,US
+275,A,"Agilent Technologies, Inc.",39417078733,Large,Healthcare,United States,US
+276,PCG,PG&E Corporation,39349002542,Large,Utilities,United States,US
+277,SU,Suncor Energy Inc.,39194631974,Large,Energy,Canada,CA
+278,WELL,Welltower Inc.,39088194830,Large,Real Estate,United States,US
+279,SYY,Sysco Corporation,38968759080,Large,Consumer Defensive,United States,US
+280,PAYX,"Paychex, Inc.",38869157473,Large,Industrials,United States,US
+281,TEL,TE Connectivity Ltd.,38740239084,Large,Technology,Switzerland,CH
+282,NEM,Newmont Corporation,38718368640,Large,Basic Materials,United States,US
+283,VLO,Valero Energy Corporation,38696778824,Large,Energy,United States,US
+284,DOW,Dow Inc.,38485009585,Large,Basic Materials,United States,US
+285,STM,STMicroelectronics N.V.,38381696479,Large,Technology,Switzerland,CH
+286,KMI,"Kinder Morgan, Inc.",38306260255,Large,Energy,United States,US
+287,XEL,Xcel Energy Inc.,38288264694,Large,Utilities,United States,US
+288,HLT,Hilton Worldwide Holdings Inc.,38267711627,Large,Consumer Cyclical,United States,US
+289,ET,Energy Transfer LP,38249131807,Large,Energy,United States,US
+290,TFC,Truist Financial Corporation,38212784800,Large,Financial Services,United States,US
+291,LYG,Lloyds Banking Group plc,38088664965,Large,Financial Services,United Kingdom,GB
+292,PCAR,PACCAR Inc,38021102382,Large,Industrials,United States,US
+293,MSCI,MSCI Inc.,37922029410,Large,Financial Services,United States,US
+294,CM,Canadian Imperial Bank of Commerce,37833267168,Large,Financial Services,Canada,CA
+295,CPRT,"Copart, Inc.",37598421139,Large,Consumer Cyclical,United States,US
+296,CNC,Centene Corporation,37530313551,Large,Healthcare,United States,US
+297,MFG,"Mizuho Financial Group, Inc.",37507343811,Large,Financial Services,Japan,JP
+298,SGEN,Seagen Inc.,37476424480,Large,Healthcare,United States,US
+299,LNG,"Cheniere Energy, Inc.",37448798668,Large,Energy,United States,US
+300,DHI,"D.R. Horton, Inc.",36876597385,Large,Consumer Cyclical,United States,US
+301,WMB,"The Williams Companies, Inc.",36783685317,Large,Energy,United States,US
+302,MFC,Manulife Financial Corporation,36614468817,Large,Financial Services,Canada,CA
+303,CRH,CRH plc,36507240000,Large,Basic Materials,Ireland,IE
+304,WCN,"Waste Connections, Inc.",36269175613,Large,Industrials,Canada,CA
+305,ALC,Alcon Inc.,36240742000,Large,Healthcare,Switzerland,CH
+306,GEHC,GE HealthCare Technologies Inc.,35914935598,Large,Healthcare,United States,US
+307,SQ,"Block, Inc.",35835820637,Large,Technology,United States,US
+308,ROST,"Ross Stores, Inc.",35723493120,Large,Consumer Cyclical,United States,US
+309,NUE,Nucor Corporation,35722320000,Large,Basic Materials,United States,US
+310,LHX,"L3Harris Technologies, Inc.",35566010188,Large,Industrials,United States,US
+311,OTIS,Otis Worldwide Corporation,35526495048,Large,Industrials,United States,US
+312,GOLD,Barrick Gold Corporation,35458070323,Large,Basic Materials,Canada,CA
+313,CARR,Carrier Global Corporation,35380435118,Large,Industrials,United States,US
+314,KR,The Kroger Co.,35320951215,Large,Consumer Defensive,United States,US
+315,TEAM,Atlassian Corporation Plc,35269983963,Large,Technology,Australia,AU
+316,MRVL,"Marvell Technology, Inc.",35107191689,Large,Technology,United States,US
+317,ON,ON Semiconductor Corporation,35076724410,Large,Technology,United States,US
+318,IQV,IQVIA Holdings Inc.,34979695972,Large,Healthcare,United States,US
+319,ODFL,"Old Dominion Freight Line, Inc.",34850851500,Large,Industrials,United States,US
+320,APO,"Apollo Global Management, Inc.",34541567497,Large,Financial Services,United States,US
+321,ED,"Consolidated Edison, Inc.",34467118212,Large,Utilities,United States,US
+322,DLTR,"Dollar Tree, Inc.",34394317160,Large,Consumer Defensive,United States,US
+323,EA,Electronic Arts Inc.,34393675760,Large,Communication Services,United States,US
+324,ORAN,Orange S.A.,34280183250,Large,Communication Services,France,FR
+325,RMD,ResMed Inc.,34036568003,Large,Healthcare,United States,US
+326,MPLX,MPLX LP,34025349600,Large,Energy,United States,US
+327,ABC,AmerisourceBergen Corporation,33977321420,Large,Healthcare,United States,US
+328,GWW,"W.W. Grainger, Inc.",33888310170,Large,Industrials,United States,US
+329,COF,Capital One Financial Corporation,33658983746,Large,Financial Services,United States,US
+330,DVN,Devon Energy Corporation,33548674324,Large,Energy,United States,US
+331,AME,"AMETEK, Inc.",33395349460,Large,Industrials,United States,US
+332,DELL,Dell Technologies Inc.,33189393906,Large,Technology,United States,US
+333,FIS,"Fidelity National Information Services, Inc.",33028084000,Large,Technology,United States,US
+334,VICI,VICI Properties Inc.,32947802000,Large,Real Estate,United States,US
+335,QSR,Restaurant Brands International Inc.,32677199252,Large,Consumer Cyclical,Canada,CA
+336,ROK,"Rockwell Automation, Inc.",32557872500,Large,Industrials,United States,US
+337,GFS,GLOBALFOUNDRIES Inc.,32542125025,Large,Technology,United States,US
+338,NTR,Nutrien Ltd.,32507837000,Large,Basic Materials,Canada,CA
+339,BK,The Bank of New York Mellon Corporation,32488647439,Large,Financial Services,United States,US
+340,PPG,"PPG Industries, Inc.",32486464740,Large,Basic Materials,United States,US
+341,LEN,Lennar Corporation,32344806767,Large,Consumer Cyclical,United States,US
+342,VOD,Vodafone Group PLC,32258067853,Large,Communication Services,United Kingdom,GB
+343,CHT,"Chunghwa Telecom Co., Ltd.",32201175946,Large,Communication Services,Taiwan,TW
+344,CTSH,Cognizant Technology Solutions Corporation,32117522127,Large,Technology,United States,US
+345,CMI,Cummins Inc.,32041825200,Large,Industrials,United States,US
+346,BBD,Banco Bradesco S.A.,31983957555,Large,Financial Services,Brazil,BR
+347,IBKR,"Interactive Brokers Group, Inc.",31906040842,Large,Financial Services,United States,US
+348,PEG,Public Service Enterprise Group Incorporated,31831500379,Large,Utilities,United States,US
+349,NWG,NatWest Group plc,31560191770,Large,Financial Services,United Kingdom,GB
+350,ILMN,"Illumina, Inc.",31556662320,Large,Healthcare,United States,US
+351,MTD,Mettler-Toledo International Inc.,31449671799,Large,Healthcare,United States,US
+352,BCS,Barclays PLC,31413410999,Large,Financial Services,United Kingdom,GB
+353,WBD,"Warner Bros. Discovery, Inc.",31394882350,Large,Communication Services,United States,US
+354,FAST,Fastenal Company,31213154845,Large,Industrials,United States,US
+356,CPNG,"Coupang, Inc.",30942743455,Large,Consumer Cyclical,United States,US
+357,AMP,"Ameriprise Financial, Inc.",30655139220,Large,Financial Services,United States,US
+358,TTD,"The Trade Desk, Inc.",30602363821,Large,Technology,United States,US
+359,FNV,Franco-Nevada Corporation,30512904658,Large,Basic Materials,Canada,CA
+360,CSGP,"CoStar Group, Inc.",30477009997,Large,Real Estate,United States,US
+361,ALL,The Allstate Corporation,30475180900,Large,Financial Services,United States,US
+362,VRSK,"Verisk Analytics, Inc.",30463090473,Large,Industrials,United States,US
+363,CVE,Cenovus Energy Inc.,30357052764,Large,Energy,Canada,CA
+364,WEC,"WEC Energy Group, Inc.",30284915118,Large,Utilities,United States,US
+365,TU,TELUS Corporation,30255520000,Large,Communication Services,Canada,CA
+366,MBLY,Mobileye Global Inc.,30159908891,Large,Consumer Cyclical,Israel,IL
+367,PRU,"Prudential Financial, Inc.",30110218013,Large,Financial Services,United States,US
+368,CCEP,Coca-Cola Europacific Partners PLC,30093409075,Large,Consumer Defensive,United Kingdom,GB
+369,DD,"DuPont de Nemours, Inc.",30070138160,Large,Basic Materials,United States,US
+370,LYB,LyondellBasell Industries N.V.,30055316122,Large,Basic Materials,United States,US
+371,HPQ,HP Inc.,29687932640,Large,Technology,United States,US
+372,AEM,Agnico Eagle Mines Limited,29562946132,Large,Basic Materials,Canada,CA
+373,CRWD,"CrowdStrike Holdings, Inc.",29388734945,Large,Technology,United States,US
+374,ZBH,"Zimmer Biomet Holdings, Inc.",28933242180,Large,Healthcare,United States,US
+375,AWK,"American Water Works Company, Inc.",28891008920,Large,Utilities,United States,US
+376,OKE,"ONEOK, Inc.",28864354400,Large,Energy,United States,US
+377,VEEV,Veeva Systems Inc.,28621252630,Large,Healthcare,United States,US
+378,FERG,Ferguson plc,28594389246,Large,Industrials,United Kingdom,GB
+379,BKR,Baker Hughes Company,28568799200,Large,Energy,United States,US
+380,SLF,Sun Life Financial Inc.,28551255779,Large,Financial Services,Canada,CA
+382,EIX,Edison International,28146042708,Large,Utilities,United States,US
+383,DLR,"Digital Realty Trust, Inc.",28087050351,Large,Real Estate,United States,US
+384,ACGL,Arch Capital Group Ltd.,27844282000,Large,Financial Services,Bermuda,BM
+385,WBA,"Walgreens Boots Alliance, Inc.",27756148349,Large,Healthcare,United States,US
+386,GPN,Global Payments Inc.,27428366218,Large,Industrials,United States,US
+387,SPOT,Spotify Technology S.A.,27417001500,Large,Communication Services,Luxembourg,LU
+388,WST,"West Pharmaceutical Services, Inc.",27355428396,Large,Healthcare,United States,US
+389,IMO,Imperial Oil Limited,27241246000,Large,Energy,Canada,CA
+390,ES,Eversource Energy,27001236500,Large,Utilities,United States,US
+391,HAL,Halliburton Company,26957586839,Large,Energy,United States,US
+392,NDAQ,"Nasdaq, Inc.",26856045199,Large,Financial Services,United States,US
+393,GLW,Corning Incorporated,26762091896,Large,Technology,United States,US
+394,ALNY,"Alnylam Pharmaceuticals, Inc.",26341699200,Large,Healthcare,United States,US
+395,TSCO,Tractor Supply Company,26332477440,Large,Consumer Cyclical,United States,US
+396,GMAB,Genmab A/S,26330324219,Large,Healthcare,Denmark,DK
+397,ANSS,"ANSYS, Inc.",26189053183,Large,Technology,United States,US
+398,YUMC,"Yum China Holdings, Inc.",26149552639,Large,Consumer Cyclical,China,CN
+399,BNTX,BioNTech SE,26130979420,Large,Healthcare,Germany,DE
+400,BGNE,"BeiGene, Ltd.",26113546180,Large,Healthcare,Cayman Islands,KY
+401,RCI,Rogers Communications Inc.,26081075659,Large,Communication Services,Canada,CA
+402,ULTA,"Ulta Beauty, Inc.",26048576430,Large,Consumer Cyclical,United States,US
+403,CEG,Constellation Energy Corporation,26035915494,Large,Utilities,United States,US
+404,SBAC,SBA Communications Corporation,25952867980,Large,Real Estate,United States,US
+405,VMC,Vulcan Materials Company,25755843490,Large,Basic Materials,United States,US
+406,HZNP,Horizon Therapeutics PLC,25672986240,Large,Healthcare,Ireland,IE
+407,NU,Nu Holdings Ltd.,25633554099,Large,Financial Services,Brazil,BR
+408,KEYS,"Keysight Technologies, Inc.",25591449889,Large,Technology,United States,US
+409,WIT,Wipro Limited,25361101911,Large,Technology,India,IN
+410,APTV,Aptiv PLC,25321211487,Large,Consumer Cyclical,Ireland,IE
+411,TEF,"Telefónica, S.A.",25244518979,Large,Technology,Spain,ES
+412,AVB,"AvalonBay Communities, Inc.",25166797500,Large,Real Estate,United States,US
+413,PWR,"Quanta Services, Inc.",24832521200,Large,Industrials,United States,US
+414,MLM,"Martin Marietta Materials, Inc.",24653727020,Large,Basic Materials,United States,US
+415,IFF,International Flavors & Fragrances Inc.,24601212922,Large,Basic Materials,United States,US
+416,EFX,Equifax Inc.,24542290840,Large,Industrials,United States,US
+417,DASH,"DoorDash, Inc.",24435393006,Large,Communication Services,United States,US
+418,ARES,Ares Management Corporation,24427737540,Large,Financial Services,United States,US
+419,GPC,Genuine Parts Company,24411844680,Large,Consumer Cyclical,United States,US
+420,EBAY,eBay Inc.,24389372255,Large,Consumer Cyclical,United States,US
+421,DFS,Discover Financial Services,24368658160,Large,Financial Services,United States,US
+422,WTW,Willis Towers Watson PLC,24243009660,Large,Financial Services,United Kingdom,GB
+423,TROW,"T. Rowe Price Group, Inc.",24128519580,Large,Financial Services,United States,US
+424,K,Kellogg Company,24106693800,Large,Consumer Defensive,United States,US
+425,FANG,"Diamondback Energy, Inc.",24092975462,Large,Energy,United States,US
+426,ALGN,"Align Technology, Inc.",24068419960,Large,Healthcare,United States,US
+427,EQR,Equity Residential,24014998393,Large,Real Estate,United States,US
+428,IT,"Gartner, Inc.",24000426342,Large,Technology,United States,US
+429,DDOG,"Datadog, Inc.",23971309408,Large,Technology,United States,US
+430,IR,Ingersoll Rand Inc.,23961305217,Large,Industrials,United States,US
+431,MKC,"McCormick & Company, Incorporated",23845447371,Large,Consumer Defensive,United States,US
+432,CHD,"Church & Dwight Co., Inc.",23823067920,Large,Consumer Defensive,United States,US
+433,GIB,CGI Inc.,23760988954,Large,Technology,Canada,CA
+434,AEE,Ameren Corporation,23746113974,Large,Utilities,United States,US
+435,WPM,Wheaton Precious Metals Corp.,23571715127,Large,Basic Materials,Canada,CA
+436,URI,"United Rentals, Inc.",23509506960,Large,Industrials,United States,US
+437,LI,Li Auto Inc.,23383846184,Large,Consumer Cyclical,China,CN
+438,DTE,DTE Energy Company,23364515333,Large,Utilities,United States,US
+439,BAX,Baxter International Inc.,23294391763,Large,Healthcare,United States,US
+440,CBRE,"CBRE Group, Inc.",23172525600,Large,Real Estate,United States,US
+441,TECK,Teck Resources Limited,23103663367,Large,Basic Materials,Canada,CA
+442,NOK,Nokia Oyj,22913004058,Large,Technology,Finland,FI
+443,STT,State Street Corporation,22896742048,Large,Financial Services,United States,US
+444,FTV,Fortive Corporation,22881757036,Large,Technology,United States,US
+445,PODD,Insulet Corporation,22862727863,Large,Healthcare,United States,US
+446,VRSN,"VeriSign, Inc.",22848031040,Large,Technology,United States,US
+447,FE,FirstEnergy Corp.,22741628582,Large,Utilities,United States,US
+448,UDR,"UDR, Inc.",22720093623,Large,Real Estate,United States,US
+449,ETR,Entergy Corporation,22700842560,Large,Utilities,United States,US
+450,TCOM,Trip.com Group Limited,22650761359,Large,Consumer Cyclical,China,CN
+451,ZTO,ZTO Express (Cayman) Inc.,22607890240,Large,Industrials,China,CN
+452,HRL,Hormel Foods Corporation,22517159270,Large,Consumer Defensive,United States,US
+453,ARGX,argenx SE,22502860896,Large,Healthcare,Netherlands,NL
+454,CDW,CDW Corporation,22431224640,Large,Technology,United States,US
+455,DB,Deutsche Bank Aktiengesellschaft,22178661317,Large,Financial Services,Germany,DE
+456,CQP,"Cheniere Energy Partners, L.P.",22144509384,Large,Energy,United States,US
+457,HUBS,"HubSpot, Inc.",22025708640,Large,Technology,United States,US
+458,FTS,Fortis Inc.,22014071827,Large,Utilities,Canada,CA
+459,EXR,Extra Space Storage Inc.,22007432435,Large,Real Estate,United States,US
+460,PKX,POSCO Holdings Inc.,21991971720,Large,Basic Materials,South Korea,KR
+461,ENPH,"Enphase Energy, Inc.",21879074600,Large,Technology,United States,US
+462,DAL,"Delta Air Lines, Inc.",21813814708,Large,Industrials,United States,US
+463,RYAAY,Ryanair Holdings plc,21728197113,Large,Industrials,Ireland,IE
+464,WY,Weyerhaeuser Company,21727222320,Large,Real Estate,United States,US
+465,HIG,"The Hartford Financial Services Group, Inc.",21632687108,Large,Financial Services,United States,US
+466,TSN,"Tyson Foods, Inc.",21582942001,Large,Consumer Defensive,United States,US
+467,CAH,"Cardinal Health, Inc.",21435565466,Large,Healthcare,United States,US
+468,RBLX,Roblox Corporation,21395991013,Large,Communication Services,United States,US
+469,ARE,"Alexandria Real Estate Equities, Inc.",21391450960,Large,Real Estate,United States,US
+470,MT,ArcelorMittal S.A.,21364354977,Large,Basic Materials,Luxembourg,LU
+471,PPL,PPL Corporation,21190360000,Large,Utilities,United States,US
+472,ALB,Albemarle Corporation,21078630300,Large,Basic Materials,United States,US
+473,INVH,Invitation Homes Inc.,21041899515,Large,Real Estate,United States,US
+474,TTWO,"Take-Two Interactive Software, Inc.",21001725246,Large,Communication Services,United States,US
+475,ELP,Companhia Paranaense de Energia - COPEL,20989337641,Large,Utilities,Brazil,BR
+476,EC,Ecopetrol S.A.,20966338832,Large,Energy,Colombia,CO
+477,CLX,The Clorox Company,20949840000,Large,Consumer Defensive,United States,US
+478,HOLX,"Hologic, Inc.",20646431960,Large,Healthcare,United States,US
+479,ROL,"Rollins, Inc.",20583713324,Large,Consumer Cyclical,United States,US
+480,UMC,United Microelectronics Corporation,20505575475,Large,Technology,Taiwan,TW
+481,HEI,HEICO Corporation,20449580860,Large,Industrials,United States,US
+483,BEP,Brookfield Renewable Partners L.P.,20267782079,Large,Utilities,Bermuda,BM
+484,DOV,Dover Corporation,20209869166,Large,Industrials,United States,US
+485,RTO,Rentokil Initial plc,20074638640,Large,Industrials,United Kingdom,GB
+486,BEKE,KE Holdings Inc.,20041027113,Large,Real Estate,China,CN
+487,MTB,M&T Bank Corporation,19926657520,Large,Financial Services,United States,US
+488,GRMN,Garmin Ltd.,19865152480,Large,Technology,Switzerland,CH
+489,LH,Laboratory Corporation of America Holdings,19811810579,Large,Healthcare,United States,US
+491,XYL,Xylem Inc.,19681943460,Large,Industrials,United States,US
+492,MPWR,"Monolithic Power Systems, Inc.",19498721970,Large,Technology,United States,US
+493,TDY,Teledyne Technologies Incorporated,19429832800,Large,Technology,United States,US
+494,SQM,Sociedad Química y Minera de Chile S.A.,19337693683,Large,Basic Materials,Chile,CL
+495,RCL,Royal Caribbean Cruises Ltd.,19335896520,Large,Consumer Cyclical,United States,US
+496,CNP,"CenterPoint Energy, Inc.",19259004836,Large,Utilities,United States,US
+497,CTRA,Coterra Energy Inc.,19206495360,Large,Energy,United States,US
+498,VTR,"Ventas, Inc.",19142584666,Large,Real Estate,United States,US
+499,COO,"The Cooper Companies, Inc.",19086932858,Large,Healthcare,United States,US
+500,FSLR,"First Solar, Inc.",19079123600,Large,Technology,United States,US
+501,CNHI,CNH Industrial N.V.,19007693773,Large,Industrials,United Kingdom,GB
+503,STE,STERIS plc,18782622792,Large,Healthcare,Ireland,IE
+504,PHG,Koninklijke Philips N.V.,18644550019,Large,Healthcare,Netherlands,NL
+505,ZM,"Zoom Video Communications, Inc.",18629202907,Large,Technology,United States,US
+506,KOF,"Coca-Cola FEMSA, SAB de CV",18588144548,Large,Consumer Defensive,Mexico,MX
+507,JBHT,"J.B. Hunt Transport Services, Inc.",18565429760,Large,Industrials,United States,US
+508,BRO,"Brown & Brown, Inc.",18524789640,Large,Financial Services,United States,US
+509,DRI,"Darden Restaurants, Inc.",18513020610,Large,Consumer Cyclical,United States,US
+510,BALL,Ball Corporation,18423547469,Large,Consumer Cyclical,United States,US
+511,MAA,"Mid-America Apartment Communities, Inc.",18335717342,Large,Real Estate,United States,US
+512,FICO,Fair Isaac Corporation,18294449338,Large,Technology,United States,US
+513,HPE,Hewlett Packard Enterprise Company,18284725023,Large,Technology,United States,US
+514,RJF,"Raymond James Financial, Inc.",18239920000,Large,Financial Services,United States,US
+515,EXPD,"Expeditors International of Washington, Inc.",18174837520,Large,Industrials,United States,US
+516,BMRN,BioMarin Pharmaceutical Inc.,18137546857,Large,Healthcare,United States,US
+517,HWM,Howmet Aerospace Inc.,18119376000,Large,Industrials,United States,US
+518,CMS,CMS Energy Corporation,18076838880,Large,Utilities,United States,US
+519,UWMC,UWM Holdings Corporation,18056910349,Large,Financial Services,United States,US
+520,ERIC,Telefonaktiebolaget LM Ericsson (publ),18048599306,Large,Technology,Sweden,SE
+521,MKL,Markel Corporation,18046473471,Large,Financial Services,United States,US
+522,CAG,"Conagra Brands, Inc.",18036623043,Large,Consumer Defensive,United States,US
+523,BR,"Broadridge Financial Solutions, Inc.",17991728910,Large,Technology,United States,US
+524,PBA,Pembina Pipeline Corporation,17907966761,Large,Energy,Canada,CA
+525,OMC,Omnicom Group Inc.,17906471968,Large,Communication Services,United States,US
+526,LYV,"Live Nation Entertainment, Inc.",17869562177,Large,Communication Services,United States,US
+527,WAB,Westinghouse Air Brake Technologies Corporation,17837707900,Large,Industrials,United States,US
+528,LUV,Southwest Airlines Co.,17649865892,Large,Industrials,United States,US
+529,SUI,"Sun Communities, Inc.",17630297600,Large,Real Estate,United States,US
+530,WAT,Waters Corporation,17516605158,Large,Healthcare,United States,US
+531,MOH,"Molina Healthcare, Inc.",17462599000,Large,Healthcare,United States,US
+532,PFG,"Principal Financial Group, Inc.",17384081000,Large,Financial Services,United States,US
+533,TW,Tradeweb Markets Inc.,17347635122,Large,Financial Services,United States,US
+534,TS,Tenaris S.A.,17253885473,Large,Energy,Luxembourg,LU
+535,FLT,"FLEETCOR Technologies, Inc.",17068317514,Large,Technology,United States,US
+536,ATO,Atmos Energy Corporation,16985655660,Large,Utilities,United States,US
+537,FITB,Fifth Third Bancorp,16958982638,Large,Financial Services,United States,US
+538,FWONA,Formula One Group,16939723860,Large,Communication Services,United States,US
+539,MDB,"MongoDB, Inc.",16899275988,Large,Technology,United States,US
+540,AMCR,Amcor plc,16889258177,Large,Consumer Cyclical,Switzerland,CH
+541,SJM,The J. M. Smucker Company,16869815200,Large,Consumer Defensive,United States,US
+542,RKT,"Rocket Companies, Inc.",16792683893,Large,Financial Services,United States,US
+543,STLD,"Steel Dynamics, Inc.",16751446214,Large,Basic Materials,United States,US
+544,IEP,Icahn Enterprises L.P.,16704049642,Large,Industrials,United States,US
+545,SWKS,"Skyworks Solutions, Inc.",16571009527,Large,Technology,United States,US
+546,RE,"Everest Re Group, Ltd.",16554727435,Large,Financial Services,Bermuda,BM
+547,CINF,Cincinnati Financial Corporation,16545095278,Large,Financial Services,United States,US
+548,SEDG,"SolarEdge Technologies, Inc.",16472850974,Large,Technology,Israel,IL
+549,FOXA,Fox Corporation,16462567956,Large,Communication Services,United States,US
+551,PAYC,"Paycom Software, Inc.",16441197517,Large,Technology,United States,US
+552,PKI,"PerkinElmer, Inc.",16417126440,Large,Healthcare,United States,US
+553,IRM,Iron Mountain Incorporated,16403625440,Large,Real Estate,United States,US
+554,CPB,Campbell Soup Company,16393316240,Large,Consumer Defensive,United States,US
+555,TYL,"Tyler Technologies, Inc.",16339966422,Large,Technology,United States,US
+556,LW,"Lamb Weston Holdings, Inc.",16331961360,Large,Consumer Defensive,United States,US
+557,BIP,Brookfield Infrastructure Partners L.P.,16292034129,Large,Utilities,Bermuda,BM
+558,TRGP,Targa Resources Corp.,16264718880,Large,Energy,United States,US
+559,WRB,W. R. Berkley Corporation,16067342981,Large,Financial Services,United States,US
+560,BBY,"Best Buy Co., Inc.",16041644220,Large,Consumer Cyclical,United States,US
+561,AXON,"Axon Enterprise, Inc.",16023126402,Large,Industrials,United States,US
+562,IEX,IDEX Corporation,15941330052,Large,Industrials,United States,US
+563,AGR,"Avangrid, Inc.",15890944771,Large,Utilities,United States,US
+564,PLTR,Palantir Technologies Inc.,15756475830,Large,Technology,United States,US
+565,RPRX,Royalty Pharma plc,15734873981,Large,Healthcare,United States,US
+566,MGM,MGM Resorts International,15694289205,Large,Consumer Cyclical,United States,US
+567,WPC,W. P. Carey Inc.,15665743040,Large,Real Estate,United States,US
+568,LPLA,LPL Financial Holdings Inc.,15622909687,Large,Financial Services,United States,US
+569,FDS,FactSet Research Systems Inc.,15551969075,Large,Financial Services,United States,US
+570,ICLR,ICON PLC,15549191036,Large,Healthcare,Ireland,IE
+571,RF,Regions Financial Corporation,15464900000,Large,Financial Services,United States,US
+572,WLK,Westlake Corporation,15447858270,Large,Basic Materials,United States,US
+573,MGA,Magna International Inc.,15434609360,Large,Consumer Cyclical,Canada,CA
+574,DGX,Quest Diagnostics Incorporated,15290348590,Large,Healthcare,United States,US
+575,ASX,"ASE Technology Holding Co., Ltd.",15288277386,Large,Technology,Taiwan,TW
+576,PTC,PTC Inc.,15263022780,Large,Technology,United States,US
+577,LKQ,LKQ Corporation,15254240300,Large,Consumer Cyclical,United States,US
+578,NTRS,Northern Trust Corporation,15215216260,Large,Financial Services,United States,US
+579,AES,The AES Corporation,15166932226,Large,Utilities,United States,US
+580,J,Jacobs Engineering Group Inc.,15095438820,Large,Industrials,United States,US
+581,BZ,Kanzhun Limited,15001003598,Large,Industrials,China,CN
+582,PHM,"PulteGroup, Inc.",14960472480,Large,Consumer Cyclical,United States,US
+583,INCY,Incyte Corporation,14848604160,Large,Healthcare,United States,US
+584,HTHT,H World Group Limited,14799506130,Large,Consumer Cyclical,China,CN
+585,UAL,"United Airlines Holdings, Inc.",14696290532,Large,Industrials,United States,US
+586,GFI,Gold Fields Limited,14654270892,Large,Basic Materials,South Africa,ZA
+587,KB,KB Financial Group Inc.,14646341459,Large,Financial Services,South Korea,KR
+588,NET,"Cloudflare, Inc.",14627361972,Large,Technology,United States,US
+589,ESS,"Essex Property Trust, Inc.",14619791120,Large,Real Estate,United States,US
+590,CHKP,Check Point Software Technologies Ltd.,14607371520,Large,Technology,Israel,IL
+591,HUBB,Hubbell Incorporated,14580894965,Large,Industrials,United States,US
+592,OWL,Blue Owl Capital Inc.,14496631217,Large,Financial Services,United States,US
+593,FCNCA,"First Citizens BancShares, Inc.",14493359335,Large,Financial Services,United States,US
+594,AMH,American Homes 4 Rent,14489240956,Large,Real Estate,United States,US
+595,SIRI,Sirius XM Holdings Inc.,14429132477,Large,Communication Services,United States,US
+596,TER,"Teradyne, Inc.",14427678280,Large,Technology,United States,US
+597,BLDR,"Builders FirstSource, Inc.",14402091250,Large,Industrials,United States,US
+598,EVRG,"Evergy, Inc.",14369600471,Large,Utilities,United States,US
+599,PINS,"Pinterest, Inc.",14365734024,Large,Communication Services,United States,US
+600,RS,Reliance Steel & Aluminum Co.,14331070400,Large,Basic Materials,United States,US
+601,MRO,Marathon Oil Corporation,14282523933,Large,Energy,United States,US
+602,COIN,"Coinbase Global, Inc.",14267810735,Large,Technology,United States,US
+603,HBAN,Huntington Bancshares Incorporated,14219558342,Large,Financial Services,United States,US
+604,WMG,Warner Music Group Corp.,14219278289,Large,Communication Services,United States,US
+605,FMC,FMC Corporation,14202365580,Large,Basic Materials,United States,US
+606,LCID,"Lucid Group, Inc.",14150305976,Large,Consumer Cyclical,United States,US
+607,CHWY,"Chewy, Inc.",14140451421,Large,Consumer Cyclical,United States,US
+608,SPLK,Splunk Inc.,14108875000,Large,Technology,United States,US
+609,ZBRA,Zebra Technologies Corporation,14074606860,Large,Technology,United States,US
+610,TAP,Molson Coors Beverage Company,14066400165,Large,Consumer Defensive,United States,US
+611,EPAM,"EPAM Systems, Inc.",14028635284,Large,Technology,United States,US
+612,SNN,Smith & Nephew plc,13991419953,Large,Healthcare,United Kingdom,GB
+613,EXPE,"Expedia Group, Inc.",13984604160,Large,Consumer Cyclical,United States,US
+614,AVY,Avery Dennison Corporation,13957236720,Large,Industrials,United States,US
+615,VIV,Telefônica Brasil S.A.,13919499433,Large,Communication Services,Brazil,BR
+616,SYM,Symbotic Inc.,13892881870,Large,Financial Services,United States,US
+617,LNT,Alliant Energy Corporation,13840215180,Large,Utilities,United States,US
+618,POOL,Pool Corporation,13817961272,Large,Industrials,United States,US
+619,SSNC,"SS&C Technologies Holdings, Inc.",13807389600,Large,Technology,United States,US
+620,SNA,Snap-on Incorporated,13805142758,Large,Industrials,United States,US
+621,NIO,NIO Inc.,13755081261,Large,Consumer Cyclical,China,CN
+622,FMS,Fresenius Medical Care AG & Co. KGaA,13743488527,Large,Healthcare,Germany,DE
+623,IPG,"The Interpublic Group of Companies, Inc.",13738914185,Large,Communication Services,United States,US
+624,NTAP,"NetApp, Inc.",13657833739,Large,Technology,United States,US
+626,CF,"CF Industries Holdings, Inc.",13579800000,Large,Basic Materials,United States,US
+627,BG,Bunge Limited,13575799300,Large,Consumer Defensive,United States,US
+628,SNAP,Snap Inc.,13574645074,Large,Communication Services,United States,US
+629,AVTR,"Avantor, Inc.",13535914758,Large,Basic Materials,United States,US
+630,ELS,"Equity LifeStyle Properties, Inc.",13490862571,Large,Real Estate,United States,US
+631,GLPI,"Gaming and Leisure Properties, Inc.",13393273800,Large,Real Estate,United States,US
+632,L,Loews Corporation,13359380760,Large,Financial Services,United States,US
+633,CBOE,"Cboe Global Markets, Inc.",13352541184,Large,Financial Services,United States,US
+634,TXT,Textron Inc.,13341132000,Large,Industrials,United States,US
+635,GGG,Graco Inc.,13238257600,Large,Industrials,United States,US
+636,AER,AerCap Holdings N.V.,13216060320,Large,Industrials,Ireland,IE
+637,GFL,GFL Environmental Inc.,13134463277,Large,Industrials,Canada,CA
+638,WSO,"Watsco, Inc.",13102766611,Large,Industrials,United States,US
+639,SWK,"Stanley Black & Decker, Inc.",13081611534,Large,Industrials,United States,US
+640,TECH,Bio-Techne Corporation,13074271415,Large,Healthcare,United States,US
+641,CCL,Carnival Corporation & plc,13041227499,Large,Consumer Cyclical,United States,US
+642,MOS,The Mosaic Company,12988392203,Large,Basic Materials,United States,US
+643,ZS,"Zscaler, Inc.",12982435200,Large,Technology,United States,US
+644,BAM,Brookfield Asset Management Inc.,12815614509,Large,Financial Services,Canada,CA
+645,CFG,"Citizens Financial Group, Inc.",12796484503,Large,Financial Services,United States,US
+646,DECK,Deckers Outdoor Corporation,12790586732,Large,Consumer Cyclical,United States,US
+647,BEN,"Franklin Resources, Inc.",12779143729,Large,Financial Services,United States,US
+648,DT,"Dynatrace, Inc.",12706725920,Large,Technology,United States,US
+649,HST,"Host Hotels & Resorts, Inc.",12653768694,Large,Real Estate,United States,US
+650,WPP,WPP plc,12628625073,Large,Communication Services,United Kingdom,GB
+651,NDSN,Nordson Corporation,12607154370,Large,Industrials,United States,US
+652,WYNN,"Wynn Resorts, Limited",12593691960,Large,Consumer Cyclical,United States,US
+653,TME,Tencent Music Entertainment Group,12544544800,Large,Communication Services,China,CN
+654,TRU,TransUnion,12498108000,Large,Industrials,United States,US
+655,BSY,"Bentley Systems, Incorporated",12419392278,Large,Technology,United States,US
+656,H,Hyatt Hotels Corporation,12373040584,Large,Consumer Cyclical,United States,US
+657,NICE,NICE Ltd.,12332128439,Large,Technology,Israel,IL
+658,RIVN,"Rivian Automotive, Inc.",12327343972,Large,Consumer Cyclical,United States,US
+659,BAH,Booz Allen Hamilton Holding Corporation,12312250080,Large,Industrials,United States,US
+660,AKAM,"Akamai Technologies, Inc.",12279242240,Large,Technology,United States,US
+661,SRPT,"Sarepta Therapeutics, Inc.",12201942600,Large,Healthcare,United States,US
+662,EQT,EQT Corporation,12193103006,Large,Energy,United States,US
+663,UI,Ubiquiti Inc.,12183193155,Large,Technology,United States,US
+664,CHRW,"C.H. Robinson Worldwide, Inc.",12167875500,Large,Industrials,United States,US
+665,PKG,Packaging Corporation of America,12167542932,Large,Consumer Cyclical,United States,US
+666,DKS,"DICK'S Sporting Goods, Inc.",12123522818,Large,Consumer Cyclical,United States,US
+667,TFX,Teleflex Incorporated,12109256390,Large,Healthcare,United States,US
+668,EXAS,Exact Sciences Corporation,12102760362,Large,Healthcare,United States,US
+669,MAS,Masco Corporation,12031006622,Large,Industrials,United States,US
+670,CPT,Camden Property Trust,11989748200,Large,Real Estate,United States,US
+671,BURL,"Burlington Stores, Inc.",11946064482,Large,Consumer Cyclical,United States,US
+672,ACI,"Albertsons Companies, Inc.",11943962429,Large,Consumer Defensive,United States,US
+673,CCJ,Cameco Corporation,11934361920,Large,Energy,Canada,CA
+674,ERIE,Erie Indemnity Company,11923665669,Large,Financial Services,United States,US
+675,OKTA,"Okta, Inc.",11899828566,Large,Technology,United States,US
+676,TRMB,Trimble Inc.,11887137934,Large,Technology,United States,US
+677,AU,AngloGold Ashanti Limited,11863180227,Large,Basic Materials,South Africa,ZA
+678,PEN,"Penumbra, Inc.",11838513312,Large,Healthcare,United States,US
+680,ENTG,"Entegris, Inc.",11788955140,Large,Technology,United States,US
+681,NI,NiSource Inc.,11786535048,Large,Utilities,United States,US
+682,PEAK,"Healthpeak Properties, Inc.",11749473393,Large,Real Estate,United States,US
+683,CE,Celanese Corporation,11736367500,Large,Basic Materials,United States,US
+684,LBRDK,Liberty Broadband Corporation,11720114160,Large,Communication Services,United States,US
+685,SYF,Synchrony Financial,11717131359,Large,Financial Services,United States,US
+686,GRAB,Grab Holdings Limited,11679668764,Large,Technology,Singapore,SG
+687,KIM,Kimco Realty Corporation,11660167918,Large,Real Estate,United States,US
+688,ACM,AECOM,11630115000,Large,Industrials,United States,US
+689,LSCC,Lattice Semiconductor Corporation,11605521360,Large,Technology,United States,US
+690,LSI,"Life Storage, Inc.",11594928678,Large,Real Estate,United States,US
+691,STX,Seagate Technology Holdings plc,11584167080,Large,Technology,Ireland,IE
+692,BRKR,Bruker Corporation,11522786058,Large,Healthcare,United States,US
+693,Z,"Zillow Group, Inc.",11456448901,Large,Communication Services,United States,US
+694,BIO,"Bio-Rad Laboratories, Inc.",11456074115,Large,Healthcare,United States,US
+695,REXR,"Rexford Industrial Realty, Inc.",11389984276,Large,Real Estate,United States,US
+696,WTRG,"Essential Utilities, Inc.",11386372485,Large,Utilities,United States,US
+697,DKNG,DraftKings Inc.,11348561617,Large,Consumer Cyclical,United States,US
+698,MKTX,MarketAxess Holdings Inc.,11313250902,Large,Financial Services,United States,US
+699,BAP,Credicorp Ltd.,11242004250,Large,Financial Services,Peru,PE
+700,IP,International Paper Company,11227293691,Large,Consumer Cyclical,United States,US
+701,OTEX,Open Text Corporation,11199873161,Large,Technology,Canada,CA
+702,AZPN,"Aspen Technology, Inc.",11192648602,Large,Technology,United States,US
+703,KMX,"CarMax, Inc.",11162806075,Large,Consumer Cyclical,United States,US
+704,JKHY,"Jack Henry & Associates, Inc.",11162468363,Large,Technology,United States,US
+705,VTRS,Viatris Inc.,11126813245,Large,Healthcare,United States,US
+706,PARA,Paramount Global,11113066225,Large,Communication Services,United States,US
+707,ETSY,"Etsy, Inc.",11099610000,Large,Consumer Cyclical,United States,US
+708,BCH,Banco de Chile,11091666424,Large,Financial Services,Chile,CL
+709,CHDN,Churchill Downs Incorporated,11090137588,Large,Consumer Cyclical,United States,US
+710,LDOS,"Leidos Holdings, Inc.",11089309543,Large,Technology,United States,US
+711,MMP,"Magellan Midstream Partners, L.P.",11071391240,Large,Energy,United States,US
+712,LEGN,Legend Biotech Corporation,11057838866,Large,Healthcare,United States,US
+713,TTC,The Toro Company,11044824350,Large,Industrials,United States,US
+715,DPZ,"Domino's Pizza, Inc.",10994316290,Large,Consumer Cyclical,United States,US
+716,GEN,Gen Digital Inc.,10961062762,Large,Technology,United States,US
+717,RYAN,"Ryan Specialty Holdings, Inc.",10946818903,Large,Financial Services,United States,US
+718,FIVE,"Five Below, Inc.",10897386060,Large,Consumer Cyclical,United States,US
+719,CSL,Carlisle Companies Incorporated,10885660008,Large,Industrials,United States,US
+721,UHAL,U-Haul Holding Company,10862071702,Large,Industrials,United States,US
+722,XM,Qualtrics International Inc.,10848352039,Large,Technology,United States,US
+723,APLS,"Apellis Pharmaceuticals, Inc.",10825559220,Large,Healthcare,United States,US
+724,CNA,CNA Financial Corporation,10815200859,Large,Financial Services,United States,US
+725,DOX,Amdocs Limited,10810714200,Large,Technology,United States,US
+726,CRBG,"Corebridge Financial, Inc.",10785099121,Large,Financial Services,United States,US
+727,GDDY,GoDaddy Inc.,10738219100,Large,Technology,United States,US
+728,ONON,On Holding AG,10733193200,Large,Consumer Cyclical,Switzerland,CH
+729,ZI,ZoomInfo Technologies Inc.,10732936508,Large,Technology,United States,US
+730,WDC,Western Digital Corporation,10681521600,Large,Technology,United States,US
+731,AOS,A. O. Smith Corporation,10588107467,Large,Industrials,United States,US
+732,NMR,"Nomura Holdings, Inc.",10572953600,Large,Financial Services,Japan,JP
+733,SWAV,"ShockWave Medical, Inc.",10549318320,Large,Healthcare,United States,US
+734,CHK,Chesapeake Energy Corporation,10544129840,Large,Energy,United States,US
+735,UTHR,United Therapeutics Corporation,10509780432,Large,Healthcare,United States,US
+736,MANH,"Manhattan Associates, Inc.",10477668408,Large,Technology,United States,US
+737,QGEN,Qiagen N.V.,10470427292,Large,Healthcare,Netherlands,NL
+738,RPM,RPM International Inc.,10468943520,Large,Basic Materials,United States,US
+739,HSIC,"Henry Schein, Inc.",10462801250,Large,Healthcare,United States,US
+740,GL,Globe Life Inc.,10452280748,Large,Financial Services,United States,US
+741,BWA,BorgWarner Inc.,10429148493,Large,Consumer Cyclical,United States,US
+742,REG,Regency Centers Corporation,10405247920,Large,Real Estate,United States,US
+743,CUBE,CubeSmart,10348622252,Large,Real Estate,United States,US
+744,RBA,Ritchie Bros. Auctioneers Incorporated,10345611535,Large,Industrials,Canada,CA
+745,APA,APA Corporation,10332981606,Large,Energy,United States,US
+746,COTY,Coty Inc.,10316411213,Large,Consumer Defensive,United States,US
+748,LOGI,Logitech International S.A.,10312356320,Large,Technology,Switzerland,CH
+749,CCK,"Crown Holdings, Inc.",10296173000,Large,Consumer Cyclical,United States,US
+750,JBL,Jabil Inc.,10252492680,Large,Technology,United States,US
+751,AGL,"agilon health, inc.",10158536954,Large,Healthcare,United States,US
+752,RDY,Dr. Reddy's Laboratories Limited,10095861414,Large,Healthcare,India,IN
+753,BJ,"BJ's Wholesale Club Holdings, Inc.",10036104800,Large,Consumer Defensive,United States,US
+754,LII,Lennox International Inc.,10031303840,Large,Industrials,United States,US
+755,U,Unity Software Inc.,10015850880,Large,Technology,United States,US
+756,BILL,"Bill.com Holdings, Inc.",10004539440,Large,Technology,United States,US
+757,UHS,"Universal Health Services, Inc.",10001883217,Large,Healthcare,United States,US
+758,SCI,Service Corporation International,9968433760,Mid,Consumer Cyclical,United States,US
+759,PCTY,Paylocity Holding Corporation,9965640367,Mid,Technology,United States,US
+760,NBIX,"Neurocrine Biosciences, Inc.",9964215287,Mid,Healthcare,United States,US
+761,MASI,Masimo Corporation,9917324420,Mid,Healthcare,United States,US
+762,ARCC,Ares Capital Corporation,9916819864,Mid,Financial Services,United States,US
+763,AFG,"American Financial Group, Inc.",9866092800,Mid,Financial Services,United States,US
+764,DOCU,"DocuSign, Inc.",9858907020,Mid,Technology,United States,US
+765,NWSA,News Corporation,9846327789,Mid,Communication Services,United States,US
+766,WES,"Western Midstream Partners, LP",9841688440,Mid,Energy,United States,US
+767,FND,"Floor & Decor Holdings, Inc.",9841532160,Mid,Consumer Cyclical,United States,US
+768,LAMR,Lamar Advertising Company,9826508353,Mid,Real Estate,United States,US
+769,LECO,"Lincoln Electric Holdings, Inc.",9813876534,Mid,Industrials,United States,US
+770,CRL,"Charles River Laboratories International, Inc.",9788519250,Mid,Healthcare,United States,US
+771,TEVA,Teva Pharmaceutical Industries Limited,9741628440,Mid,Healthcare,Israel,IL
+772,RGA,"Reinsurance Group of America, Incorporated",9698943280,Mid,Financial Services,United States,US
+773,TWLO,Twilio Inc.,9684365559,Mid,Communication Services,United States,US
+774,PFGC,Performance Food Group Company,9682241400,Mid,Consumer Defensive,United States,US
+775,CG,The Carlyle Group Inc.,9666895200,Mid,Financial Services,United States,US
+776,EMN,Eastman Chemical Company,9645354400,Mid,Basic Materials,United States,US
+777,CZR,"Caesars Entertainment, Inc.",9615180323,Mid,Consumer Cyclical,United States,US
+778,MTN,"Vail Resorts, Inc.",9609524408,Mid,Consumer Cyclical,United States,US
+779,PAG,"Penske Automotive Group, Inc.",9591717802,Mid,Consumer Cyclical,United States,US
+780,CX,"CEMEX, SAB de CV",9589985983,Mid,Basic Materials,Mexico,MX
+781,TOST,"Toast, Inc.",9586954463,Mid,Technology,United States,US
+782,PNR,Pentair plc,9545656500,Mid,Industrials,United Kingdom,GB
+783,MTCH,"Match Group, Inc.",9531382441,Mid,Communication Services,United States,US
+784,AGCO,AGCO Corporation,9506964324,Mid,Industrials,United States,US
+785,ALLE,Allegion plc,9506159235,Mid,Industrials,Ireland,IE
+786,IOT,Samsara Inc.,9454192662,Mid,Technology,United States,US
+787,OC,Owens Corning,9448871684,Mid,Industrials,United States,US
+788,NLY,"Annaly Capital Management, Inc.",9418310517,Mid,Real Estate,United States,US
+789,KEP,Korea Electric Power Corporation,9411206783,Mid,Utilities,South Korea,KR
+790,YPF,YPF SA,9402570096,Mid,Energy,Argentina,AR
+791,KNX,Knight-Swift Transportation Holdings Inc.,9351402255,Mid,Industrials,United States,US
+792,RGLD,"Royal Gold, Inc.",9300047280,Mid,Basic Materials,United States,US
+793,FNF,"Fidelity National Financial, Inc.",9292601013,Mid,Financial Services,United States,US
+794,QRVO,"Qorvo, Inc.",9280705572,Mid,Technology,United States,US
+795,RXDX,"Prometheus Biosciences, Inc.",9280526700,Mid,Healthcare,United States,US
+796,JNPR,"Juniper Networks, Inc.",9277929200,Mid,Technology,United States,US
+797,FLEX,Flex Ltd.,9247160336,Mid,Technology,Singapore,SG
+798,DAR,Darling Ingredients Inc.,9225092520,Mid,Consumer Defensive,United States,US
+799,TFII,TFI International Inc.,9215101440,Mid,Industrials,Canada,CA
+800,BSAC,Banco Santander-Chile,9205587256,Mid,Financial Services,Chile,CL
+801,TPR,"Tapestry, Inc.",9199881720,Mid,Consumer Cyclical,United States,US
+802,KEY,KeyCorp,9193300991,Mid,Financial Services,United States,US
+803,XRAY,DENTSPLY SIRONA Inc.,9126019494,Mid,Healthcare,United States,US
+804,PNW,Pinnacle West Capital Corporation,9073670120,Mid,Utilities,United States,US
+805,ARMK,Aramark,9063246992,Mid,Industrials,United States,US
+806,AAL,American Airlines Group Inc.,9055209477,Mid,Industrials,United States,US
+807,PAA,"Plains All American Pipeline, L.P.",9023199007,Mid,Energy,United States,US
+808,RNR,RenaissanceRe Holdings Ltd.,9017930010,Mid,Financial Services,Bermuda,BM
+809,XPEV,XPeng Inc.,8972859750,Mid,Consumer Cyclical,China,CN
+810,WSC,WillScot Mobile Mini Holdings Corp.,8956617860,Mid,Industrials,United States,US
+812,USFD,US Foods Holding Corp.,8950911601,Mid,Consumer Defensive,United States,US
+813,VST,Vistra Corp.,8933629073,Mid,Utilities,United States,US
+814,JAZZ,Jazz Pharmaceuticals plc,8921753340,Mid,Healthcare,Ireland,IE
+815,RGEN,Repligen Corporation,8911975072,Mid,Healthcare,United States,US
+816,AEG,Aegon N.V.,8830667930,Mid,Financial Services,Netherlands,NL
+817,LBTYK,Liberty Global plc,8751493468,Mid,Communication Services,United Kingdom,GB
+818,OVV,Ovintiv Inc.,8745209962,Mid,Energy,United States,US
+819,UNM,Unum Group,8729084400,Mid,Financial Services,United States,US
+820,CASY,"Casey's General Stores, Inc.",8706755750,Mid,Consumer Cyclical,United States,US
+821,GGB,Gerdau S.A.,8687510380,Mid,Basic Materials,Brazil,BR
+822,CDAY,Ceridian HCM Holding Inc.,8657919446,Mid,Technology,United States,US
+823,DCP,"DCP Midstream, LP",8652781322,Mid,Energy,United States,US
+824,EQH,"Equitable Holdings, Inc.",8628187962,Mid,Financial Services,United States,US
+825,CTLT,"Catalent, Inc.",8599297500,Mid,Healthcare,United States,US
+826,VFC,V.F. Corporation,8597092663,Mid,Consumer Cyclical,United States,US
+827,CGNX,Cognex Corporation,8567110400,Mid,Technology,United States,US
+828,ESLT,Elbit Systems Ltd.,8556425944,Mid,Industrials,Israel,IL
+829,RRX,Regal Rexnord Corporation,8541762196,Mid,Industrials,United States,US
+830,BKI,"Black Knight, Inc.",8476175520,Mid,Technology,United States,US
+831,ASR,"Grupo Aeroportuario del Sureste, S. A. B. de C. V.",8463300000,Mid,Industrials,Mexico,MX
+832,PSNY,Polestar Automotive Holding UK PLC,8397462874,Mid,Consumer Cyclical,Sweden,SE
+833,VIPS,Vipshop Holdings Limited,8383978171,Mid,Consumer Cyclical,China,CN
+834,HAS,"Hasbro, Inc.",8368547240,Mid,Consumer Cyclical,United States,US
+835,SNX,TD SYNNEX Corporation,8337384520,Mid,Technology,United States,US
+836,BILI,Bilibili Inc.,8316715824,Mid,Communication Services,China,CN
+837,CHE,Chemed Corporation,8271403860,Mid,Healthcare,United States,US
+838,COLD,"Americold Realty Trust, Inc.",8264937600,Mid,Real Estate,United States,US
+839,KRTX,"Karuna Therapeutics, Inc.",8243671040,Mid,Healthcare,United States,US
+840,TPG,TPG Inc.,8198525241,Mid,Financial Services,United States,US
+841,BXP,"Boston Properties, Inc.",8144181900,Mid,Real Estate,United States,US
+842,DLB,"Dolby Laboratories, Inc.",8115157304,Mid,Technology,United States,US
+843,NNN,"National Retail Properties, Inc.",8091946636,Mid,Real Estate,United States,US
+844,FBIN,"Fortune Brands Innovations, Inc.",8090433500,Mid,Industrials,United States,US
+845,XP,XP Inc.,8075464904,Mid,Financial Services,Cayman Islands,KY
+846,INSP,"Inspire Medical Systems, Inc.",8074655576,Mid,Healthcare,United States,US
+847,IRDM,Iridium Communications Inc.,8072987640,Mid,Communication Services,United States,US
+848,FFIV,"F5, Inc.",8055147300,Mid,Technology,United States,US
+849,SKX,"Skechers U.S.A., Inc.",8049922301,Mid,Consumer Cyclical,United States,US
+850,DVA,DaVita Inc.,8020132485,Mid,Healthcare,United States,US
+851,SSL,Sasol Limited,8011663680,Mid,Basic Materials,South Africa,ZA
+852,SKM,"SK Telecom Co.,Ltd",8006739137,Mid,Communication Services,South Korea,KR
+853,HOOD,"Robinhood Markets, Inc.",8005709761,Mid,Technology,United States,US
+854,CELH,"Celsius Holdings, Inc.",7997460977,Mid,Consumer Defensive,United States,US
+855,EME,"EMCOR Group, Inc.",7981972116,Mid,Industrials,United States,US
+856,ATR,"AptarGroup, Inc.",7973954380,Mid,Healthcare,United States,US
+857,WWE,"World Wrestling Entertainment, Inc.",7955309925,Mid,Communication Services,United States,US
+858,KBR,"KBR, Inc.",7947880320,Mid,Industrials,United States,US
+859,MORN,"Morningstar, Inc.",7923421710,Mid,Financial Services,United States,US
+860,PCOR,"Procore Technologies, Inc.",7912328900,Mid,Technology,United States,US
+861,SEIC,SEI Investments Company,7909044980,Mid,Financial Services,United States,US
+862,GPK,Graphic Packaging Holding Company,7898201306,Mid,Consumer Cyclical,United States,US
+863,HII,"Huntington Ingalls Industries, Inc.",7885725007,Mid,Industrials,United States,US
+864,PSO,Pearson plc,7883757352,Mid,Communication Services,United Kingdom,GB
+865,ICL,ICL Group Ltd,7864486195,Mid,Basic Materials,Israel,IL
+866,FRT,Federal Realty Investment Trust,7852769740,Mid,Real Estate,United States,US
+867,MIDD,The Middleby Corporation,7831841073,Mid,Industrials,United States,US
+868,DCI,"Donaldson Company, Inc.",7822302000,Mid,Industrials,United States,US
+869,SAIA,"Saia, Inc.",7775967696,Mid,Industrials,United States,US
+870,WSM,"Williams-Sonoma, Inc.",7769855458,Mid,Consumer Cyclical,United States,US
+871,ROKU,"Roku, Inc.",7738950735,Mid,Communication Services,United States,US
+872,BBWI,"Bath & Body Works, Inc.",7717938480,Mid,Consumer Cyclical,United States,US
+873,TX,Ternium S.A.,7710978240,Mid,Basic Materials,Luxembourg,LU
+874,PATH,UiPath Inc.,7695371713,Mid,Technology,United States,US
+875,CLF,Cleveland-Cliffs Inc.,7690129589,Mid,Basic Materials,United States,US
+876,HR,Healthcare Realty Trust Incorporated,7665826080,Mid,Real Estate,United States,US
+877,RHI,Robert Half International Inc.,7664312379,Mid,Industrials,United States,US
+878,NATI,National Instruments Corporation,7653183600,Mid,Technology,United States,US
+879,TTEK,"Tetra Tech, Inc.",7645929265,Mid,Industrials,United States,US
+880,EGP,"EastGroup Properties, Inc.",7618672740,Mid,Real Estate,United States,US
+881,ALLY,Ally Financial Inc.,7616787517,Mid,Financial Services,United States,US
+882,KNSL,"Kinsale Capital Group, Inc.",7604665278,Mid,Financial Services,United States,US
+883,IVZ,Invesco Ltd.,7592374000,Mid,Financial Services,United States,US
+884,OGE,OGE Energy Corp.,7560834552,Mid,Utilities,United States,US
+885,ORI,Old Republic International Corporation,7547193786,Mid,Financial Services,United States,US
+886,DBX,"Dropbox, Inc.",7536046920,Mid,Technology,United States,US
+887,WEX,WEX Inc.,7523255327,Mid,Technology,United States,US
+888,RL,Ralph Lauren Corporation,7521124200,Mid,Consumer Cyclical,United States,US
+889,WHR,Whirlpool Corporation,7502927458,Mid,Consumer Cyclical,United States,US
+890,EDU,New Oriental Education & Technology Group Inc.,7499456123,Mid,Consumer Defensive,China,CN
+891,CLH,"Clean Harbors, Inc.",7446496790,Mid,Industrials,United States,US
+892,DINO,HF Sinclair Corporation,7396977400,Mid,Energy,United States,US
+893,SMCI,"Super Micro Computer, Inc.",7360632956,Mid,Technology,United States,US
+894,ALV,"Autoliv, Inc.",7345314284,Mid,Consumer Cyclical,Sweden,SE
+895,AAP,"Advance Auto Parts, Inc.",7336318226,Mid,Consumer Cyclical,United States,US
+896,G,Genpact Limited,7321046021,Mid,Technology,Bermuda,BM
+897,EDR,"Endeavor Group Holdings, Inc.",7316299002,Mid,Communication Services,United States,US
+898,LEA,Lear Corporation,7295181000,Mid,Consumer Cyclical,United States,US
+899,NRG,"NRG Energy, Inc.",7265405600,Mid,Utilities,United States,US
+900,NYCB,"New York Community Bancorp, Inc.",7264829161,Mid,Financial Services,United States,US
+901,TXRH,"Texas Roadhouse, Inc.",7258665425,Mid,Consumer Cyclical,United States,US
+902,NVCR,NovoCure Limited,7245343700,Mid,Healthcare,Jersey,JE
+903,WRK,WestRock Company,7244849400,Mid,Consumer Cyclical,United States,US
+904,WGS,GeneDx Holdings Corp.,7213942800,Mid,Healthcare,United States,US
+905,BYD,Boyd Gaming Corporation,7193010400,Mid,Consumer Cyclical,United States,US
+906,FR,"First Industrial Realty Trust, Inc.",7188729480,Mid,Real Estate,United States,US
+907,ALGM,"Allegro MicroSystems, Inc.",7173889680,Mid,Technology,United States,US
+908,INGR,Ingredion Incorporated,7151278080,Mid,Consumer Defensive,United States,US
+909,OLN,Olin Corporation,7110125000,Mid,Basic Materials,United States,US
+910,STVN,Stevanato Group S.p.A.,7107168284,Mid,Healthcare,Italy,IT
+911,CROX,"Crocs, Inc.",7100679240,Mid,Consumer Cyclical,United States,US
+912,JEF,Jefferies Financial Group Inc.,7078233680,Mid,Financial Services,United States,US
+913,WMS,"Advanced Drainage Systems, Inc.",7077053808,Mid,Industrials,United States,US
+914,THC,Tenet Healthcare Corporation,7069192250,Mid,Healthcare,United States,US
+915,GNRC,Generac Holdings Inc.,7066314750,Mid,Industrials,United States,US
+916,MTZ,"MasTec, Inc.",7038409320,Mid,Industrials,United States,US
+917,TOL,"Toll Brothers, Inc.",7029330840,Mid,Consumer Cyclical,United States,US
+918,CAE,CAE Inc.,7021527400,Mid,Industrials,Canada,CA
+919,AXTA,Axalta Coating Systems Ltd.,7001593736,Mid,Basic Materials,United States,US
+920,BERY,"Berry Global Group, Inc.",6999924000,Mid,Consumer Cyclical,United States,US
+921,CACI,CACI International Inc,6967622739,Mid,Technology,United States,US
+922,ITT,ITT Inc.,6966536084,Mid,Industrials,United States,US
+923,HESM,Hess Midstream LP,6943892280,Mid,Energy,United States,US
+924,AIZ,"Assurant, Inc.",6929462646,Mid,Financial Services,United States,US
+925,VOYA,"Voya Financial, Inc.",6915813288,Mid,Financial Services,United States,US
+926,NVT,nVent Electric plc,6914940914,Mid,Industrials,United Kingdom,GB
+927,ARW,"Arrow Electronics, Inc.",6888141396,Mid,Technology,United States,US
+928,SITE,"SiteOne Landscape Supply, Inc.",6880703844,Mid,Industrials,United States,US
+929,CIB,Bancolombia S.A.,6861104360,Mid,Financial Services,Colombia,CO
+930,PSTG,"Pure Storage, Inc.",6850546678,Mid,Technology,United States,US
+931,BLD,TopBuild Corp.,6828902640,Mid,Industrials,United States,US
+932,YMM,Full Truck Alliance Co. Ltd.,6816660000,Mid,Technology,China,CN
+933,SBSW,Sibanye Stillwater Limited,6799968961,Mid,Basic Materials,South Africa,ZA
+934,CFR,"Cullen/Frost Bankers, Inc.",6780583569,Mid,Financial Services,United States,US
+935,RCM,R1 RCM Inc.,6774924380,Mid,Healthcare,United States,US
+936,TIMB,TIM S.A.,6763687484,Mid,Communication Services,Brazil,BR
+937,OHI,"Omega Healthcare Investors, Inc.",6763311909,Mid,Real Estate,United States,US
+938,STN,Stantec Inc.,6754078560,Mid,Industrials,Canada,CA
+939,CFLT,"Confluent, Inc.",6694057878,Mid,Technology,United States,US
+940,WCC,"WESCO International, Inc.",6661274428,Mid,Industrials,United States,US
+941,CAR,"Avis Budget Group, Inc.",6658724429,Mid,Industrials,United States,US
+942,PRI,"Primerica, Inc.",6648290600,Mid,Financial Services,United States,US
+943,PAAS,Pan American Silver Corp.,6635435189,Mid,Basic Materials,Canada,CA
+944,CHH,"Choice Hotels International, Inc.",6629288775,Mid,Consumer Cyclical,United States,US
+945,CNM,"Core & Main, Inc.",6616731215,Mid,Industrials,United States,US
+946,DOCS,"Doximity, Inc.",6601418420,Mid,Healthcare,United States,US
+947,GNTX,Gentex Corporation,6584458515,Mid,Consumer Cyclical,United States,US
+948,CIEN,Ciena Corporation,6574972800,Mid,Technology,United States,US
+949,RBC,RBC Bearings Incorporated,6566204875,Mid,Industrials,United States,US
+950,NYT,The New York Times Company,6547565560,Mid,Communication Services,United States,US
+951,ROIV,Roivant Sciences Ltd.,6537640809,Mid,Healthcare,United Kingdom,GB
+952,KGC,Kinross Gold Corporation,6530512630,Mid,Basic Materials,Canada,CA
+953,FSV,FirstService Corporation,6525572838,Mid,Real Estate,Canada,CA
+954,LFUS,"Littelfuse, Inc.",6525097740,Mid,Technology,United States,US
+956,OLED,Universal Display Corporation,6505769655,Mid,Technology,United States,US
+957,WWD,"Woodward, Inc.",6503239080,Mid,Industrials,United States,US
+958,LSTR,"Landstar System, Inc.",6497063811,Mid,Industrials,United States,US
+959,DSGX,The Descartes Systems Group Inc.,6494854520,Mid,Technology,Canada,CA
+960,CIG,Companhia Energética de Minas Gerais,6481239493,Mid,Utilities,Brazil,BR
+961,JLL,Jones Lang LaSalle Incorporated,6451998784,Mid,Real Estate,United States,US
+962,AA,Alcoa Corporation,6447533539,Mid,Basic Materials,United States,US
+963,MAT,"Mattel, Inc.",6437968364,Mid,Consumer Cyclical,United States,US
+964,NFE,New Fortress Energy Inc.,6434291400,Mid,Utilities,United States,US
+965,CBSH,"Commerce Bancshares, Inc.",6426873130,Mid,Financial Services,United States,US
+966,BRX,Brixmor Property Group Inc.,6419128389,Mid,Real Estate,United States,US
+967,LNTH,"Lantheus Holdings, Inc.",6415183962,Mid,Healthcare,United States,US
+968,UGI,UGI Corporation,6391488256,Mid,Utilities,United States,US
+969,MHK,"Mohawk Industries, Inc.",6381969512,Mid,Consumer Cyclical,United States,US
+970,SBS,Companhia de Saneamento Básico do Estado de São Paulo - SABESP,6377148449,Mid,Utilities,Brazil,BR
+971,ACHC,"Acadia Healthcare Company, Inc.",6366960823,Mid,Healthcare,United States,US
+972,MUSA,Murphy USA Inc.,6357788536,Mid,Consumer Cyclical,United States,US
+973,ST,Sensata Technologies Holding plc,6338648080,Mid,Technology,United States,US
+974,AR,Antero Resources Corporation,6332848669,Mid,Energy,United States,US
+975,EXEL,"Exelixis, Inc.",6331817848,Mid,Healthcare,United States,US
+976,FHN,First Horizon Corporation,6331546661,Mid,Financial Services,United States,US
+977,MEDP,"Medpace Holdings, Inc.",6306908889,Mid,Healthcare,United States,US
+978,STAG,"STAG Industrial, Inc.",6305101269,Mid,Real Estate,United States,US
+979,AQUA,Evoqua Water Technologies Corp.,6303420480,Mid,Industrials,United States,US
+980,PLNT,"Planet Fitness, Inc.",6301503900,Mid,Consumer Cyclical,United States,US
+981,WING,Wingstop Inc.,6300256732,Mid,Consumer Cyclical,United States,US
+982,APP,AppLovin Corporation,6297342600,Mid,Technology,United States,US
+983,FTI,TechnipFMC plc,6292272864,Mid,Energy,United Kingdom,GB
+984,GRFS,"Grifols, S.A.",6277098530,Mid,Healthcare,Spain,ES
+985,GWRE,"Guidewire Software, Inc.",6272479538,Mid,Technology,United States,US
+986,CW,Curtiss-Wright Corporation,6261230115,Mid,Industrials,United States,US
+987,RLI,RLI Corp.,6254660310,Mid,Financial Services,United States,US
+988,SIGI,"Selective Insurance Group, Inc.",6252453120,Mid,Financial Services,United States,US
+989,EWBC,"East West Bancorp, Inc.",6251073304,Mid,Financial Services,United States,US
+990,TPX,"Tempur Sealy International, Inc.",6247898300,Mid,Consumer Cyclical,United States,US
+991,GXO,"GXO Logistics, Inc.",6243667500,Mid,Industrials,United States,US
+992,EHC,Encompass Health Corporation,6228973404,Mid,Healthcare,United States,US
+993,GME,GameStop Corp.,6221463663,Mid,Consumer Cyclical,United States,US
+994,NTRA,"Natera, Inc.",6183738200,Mid,Healthcare,United States,US
+996,SF,Stifel Financial Corp.,6154790840,Mid,Financial Services,United States,US
+997,ADC,Agree Realty Corporation,6146218944,Mid,Real Estate,United States,US
+998,SEE,Sealed Air Corporation,6142137560,Mid,Consumer Cyclical,United States,US
+999,NOV,NOV Inc.,6126360876,Mid,Energy,United States,US
+1000,BLCO,Bausch + Lomb Corporation,6125017360,Mid,Healthcare,Canada,CA
+1001,VMI,"Valmont Industries, Inc.",6107140248,Mid,Industrials,United States,US
+1002,RRC,Range Resources Corporation,6104535800,Mid,Energy,United States,US
+1003,WFG,West Fraser Timber Co. Ltd.,6098823772,Mid,Basic Materials,Canada,CA
+1004,HXL,Hexcel Corporation,6097593348,Mid,Industrials,United States,US
+1005,HLI,"Houlihan Lokey, Inc.",6081682735,Mid,Financial Services,United States,US
+1006,AQN,Algonquin Power & Utilities Corp.,6076832561,Mid,Utilities,Canada,CA
+1007,AN,"AutoNation, Inc.",6075951048,Mid,Consumer Cyclical,United States,US
+1008,BEPC,Brookfield Renewable Corporation,6041793039,Mid,Utilities,United States,US
+1009,LANC,Lancaster Colony Corporation,6033637640,Mid,Consumer Defensive,United States,US
+1010,ITCI,"Intra-Cellular Therapies, Inc.",6031224000,Mid,Healthcare,United States,US
+1011,GLOB,Globant S.A.,6025727400,Mid,Technology,Luxembourg,LU
+1012,FLO,"Flowers Foods, Inc.",6024360108,Mid,Consumer Defensive,United States,US
+1013,FAF,First American Financial Corporation,6016402350,Mid,Financial Services,United States,US
+1014,MLCO,Melco Resorts & Entertainment Limited,6012805654,Mid,Consumer Cyclical,Hong Kong,HK
+1015,CWEN,"Clearway Energy, Inc.",6012467732,Mid,Utilities,United States,US
+1016,TREX,"Trex Company, Inc.",6008747850,Mid,Industrials,United States,US
+1017,NCLH,Norwegian Cruise Line Holdings Ltd.,5993366783,Mid,Consumer Cyclical,United States,US
+1018,TXG,"10x Genomics, Inc.",5989128714,Mid,Healthcare,United States,US
+1019,PII,Polaris Inc.,5988850584,Mid,Consumer Cyclical,United States,US
+1020,MDU,"MDU Resources Group, Inc.",5970255680,Mid,Industrials,United States,US
+1021,BWXT,"BWX Technologies, Inc.",5964526832,Mid,Industrials,United States,US
+1022,LAD,"Lithia Motors, Inc.",5954813696,Mid,Consumer Cyclical,United States,US
+1023,FCN,"FTI Consulting, Inc.",5950202778,Mid,Industrials,United States,US
+1024,WBS,Webster Financial Corporation,5929725280,Mid,Financial Services,United States,US
+1025,FUTU,Futu Holdings Limited,5921751049,Mid,Financial Services,Hong Kong,HK
+1026,NXST,"Nexstar Media Group, Inc.",5906263968,Mid,Communication Services,United States,US
+1027,MKSI,"MKS Instruments, Inc.",5901566436,Mid,Technology,United States,US
+1028,QDEL,QuidelOrtho Corporation,5900814591,Mid,Healthcare,United States,US
+1029,BC,Brunswick Corporation,5892213644,Mid,Consumer Cyclical,United States,US
+1030,SON,Sonoco Products Company,5891446126,Mid,Consumer Cyclical,United States,US
+1031,KT,KT Corporation,5888977408,Mid,Communication Services,South Korea,KR
+1032,VVV,Valvoline Inc.,5880211200,Mid,Energy,United States,US
+1033,PR,Permian Resources Corporation,5875890504,Mid,Energy,United States,US
+1034,WH,"Wyndham Hotels & Resorts, Inc.",5865369840,Mid,Consumer Cyclical,United States,US
+1035,GMED,"Globus Medical, Inc.",5864463908,Mid,Healthcare,United States,US
+1037,DOOO,BRP Inc.,5828009090,Mid,Consumer Cyclical,Canada,CA
+1038,PB,"Prosperity Bancshares, Inc.",5814968352,Mid,Financial Services,United States,US
+1039,NOVT,Novanta Inc.,5813626956,Mid,Technology,United States,US
+1040,CHRD,Chord Energy Corporation,5785460070,Mid,Energy,United States,US
+1041,WTS,"Watts Water Technologies, Inc.",5783761723,Mid,Industrials,United States,US
+1042,CACC,Credit Acceptance Corporation,5780341125,Mid,Financial Services,United States,US
+1043,EXP,Eagle Materials Inc.,5771252184,Mid,Basic Materials,United States,US
+1044,RH,RH,5769722088,Mid,Consumer Cyclical,United States,US
+1045,NVST,Envista Holdings Corporation,5768618880,Mid,Healthcare,United States,US
+1046,REYN,Reynolds Consumer Products Inc.,5751187860,Mid,Consumer Cyclical,United States,US
+1047,IQ,"iQIYI, Inc.",5749731036,Mid,Communication Services,China,CN
+1048,OGN,Organon & Co.,5743996240,Mid,Healthcare,United States,US
+1049,ADT,ADT Inc.,5741113340,Mid,Industrials,United States,US
+1050,BMBL,Bumble Inc.,5723327989,Mid,Technology,United States,US
+1051,PDCE,"PDC Energy, Inc.",5691393466,Mid,Energy,United States,US
+1052,VRT,Vertiv Holdings Co,5688445280,Mid,Industrials,United States,US
+1053,NVEI,Nuvei Corporation,5675978565,Mid,Technology,Canada,CA
+1054,HGTY,"Hagerty, Inc.",5638550122,Mid,Financial Services,United States,US
+1055,LEVI,Levi Strauss & Co.,5616661934,Mid,Consumer Cyclical,United States,US
+1056,IDA,"IDACORP, Inc.",5611775094,Mid,Utilities,United States,US
+1057,AGNC,AGNC Investment Corp.,5610974508,Mid,Real Estate,United States,US
+1058,MDGL,"Madrigal Pharmaceuticals, Inc.",5601393347,Mid,Healthcare,United States,US
+1059,UNVR,Univar Solutions Inc.,5596850596,Mid,Basic Materials,United States,US
+1060,IPGP,IPG Photonics Corporation,5590079118,Mid,Technology,United States,US
+1061,CCCS,CCC Intelligent Solutions Holdings Inc.,5581759224,Mid,Technology,United States,US
+1062,PLUG,Plug Power Inc.,5578198783,Mid,Industrials,United States,US
+1063,TKR,The Timken Company,5576382294,Mid,Industrials,United States,US
+1064,HCP,"HashiCorp, Inc.",5567848675,Mid,Technology,United States,US
+1065,MNSO,MINISO Group Holding Limited,5551014017,Mid,Consumer Cyclical,China,CN
+1066,MNDY,monday.com Ltd.,5549530875,Mid,Technology,Israel,IL
+1067,MTDR,Matador Resources Company,5540430811,Mid,Energy,United States,US
+1068,SRC,"Spirit Realty Capital, Inc.",5533464640,Mid,Real Estate,United States,US
+1069,XPO,"XPO Logistics, Inc.",5532593700,Mid,Industrials,United States,US
+1070,AAON,"AAON, Inc.",5522489364,Mid,Industrials,United States,US
+1071,ALTR,Altair Engineering Inc.,5511735391,Mid,Technology,United States,US
+1072,NTNX,"Nutanix, Inc.",5508857532,Mid,Technology,United States,US
+1073,EEFT,"Euronet Worldwide, Inc.",5500791450,Mid,Technology,United States,US
+1074,SPSC,"SPS Commerce, Inc.",5494167792,Mid,Technology,United States,US
+1075,ALK,"Alaska Air Group, Inc.",5491807880,Mid,Industrials,United States,US
+1076,IGT,International Game Technology PLC,5489313160,Mid,Consumer Cyclical,United Kingdom,GB
+1077,BROS,Dutch Bros Inc.,5487060637,Mid,Consumer Cyclical,United States,US
+1078,CLVT,Clarivate Plc,5475762846,Mid,Technology,United Kingdom,GB
+1079,ESTC,Elastic N.V.,5468224308,Mid,Technology,United States,US
+1080,CYBR,CyberArk Software Ltd.,5457487904,Mid,Technology,Israel,IL
+1081,SAIC,Science Applications International Corporation,5457481036,Mid,Technology,United States,US
+1082,AGI,Alamos Gold Inc.,5453237560,Mid,Basic Materials,Canada,CA
+1083,TNET,"TriNet Group, Inc.",5437057499,Mid,Industrials,United States,US
+1084,FIX,"Comfort Systems USA, Inc.",5432010225,Mid,Industrials,United States,US
+1085,LNW,"Light & Wonder, Inc.",5425257600,Mid,Consumer Cyclical,United States,US
+1086,CIVI,"Civitas Resources, Inc.",5419386529,Mid,Energy,United States,US
+1087,MUR,Murphy Oil Corporation,5416600600,Mid,Energy,United States,US
+1088,ASND,Ascendis Pharma A/S,5398034735,Mid,Healthcare,Denmark,DK
+1089,STWD,"Starwood Property Trust, Inc.",5386462528,Mid,Real Estate,United States,US
+1090,PPC,Pilgrim's Pride Corporation,5385675568,Mid,Consumer Defensive,United States,US
+1091,CHX,ChampionX Corporation,5378953580,Mid,Energy,United States,US
+1092,FSK,FS KKR Capital Corp.,5376066153,Mid,Financial Services,United States,US
+1093,BOKF,BOK Financial Corporation,5374684560,Mid,Financial Services,United States,US
+1094,AIRC,Apartment Income REIT Corp.,5372181378,Mid,Real Estate,United States,US
+1095,SSD,"Simpson Manufacturing Co., Inc.",5352499980,Mid,Industrials,United States,US
+1096,BTG,B2Gold Corp.,5320980132,Mid,Basic Materials,Canada,CA
+1097,POST,"Post Holdings, Inc.",5312463998,Mid,Consumer Defensive,United States,US
+1098,GTLS,"Chart Industries, Inc.",5308426967,Mid,Industrials,United States,US
+1099,AMKR,"Amkor Technology, Inc.",5302935800,Mid,Technology,United States,US
+1100,GIL,Gildan Activewear Inc.,5301799000,Mid,Consumer Cyclical,Canada,CA
+1101,SLGN,Silgan Holdings Inc.,5292096000,Mid,Consumer Cyclical,United States,US
+1102,APG,APi Group Corporation,5289940190,Mid,Industrials,United States,US
+1103,NSA,National Storage Affiliates Trust,5278589248,Mid,Real Estate,United States,US
+1104,MSA,MSA Safety Incorporated,5262059565,Mid,Industrials,United States,US
+1105,RMBS,Rambus Inc.,5259802230,Mid,Technology,United States,US
+1106,BFAM,Bright Horizons Family Solutions Inc.,5247522624,Mid,Consumer Cyclical,United States,US
+1107,PVH,PVH Corp.,5243417208,Mid,Consumer Cyclical,United States,US
+1108,ISEE,"IVERIC bio, Inc.",5232160320,Mid,Healthcare,United States,US
+1109,EXLS,"ExlService Holdings, Inc.",5221061768,Mid,Technology,United States,US
+1110,SWN,Southwestern Energy Company,5220019876,Mid,Energy,United States,US
+1111,CMC,Commercial Metals Company,5217562350,Mid,Basic Materials,United States,US
+1112,SMAR,Smartsheet Inc.,5185742380,Mid,Technology,United States,US
+1113,RHP,"Ryman Hospitality Properties, Inc.",5182378586,Mid,Real Estate,United States,US
+1114,ENSG,"The Ensign Group, Inc.",5177474304,Mid,Healthcare,United States,US
+1115,IONS,"Ionis Pharmaceuticals, Inc.",5177432890,Mid,Healthcare,United States,US
+1116,DXC,DXC Technology Company,5166104580,Mid,Technology,United States,US
+1117,HTZ,"Hertz Global Holdings, Inc.",5160478800,Mid,Industrials,United States,US
+1118,TRNO,Terreno Realty Corporation,5156303910,Mid,Real Estate,United States,US
+1119,FOUR,"Shift4 Payments, Inc.",5155737819,Mid,Technology,United States,US
+1120,DDS,"Dillard's, Inc.",5154480105,Mid,Consumer Cyclical,United States,US
+1121,MPW,"Medical Properties Trust, Inc.",5151380358,Mid,Real Estate,United States,US
+1122,COLM,Columbia Sportswear Company,5129860449,Mid,Consumer Cyclical,United States,US
+1123,TGTX,"TG Therapeutics, Inc.",5122788840,Mid,Healthcare,United States,US
+1124,HOG,"Harley-Davidson, Inc.",5113673324,Mid,Consumer Cyclical,United States,US
+1126,WOLF,"Wolfspeed, Inc.",5099699780,Mid,Technology,United States,US
+1127,MSM,"MSC Industrial Direct Co., Inc.",5092975440,Mid,Industrials,United States,US
+1128,CERE,"Cerevel Therapeutics Holdings, Inc.",5092918810,Mid,Healthcare,United States,US
+1129,MGY,Magnolia Oil & Gas Corporation,5090123179,Mid,Energy,United States,US
+1130,UFPI,"UFP Industries, Inc.",5086687810,Mid,Basic Materials,United States,US
+1131,AMG,"Affiliated Managers Group, Inc.",5077389082,Mid,Financial Services,United States,US
+1132,ORA,"Ormat Technologies, Inc.",5074276956,Mid,Utilities,United States,US
+1133,GLBE,Global-e Online Ltd.,5056034403,Mid,Consumer Cyclical,Israel,IL
+1134,AYI,"Acuity Brands, Inc.",5023495434,Mid,Industrials,United States,US
+1135,OPCH,"Option Care Health, Inc.",5021934564,Mid,Healthcare,United States,US
+1136,DUOL,"Duolingo, Inc.",5020971804,Mid,Technology,United States,US
+1137,AM,Antero Midstream Corporation,5012405200,Mid,Energy,United States,US
+1138,AIT,"Applied Industrial Technologies, Inc.",5012277147,Mid,Industrials,United States,US
+1139,NE,Noble Corporation,5000510593,Mid,Energy,United States,US
+1140,NEWR,"New Relic, Inc.",4982343844,Mid,Technology,United States,US
+1141,SSB,SouthState Corporation,4968810088,Mid,Financial Services,United States,US
+1142,NFG,National Fuel Gas Company,4967951028,Mid,Energy,United States,US
+1143,OSK,Oshkosh Corporation,4961874192,Mid,Industrials,United States,US
+1144,POR,Portland General Electric Company,4961503550,Mid,Utilities,United States,US
+1145,ATKR,Atkore Inc.,4957444803,Mid,Industrials,United States,US
+1146,ASH,Ashland Inc.,4939801032,Mid,Basic Materials,United States,US
+1147,HRB,"H&R Block, Inc.",4938342851,Mid,Consumer Cyclical,United States,US
+1148,WK,Workiva Inc.,4936574270,Mid,Technology,United States,US
+1149,NJR,New Jersey Resources Corporation,4929661440,Mid,Utilities,United States,US
+1150,MSGS,Madison Square Garden Sports Corp.,4927552221,Mid,Communication Services,United States,US
+1151,ALIT,"Alight, Inc.",4912678507,Mid,Technology,United States,US
+1152,X,United States Steel Corporation,4909544573,Mid,Basic Materials,United States,US
+1153,IPAR,"Inter Parfums, Inc.",4901821004,Mid,Consumer Defensive,United States,US
+1154,HUN,Huntsman Corporation,4893048507,Mid,Basic Materials,United States,US
+1155,ALKS,Alkermes plc,4892263214,Mid,Healthcare,Ireland,IE
+1156,MMS,"Maximus, Inc.",4892250650,Mid,Industrials,United States,US
+1157,ORCC,Owl Rock Capital Corporation,4890421610,Mid,Financial Services,United States,US
+1158,BRBR,"BellRing Brands, Inc.",4883428880,Mid,Consumer Defensive,United States,US
+1159,MMSI,"Merit Medical Systems, Inc.",4876607152,Mid,Healthcare,United States,US
+1160,S,"SentinelOne, Inc.",4874808639,Mid,Technology,United States,US
+1161,FIZZ,National Beverage Corp.,4872087642,Mid,Consumer Defensive,United States,US
+1163,APPF,"AppFolio, Inc.",4866522612,Mid,Technology,United States,US
+1164,IAC,IAC Inc.,4864989821,Mid,Communication Services,United States,US
+1165,SOFI,"SoFi Technologies, Inc.",4852149281,Mid,Financial Services,United States,US
+1166,PRGO,Perrigo Company plc,4828795374,Mid,Healthcare,Ireland,IE
+1167,FYBR,"Frontier Communications Parent, Inc.",4822387200,Mid,Communication Services,United States,US
+1168,CPRI,Capri Holdings Limited,4815950100,Mid,Consumer Cyclical,United Kingdom,GB
+1169,VAC,Marriott Vacations Worldwide Corporation,4812284598,Mid,Consumer Cyclical,United States,US
+1170,DNB,"Dun & Bradstreet Holdings, Inc.",4810762138,Mid,Financial Services,United States,US
+1171,WEN,The Wendy's Company,4798782020,Mid,Consumer Cyclical,United States,US
+1172,CMA,Comerica Incorporated,4798054800,Mid,Financial Services,United States,US
+1173,BIPC,Brookfield Infrastructure Corporation,4790911440,Mid,Utilities,United States,US
+1174,PCVX,"Vaxcyte, Inc.",4783473974,Mid,Healthcare,United States,US
+1175,TIXT,TELUS International (Cda) Inc.,4779669214,Mid,Technology,Canada,CA
+1176,FCFS,"FirstCash Holdings, Inc",4769091680,Mid,Financial Services,United States,US
+1177,HGV,Hilton Grand Vacations Inc.,4768723376,Mid,Consumer Cyclical,United States,US
+1178,TSEM,Tower Semiconductor Ltd.,4765406360,Mid,Technology,Israel,IL
+1179,SNDR,"Schneider National, Inc.",4760219240,Mid,Industrials,United States,US
+1180,ATI,ATI Inc.,4735450440,Mid,Industrials,United States,US
+1181,DRVN,Driven Brands Holdings Inc.,4721808000,Mid,Consumer Cyclical,United States,US
+1182,FRHC,Freedom Holding Corp.,4710978864,Mid,Financial Services,Kazakhstan,KZ
+1183,ELF,"e.l.f. Beauty, Inc.",4710718533,Mid,Consumer Defensive,United States,US
+1184,NEP,"NextEra Energy Partners, LP",4698481270,Mid,Utilities,United States,US
+1185,ASO,"Academy Sports and Outdoors, Inc.",4694230600,Mid,Consumer Cyclical,United States,US
+1186,PSN,Parsons Corporation,4660597590,Mid,Industrials,United States,US
+1187,OMAB,"Grupo Aeroportuario del Centro Norte, SAB de CV",4657560909,Mid,Industrials,Mexico,MX
+1188,AXS,AXIS Capital Holdings Limited,4651914758,Mid,Financial Services,Bermuda,BM
+1189,HQY,"HealthEquity, Inc.",4640500500,Mid,Healthcare,United States,US
+1190,FLS,Flowserve Corporation,4638740130,Mid,Industrials,United States,US
+1191,MTH,Meritage Homes Corporation,4637574942,Mid,Consumer Cyclical,United States,US
+1192,TMHC,Taylor Morrison Home Corporation,4628573460,Mid,Consumer Cyclical,United States,US
+1193,CWST,"Casella Waste Systems, Inc.",4617966467,Mid,Industrials,United States,US
+1194,ESNT,Essent Group Ltd.,4607008900,Mid,Financial Services,Bermuda,BM
+1195,RYN,Rayonier Inc.,4587920580,Mid,Real Estate,United States,US
+1196,ELAN,Elanco Animal Health Incorporated,4580966880,Mid,Healthcare,United States,US
+1197,CC,The Chemours Company,4576499625,Mid,Basic Materials,United States,US
+1198,MSTR,MicroStrategy Incorporated,4564474432,Mid,Technology,United States,US
+1199,TDC,Teradata Corporation,4559781600,Mid,Technology,United States,US
+1200,WU,The Western Union Company,4549227494,Mid,Financial Services,United States,US
+1201,AJRD,"Aerojet Rocketdyne Holdings, Inc.",4547173050,Mid,Industrials,United States,US
+1202,DTM,"DT Midstream, Inc.",4546003728,Mid,Energy,United States,US
+1203,TRTN,Triton International Limited,4542747650,Mid,Industrials,Bermuda,BM
+1204,EXPO,"Exponent, Inc.",4540591132,Mid,Industrials,United States,US
+1205,KRG,Kite Realty Group Trust,4529081900,Mid,Real Estate,United States,US
+1206,CNXC,Concentrix Corporation,4525194272,Mid,Technology,United States,US
+1207,WIX,Wix.com Ltd.,4517757895,Mid,Technology,Israel,IL
+1208,POWI,"Power Integrations, Inc.",4516765842,Mid,Technology,United States,US
+1209,NSP,"Insperity, Inc.",4501356629,Mid,Industrials,United States,US
+1210,VNOM,Viper Energy Partners LP,4499678035,Mid,Energy,United States,US
+1211,AMC,"AMC Entertainment Holdings, Inc.",4482737858,Mid,Communication Services,United States,US
+1212,ARWR,"Arrowhead Pharmaceuticals, Inc.",4481867800,Mid,Healthcare,United States,US
+1213,OGS,"ONE Gas, Inc.",4472107860,Mid,Utilities,United States,US
+1214,SHC,Sotera Health Company,4471513825,Mid,Healthcare,United States,US
+1215,DV,"DoubleVerify Holdings, Inc.",4468123285,Mid,Technology,United States,US
+1216,GOL,Gol Linhas Aéreas Inteligentes S.A.,4463302545,Mid,Industrials,Brazil,BR
+1217,LPX,Louisiana-Pacific Corporation,4456585224,Mid,Industrials,United States,US
+1218,SGRY,"Surgery Partners, Inc.",4453360800,Mid,Healthcare,United States,US
+1219,DEN,Denbury Inc.,4451522816,Mid,Energy,United States,US
+1220,RIG,Transocean Ltd.,4446830080,Mid,Energy,Switzerland,CH
+1221,W,Wayfair Inc.,4442442041,Mid,Consumer Cyclical,United States,US
+1223,ICUI,"ICU Medical, Inc.",4431766061,Mid,Healthcare,United States,US
+1224,FELE,"Franklin Electric Co., Inc.",4405780998,Mid,Industrials,United States,US
+1225,CRSP,CRISPR Therapeutics AG,4401256140,Mid,Healthcare,Switzerland,CH
+1226,JHG,Janus Henderson Group plc,4398219900,Mid,Financial Services,United Kingdom,GB
+1227,SLAB,Silicon Laboratories Inc.,4396374060,Mid,Technology,United States,US
+1228,THO,"Thor Industries, Inc.",4395515470,Mid,Consumer Cyclical,United States,US
+1229,CRUS,"Cirrus Logic, Inc.",4390737112,Mid,Technology,United States,US
+1230,BKH,Black Hills Corporation,4383600464,Mid,Utilities,United States,US
+1231,WFRD,Weatherford International plc,4380789040,Mid,Energy,United States,US
+1232,SQSP,"Squarespace, Inc.",4380778913,Mid,Technology,United States,US
+1233,ESI,Element Solutions Inc,4376944600,Mid,Basic Materials,United States,US
+1234,LEG,"Leggett & Platt, Incorporated",4371480900,Mid,Consumer Cyclical,United States,US
+1235,ESGR,Enstar Group Limited,4367378952,Mid,Financial Services,Bermuda,BM
+1236,KEX,Kirby Corporation,4327081500,Mid,Industrials,United States,US
+1237,VNT,Vontier Corporation,4324179580,Mid,Technology,United States,US
+1238,OMF,"OneMain Holdings, Inc.",4312191120,Mid,Financial Services,United States,US
+1239,QLYS,"Qualys, Inc.",4308308043,Mid,Technology,United States,US
+1240,ALSN,"Allison Transmission Holdings, Inc.",4301447648,Mid,Consumer Cyclical,United States,US
+1241,VAL,Valaris Limited,4288335648,Mid,Energy,Bermuda,BM
+1242,CWAN,"Clearwater Analytics Holdings, Inc.",4285871197,Mid,Technology,United States,US
+1243,MTG,MGIC Investment Corporation,4284555332,Mid,Financial Services,United States,US
+1244,TDOC,"Teladoc Health, Inc.",4278192300,Mid,Healthcare,United States,US
+1245,PBF,PBF Energy Inc.,4277176296,Mid,Energy,United States,US
+1246,HE,"Hawaiian Electric Industries, Inc.",4272212280,Mid,Utilities,United States,US
+1247,FIVN,"Five9, Inc.",4259917401,Mid,Technology,United States,US
+1248,HOMB,"Home Bancshares, Inc. (Conway, AR)",4258401280,Mid,Financial Services,United States,US
+1249,THG,"The Hanover Insurance Group, Inc.",4252192128,Mid,Financial Services,United States,US
+1250,STNE,StoneCo Ltd.,4251904136,Mid,Technology,Cayman Islands,KY
+1251,MLI,"Mueller Industries, Inc.",4245024840,Mid,Industrials,United States,US
+1252,INFA,Informatica Inc.,4243580163,Mid,Technology,United States,US
+1253,ABG,"Asbury Automotive Group, Inc.",4240710313,Mid,Consumer Cyclical,United States,US
+1254,SKY,Skyline Champion Corporation,4230590688,Mid,Consumer Cyclical,United States,US
+1255,NSIT,"Insight Enterprises, Inc.",4218512328,Mid,Technology,United States,US
+1256,ONTO,Onto Innovation Inc.,4208514336,Mid,Technology,United States,US
+1257,GTLB,GitLab Inc.,4206377945,Mid,Technology,United States,US
+1258,ENVX,Enovix Corporation,1998244859,Small,Industrials,United States,US
+1259,PAYO,Payoneer Global Inc.,1997152000,Small,Technology,United States,US
+1260,TROX,Tronox Holdings plc,1996714720,Small,Basic Materials,United States,US
+1261,SUPN,"Supernus Pharmaceuticals, Inc.",1996175999,Small,Healthcare,United States,US
+1262,EVEX,"Eve Holding, Inc.",1993986659,Small,Industrials,United States,US
+1263,DOOR,Masonite International Corporation,1993336156,Small,Industrials,United States,US
+1264,MTX,Minerals Technologies Inc.,1991981514,Small,Basic Materials,United States,US
+1265,WSFS,WSFS Financial Corporation,1987081005,Small,Financial Services,United States,US
+1266,THRM,Gentherm Incorporated,1983018136,Small,Consumer Cyclical,United States,US
+1267,SDGR,"Schrödinger, Inc.",1979232444,Small,Healthcare,United States,US
+1268,NMIH,"NMI Holdings, Inc.",1978469130,Small,Financial Services,United States,US
+1269,VICR,Vicor Corporation,1973781069,Small,Technology,United States,US
+1270,OSIS,"OSI Systems, Inc.",1971884852,Small,Technology,United States,US
+1271,ALGT,Allegiant Travel Company,1969138650,Small,Industrials,United States,US
+1272,EXPI,"eXp World Holdings, Inc.",1968159706,Small,Real Estate,United States,US
+1273,USAC,"USA Compression Partners, LP",1967117152,Small,Energy,United States,US
+1274,CNK,"Cinemark Holdings, Inc.",1962349620,Small,Communication Services,United States,US
+1275,BVN,Compañía de Minas Buenaventura S.A.A.,1959387840,Small,Basic Materials,Peru,PE
+1276,INSW,"International Seaways, Inc.",1958277588,Small,Energy,United States,US
+1277,NEO,"NeoGenomics, Inc.",1952867050,Small,Healthcare,United States,US
+1278,CTRE,"CareTrust REIT, Inc.",1952423556,Small,Real Estate,United States,US
+1279,AGYS,"Agilysys, Inc.",1952406070,Small,Technology,United States,US
+1280,AMLX,"Amylyx Pharmaceuticals, Inc.",1948987772,Small,Healthcare,United States,US
+1281,SIMO,Silicon Motion Technology Corporation,1945064016,Small,Technology,Hong Kong,HK
+1282,IIPR,"Innovative Industrial Properties, Inc.",1944507600,Small,Real Estate,United States,US
+1283,VGR,Vector Group Ltd.,1942804560,Small,Consumer Defensive,United States,US
+1284,WLY,"John Wiley & Sons, Inc.",1941547804,Small,Communication Services,United States,US
+1285,XPEL,"XPEL, Inc.",1940171525,Small,Consumer Cyclical,United States,US
+1286,NUS,"Nu Skin Enterprises, Inc.",1939682966,Small,Consumer Defensive,United States,US
+1287,DBRG,"DigitalBridge Group, Inc.",1938792669,Small,Real Estate,United States,US
+1288,CEPU,Central Puerto S.A.,1938413958,Small,Utilities,Argentina,AR
+1289,SITM,SiTime Corporation,1938124422,Small,Technology,United States,US
+1290,YELP,Yelp Inc.,1937269680,Small,Communication Services,United States,US
+1291,LAUR,"Laureate Education, Inc.",1936334400,Small,Consumer Defensive,United States,US
+1292,SBLK,Star Bulk Carriers Corp.,1934740170,Small,Industrials,Greece,GR
+1293,DKL,"Delek Logistics Partners, LP",1923989376,Small,Energy,United States,US
+1294,SLVM,Sylvamo Corporation,1923721040,Small,Basic Materials,United States,US
+1295,EBC,"Eastern Bankshares, Inc.",1921975200,Small,Financial Services,United States,US
+1296,JACK,Jack in the Box Inc.,1911305112,Small,Consumer Cyclical,United States,US
+1297,XPRO,Expro Group Holdings N.V.,1910844080,Small,Energy,United States,US
+1298,MXL,"MaxLinear, Inc.",1905949708,Small,Technology,United States,US
+1299,AUB,Atlantic Union Bankshares Corporation,1905475572,Small,Financial Services,United States,US
+1300,NAVI,Navient Corporation,1900768950,Small,Financial Services,United States,US
+1301,NXE,NexGen Energy Ltd.,1899631469,Small,Energy,Canada,CA
+1302,VIST,"Vista Energy, SAB de CV",1895752317,Small,Energy,Mexico,MX
+1303,ERO,Ero Copper Corp.,1895026644,Small,Basic Materials,Canada,CA
+1304,GPRE,Green Plains Inc.,1893639909,Small,Basic Materials,United States,US
+1305,ATGE,Adtalem Global Education Inc.,1893025820,Small,Consumer Defensive,United States,US
+1306,AG,First Majestic Silver Corp.,1877525280,Small,Basic Materials,Canada,CA
+1307,NG,NovaGold Resources Inc.,1876984505,Small,Basic Materials,Canada,CA
+1308,MHO,"M/I Homes, Inc.",1874866678,Small,Consumer Cyclical,United States,US
+1309,FFBC,First Financial Bancorp.,1872395168,Small,Financial Services,United States,US
+1310,SIX,Six Flags Entertainment Corporation,1868787402,Small,Consumer Cyclical,United States,US
+1311,HTGC,"Hercules Capital, Inc.",1865793792,Small,Financial Services,United States,US
+1312,GDRX,"GoodRx Holdings, Inc.",1863262168,Small,Healthcare,United States,US
+1313,SDRL,Seadrill Limited,1858500000,Small,Energy,Bermuda,BM
+1314,CRGY,Crescent Energy Company,1849551238,Small,Energy,United States,US
+1315,CARG,"CarGurus, Inc.",1844593974,Small,Communication Services,United States,US
+1316,CVAC,CureVac N.V.,1844458080,Small,Healthcare,Germany,DE
+1317,AIR,AAR Corp.,1843972284,Small,Industrials,United States,US
+1318,MIR,"Mirion Technologies, Inc.",1840487704,Small,Industrials,United States,US
+1319,RKLB,"Rocket Lab USA, Inc.",1838948619,Small,Industrials,United States,US
+1320,FA,First Advantage Corporation,1836980810,Small,Industrials,United States,US
+1321,GFF,Griffon Corporation,1835677020,Small,Industrials,United States,US
+1322,BLU,BELLUS Health Inc.,1835651160,Small,Healthcare,Canada,CA
+1323,ESTE,"Earthstone Energy, Inc.",1832963759,Small,Energy,United States,US
+1324,PPBI,"Pacific Premier Bancorp, Inc.",1831696000,Small,Financial Services,United States,US
+1325,NOVA,Sunnova Energy International Inc.,1831567500,Small,Technology,United States,US
+1326,SAND,Sandstorm Gold Ltd.,1828288800,Small,Basic Materials,Canada,CA
+1327,CAAP,Corporación América Airports S.A.,1826994811,Small,Industrials,Luxembourg,LU
+1328,HPK,"HighPeak Energy, Inc.",1826676780,Small,Energy,United States,US
+1329,SGHC,Super Group (SGHC) Limited,1824553920,Small,Consumer Cyclical,Guernsey,GG
+1330,CPRX,"Catalyst Pharmaceuticals, Inc.",1823864170,Small,Healthcare,United States,US
+1331,CRSR,"Corsair Gaming, Inc.",1820375760,Small,Technology,United States,US
+1332,SOVO,"Sovos Brands, Inc.",1820043480,Small,Consumer Defensive,United States,US
+1333,SNEX,StoneX Group Inc.,1815846678,Small,Financial Services,United States,US
+1334,DICE,"DICE Therapeutics, Inc.",1813686800,Small,Healthcare,United States,US
+1335,CWK,Cushman & Wakefield plc,1811843040,Small,Real Estate,United Kingdom,GB
+1336,WGO,"Winnebago Industries, Inc.",1809843726,Small,Consumer Cyclical,United States,US
+1337,GSAT,"Globalstar, Inc.",1808283564,Small,Communication Services,United States,US
+1338,PEB,Pebblebrook Hotel Trust,1799926680,Small,Real Estate,United States,US
+1339,SAFE,Safehold Inc.,1792914052,Small,Real Estate,United States,US
+1340,MSGE,Madison Square Garden Entertainment Corp.,1791726365,Small,Communication Services,United States,US
+1341,DRH,DiamondRock Hospitality Company,1789093440,Small,Real Estate,United States,US
+1342,ATEC,"Alphatec Holdings, Inc.",1788758720,Small,Healthcare,United States,US
+1343,UE,Urban Edge Properties,1788658514,Small,Real Estate,United States,US
+1344,NEX,NexTier Oilfield Solutions Inc.,1784054520,Small,Energy,United States,US
+1345,SAVE,"Spirit Airlines, Inc.",1781507520,Small,Industrials,United States,US
+1346,ZIP,"ZipRecruiter, Inc.",1777266769,Small,Industrials,United States,US
+1347,CRTO,Criteo S.A.,1773833472,Small,Communication Services,France,FR
+1348,EQX,Equinox Gold Corp.,1772921211,Small,Basic Materials,Canada,CA
+1349,LRN,"Stride, Inc.",1772313076,Small,Consumer Defensive,United States,US
+1350,ULCC,"Frontier Group Holdings, Inc.",1767697360,Small,Industrials,United States,US
+1352,LILAK,Liberty Latin America Ltd.,1761011790,Small,Communication Services,Bermuda,BM
+1353,PLAY,"Dave & Buster's Entertainment, Inc.",1758833391,Small,Communication Services,United States,US
+1354,AMPH,"Amphastar Pharmaceuticals, Inc.",1758569868,Small,Healthcare,United States,US
+1355,CVII,Churchill Capital Corp VII,1757774990,Small,Financial Services,United States,US
+1356,MARA,"Marathon Digital Holdings, Inc.",1754421114,Small,Financial Services,United States,US
+1357,EYE,"National Vision Holdings, Inc.",1750237440,Small,Consumer Cyclical,United States,US
+1358,ARCO,Arcos Dorados Holdings Inc.,1750044616,Small,Consumer Cyclical,Uruguay,UY
+1360,TRN,"Trinity Industries, Inc.",1747140209,Small,Industrials,United States,US
+1361,UPBD,"Upbound Group, Inc.",1746271631,Small,Technology,United States,US
+1362,CLBK,"Columbia Financial, Inc.",1745862300,Small,Financial Services,United States,US
+1363,RLJ,RLJ Lodging Trust,1736153134,Small,Real Estate,United States,US
+1364,ZETA,Zeta Global Holdings Corp.,1735945988,Small,Technology,United States,US
+1365,BOH,Bank of Hawaii Corporation,1733053419,Small,Financial Services,United States,US
+1366,FULT,Fulton Financial Corporation,1731696120,Small,Financial Services,United States,US
+1367,ESTA,Establishment Labs Holdings Inc.,1730527090,Small,Healthcare,Costa Rica,CR
+1368,FORG,"ForgeRock, Inc.",1730168611,Small,Technology,United States,US
+1369,TOWN,TowneBank,1728729684,Small,Financial Services,United States,US
+1370,FLNG,FLEX LNG Ltd.,1728026799,Small,Energy,Bermuda,BM
+1371,WAFD,"Washington Federal, Inc.",1727068875,Small,Financial Services,United States,US
+1372,AUR,"Aurora Innovation, Inc.",1723267166,Small,Technology,United States,US
+1373,ABCL,AbCellera Biologics Inc.,1723239236,Small,Healthcare,Canada,CA
+1374,SBCF,Seacoast Banking Corporation of Florida,1720100970,Small,Financial Services,United States,US
+1375,KTOS,"Kratos Defense & Security Solutions, Inc.",1719020460,Small,Industrials,United States,US
+1376,OII,"Oceaneering International, Inc.",1717120800,Small,Energy,United States,US
+1377,TLRY,"Tilray Brands, Inc.",1711882160,Small,Healthcare,Canada,CA
+1378,GOGL,Golden Ocean Group Limited,1711620960,Small,Industrials,Bermuda,BM
+1379,VRNA,Verona Pharma plc,1710882159,Small,Healthcare,United Kingdom,GB
+1380,PRK,Park National Corporation,1709764111,Small,Financial Services,United States,US
+1381,TALO,Talos Energy Inc.,1707910400,Small,Energy,United States,US
+1382,GTY,Getty Realty Corp.,1707529200,Small,Real Estate,United States,US
+1384,ODP,The ODP Corporation,1706702250,Small,Consumer Cyclical,United States,US
+1385,GPOR,Gulfport Energy Corporation,1706291334,Small,Energy,United States,US
+1386,CVBF,CVB Financial Corp.,1703663460,Small,Financial Services,United States,US
+1387,TBBK,"The Bancorp, Inc.",1703045088,Small,Financial Services,United States,US
+1388,BKE,"The Buckle, Inc.",1702896750,Small,Consumer Cyclical,United States,US
+1389,AESI,Atlas Energy Solutions Inc.,1700000000,Small,Energy,United States,US
+1390,GOGO,Gogo Inc.,1696327037,Small,Communication Services,United States,US
+1391,NWN,Northwest Natural Holding Company,1692167365,Small,Utilities,United States,US
+1392,CAKE,The Cheesecake Factory Incorporated,1691039322,Small,Consumer Cyclical,United States,US
+1393,RCKT,"Rocket Pharmaceuticals, Inc.",1689687216,Small,Healthcare,United States,US
+1394,VCYT,"Veracyte, Inc.",1685076240,Small,Healthcare,United States,US
+1395,NAPA,"The Duckhorn Portfolio, Inc.",1684501780,Small,Consumer Defensive,United States,US
+1396,NS,NuStar Energy L.P.,1683522720,Small,Energy,United States,US
+1397,FGEN,"FibroGen, Inc.",1683461761,Small,Healthcare,United States,US
+1398,EAT,"Brinker International, Inc.",1676593345,Small,Consumer Cyclical,United States,US
+1399,JBGS,JBG SMITH Properties,1676336790,Small,Real Estate,United States,US
+1400,ROCK,"Gibraltar Industries, Inc.",1675822465,Small,Industrials,United States,US
+1401,MRTN,"Marten Transport, Ltd.",1673414138,Small,Industrials,United States,US
+1402,EMBC,Embecta Corp.,1670086512,Small,Healthcare,United States,US
+1403,RDNT,"RadNet, Inc.",1658742216,Small,Healthcare,United States,US
+1404,IRWD,"Ironwood Pharmaceuticals, Inc.",1657541820,Small,Healthcare,United States,US
+1405,XNCR,"Xencor, Inc.",1655811540,Small,Healthcare,United States,US
+1406,OXM,"Oxford Industries, Inc.",1654198406,Small,Consumer Cyclical,United States,US
+1407,AUPH,Aurinia Pharmaceuticals Inc.,1653473040,Small,Healthcare,Canada,CA
+1408,SILK,"Silk Road Medical, Inc",1650936273,Small,Healthcare,United States,US
+1409,LZ,"LegalZoom.com, Inc.",1649677214,Small,Industrials,United States,US
+1410,VRE,"Veris Residential, Inc.",1647039385,Small,Real Estate,United States,US
+1411,COUR,"Coursera, Inc.",1645096000,Small,Consumer Defensive,United States,US
+1412,AMEH,"Apollo Medical Holdings, Inc.",1644103680,Small,Healthcare,United States,US
+1413,BNRE,Brookfield Reinsurance Ltd.,1640904093,Small,Financial Services,Bermuda,BM
+1414,ROIC,Retail Opportunity Investments Corp.,1639585250,Small,Real Estate,United States,US
+1415,CMTG,"Claros Mortgage Trust, Inc.",1635926879,Small,Real Estate,United States,US
+1416,VSTO,Vista Outdoor Inc.,1634679981,Small,Consumer Cyclical,United States,US
+1417,MCY,Mercury General Corporation,1634554872,Small,Financial Services,United States,US
+1418,VZIO,VIZIO Holding Corp.,1634162598,Small,Technology,United States,US
+1419,FNA,"Paragon 28, Inc.",1632036700,Small,Healthcare,United States,US
+1420,NAAS,NaaS Technology Inc.,1631899200,Small,Consumer Cyclical,China,CN
+1421,AROC,"Archrock, Inc.",1630550380,Small,Energy,United States,US
+1422,COHU,"Cohu, Inc.",1627483772,Small,Technology,United States,US
+1423,XPOF,"Xponential Fitness, Inc.",1625608187,Small,Consumer Cyclical,United States,US
+1424,BORR,Borr Drilling Limited,1620951840,Small,Energy,Bermuda,BM
+1425,KAR,"KAR Auction Services, Inc.",1619228380,Small,Consumer Cyclical,United States,US
+1426,TMCI,"Treace Medical Concepts, Inc.",1618801967,Small,Healthcare,United States,US
+1427,BCRX,"BioCryst Pharmaceuticals, Inc.",1617163692,Small,Healthcare,United States,US
+1428,CTKB,"Cytek Biosciences, Inc.",1617126705,Small,Healthcare,United States,US
+1429,ACDC,ProFrac Holding Corp.,1615409439,Small,Energy,United States,US
+1430,FTCH,Farfetch Limited,1607992485,Small,Consumer Cyclical,United Kingdom,GB
+1431,BGCP,"BGC Partners, Inc.",1607318173,Small,Financial Services,United States,US
+1432,UNFI,"United Natural Foods, Inc.",1606119216,Small,Consumer Defensive,United States,US
+1433,TTEC,"TTEC Holdings, Inc.",1604715276,Small,Technology,United States,US
+1434,KYMR,"Kymera Therapeutics, Inc.",1603994811,Small,Healthcare,United States,US
+1435,AVDX,"AvidXchange Holdings, Inc.",1603714744,Small,Technology,United States,US
+1436,HURN,Huron Consulting Group Inc.,1598928877,Small,Industrials,United States,US
+1437,PHR,"Phreesia, Inc.",1594247400,Small,Healthcare,United States,US
+1438,CVNA,Carvana Co.,1591296000,Small,Consumer Cyclical,United States,US
+1439,HLMN,Hillman Solutions Corp.,1581675240,Small,Industrials,United States,US
+1440,AHCO,AdaptHealth Corp.,1580536320,Small,Healthcare,United States,US
+1441,CSGS,"CSG Systems International, Inc.",1579679648,Small,Technology,United States,US
+1442,MOMO,Hello Group Inc.,1576713800,Small,Communication Services,China,CN
+1443,ESRT,"Empire State Realty Trust, Inc.",1574723595,Small,Real Estate,United States,US
+1444,HAIN,"The Hain Celestial Group, Inc.",1574636892,Small,Consumer Defensive,United States,US
+1445,MYGN,"Myriad Genetics, Inc.",1573072494,Small,Healthcare,United States,US
+1446,GVA,Granite Construction Incorporated,1572249064,Small,Industrials,United States,US
+1447,CLDX,"Celldex Therapeutics, Inc.",1571055616,Small,Healthcare,United States,US
+1448,VCEL,Vericel Corporation,1568137872,Small,Healthcare,United States,US
+1449,FRME,First Merchants Corporation,1559646872,Small,Financial Services,United States,US
+1450,HLIT,Harmonic Inc.,1558600311,Small,Technology,United States,US
+1451,IAG,IAMGOLD Corporation,1558213148,Small,Basic Materials,Canada,CA
+1452,IMKTA,"Ingles Markets, Incorporated",1553741838,Small,Consumer Defensive,United States,US
+1453,NVEE,"NV5 Global, Inc.",1553226816,Small,Industrials,United States,US
+1454,LVWR,"LiveWire Group, Inc.",1552476969,Small,Consumer Cyclical,United States,US
+1455,BANR,Banner Corporation,1549371860,Small,Financial Services,United States,US
+1456,HBI,Hanesbrands Inc.,1544604289,Small,Consumer Cyclical,United States,US
+1457,SXI,Standex International Corporation,1544013807,Small,Industrials,United States,US
+1458,PGTI,"PGT Innovations, Inc.",1542590247,Small,Industrials,United States,US
+1459,RAMP,"LiveRamp Holdings, Inc.",1542470860,Small,Technology,United States,US
+1460,IVT,InvenTrust Properties Corp.,1539196080,Small,Real Estate,United States,US
+1461,LOMA,Loma Negra Compañía Industrial Argentina SA,1537601656,Small,Basic Materials,Argentina,AR
+1462,MNRO,"Monro, Inc.",1533086212,Small,Consumer Cyclical,United States,US
+1463,EVGO,"EVgo, Inc.",1532256828,Small,Consumer Cyclical,United States,US
+1464,CTOS,"Custom Truck One Source, Inc.",1527599450,Small,Industrials,United States,US
+1465,IOVA,"Iovance Biotherapeutics, Inc.",1523672900,Small,Healthcare,United States,US
+1466,BRP,"BRP Group, Inc.",1519589687,Small,Financial Services,United States,US
+1467,PERI,Perion Network Ltd.,1514840976,Small,Communication Services,Israel,IL
+1468,RES,"RPC, Inc.",1514590000,Small,Energy,United States,US
+1469,SMMT,Summit Therapeutics Inc.,1513976433,Small,Healthcare,United States,US
+1470,DFH,"Dream Finders Homes, Inc.",1502193417,Small,Consumer Cyclical,United States,US
+1471,CGAU,Centerra Gold Inc.,1500302635,Small,Basic Materials,Canada,CA
+1472,OEC,Orion Engineered Carbons S.A.,1499525000,Small,Basic Materials,Luxembourg,LU
+1473,LMAT,"LeMaitre Vascular, Inc.",1496410424,Small,Healthcare,United States,US
+1474,SVC,Service Properties Trust,1495668000,Small,Real Estate,United States,US
+1475,SUMO,"Sumo Logic, Inc.",1494019520,Small,Technology,United States,US
+1476,PATK,"Patrick Industries, Inc.",1492472772,Small,Consumer Cyclical,United States,US
+1477,DADA,Dada Nexus Limited,1491281880,Small,Consumer Cyclical,China,CN
+1478,USPH,"U.S. Physical Therapy, Inc.",1490442660,Small,Healthcare,United States,US
+1479,RNST,Renasant Corporation,1488195998,Small,Financial Services,United States,US
+1480,SWI,SolarWinds Corporation,1485905568,Small,Technology,United States,US
+1481,KN,Knowles Corporation,1485505535,Small,Technology,United States,US
+1482,TGH,Textainer Group Holdings Limited,1482563641,Small,Industrials,Bermuda,BM
+1483,VRTV,Veritiv Corporation,1482554975,Small,Industrials,United States,US
+1484,TSLX,"Sixth Street Specialty Lending, Inc.",1481344500,Small,Financial Services,United States,US
+1485,SPNT,SiriusPoint Ltd.,1479272763,Small,Financial Services,Bermuda,BM
+1486,FSLY,"Fastly, Inc.",1477212000,Small,Technology,United States,US
+1487,SWTX,"SpringWorks Therapeutics, Inc.",1475552240,Small,Healthcare,United States,US
+1488,MEI,"Methode Electronics, Inc.",1473974272,Small,Technology,United States,US
+1489,ORLA,Orla Mining Ltd.,1468901400,Small,Basic Materials,Canada,CA
+1490,ROAD,"Construction Partners, Inc.",1468807116,Small,Industrials,United States,US
+1491,EFSC,Enterprise Financial Services Corp,1468242940,Small,Financial Services,United States,US
+1492,UTZ,"Utz Brands, Inc.",1467143547,Small,Consumer Defensive,United States,US
+1493,RADI,"Radius Global Infrastructure, Inc.",1466057440,Small,Communication Services,United States,US
+1494,GCMG,"Grosvenor Capital Management, L.P.",1465139200,Small,Financial Services,United States,US
+1495,KEN,Kenon Holdings Ltd.,1465116836,Small,Utilities,Singapore,SG
+1496,PDFS,"PDF Solutions, Inc.",1464976079,Small,Technology,United States,US
+1497,USM,United States Cellular Corporation,1460434811,Small,Communication Services,United States,US
+1498,SLG,SL Green Realty Corp.,1456117260,Small,Real Estate,United States,US
+1499,BRFS,BRF S.A.,1455461914,Small,Consumer Defensive,Brazil,BR
+1500,OSCR,"Oscar Health, Inc.",1455380926,Small,Healthcare,United States,US
+1501,ELME,Elme Communities,1454425720,Small,Real Estate,United States,US
+1502,AAT,"American Assets Trust, Inc.",1454148782,Small,Real Estate,United States,US
+1503,TNC,Tennant Company,1449533762,Small,Industrials,United States,US
+1504,SEAT,Vivid Seats Inc.,1448964385,Small,Communication Services,United States,US
+1505,DVAX,Dynavax Technologies Corporation,1447879440,Small,Healthcare,United States,US
+1507,KNTK,Kinetik Holdings Inc.,1440727728,Small,Energy,United States,US
+1508,INT,World Fuel Services Corporation,1440152538,Small,Energy,United States,US
+1509,VEON,VEON Ltd.,1440006124,Small,Communication Services,Netherlands,NL
+1510,PLYA,Playa Hotels & Resorts N.V.,1439479567,Small,Consumer Cyclical,United States,US
+1511,SAH,"Sonic Automotive, Inc.",1438389875,Small,Consumer Cyclical,United States,US
+1512,HLF,Herbalife Nutrition Ltd.,1435688758,Small,Consumer Defensive,United States,US
+1513,XHR,"Xenia Hotels & Resorts, Inc.",1431002430,Small,Real Estate,United States,US
+1514,RCUS,"Arcus Biosciences, Inc.",1429403802,Small,Healthcare,United States,US
+1515,GSBD,"Goldman Sachs BDC, Inc.",1424113630,Small,Financial Services,United States,US
+1516,AGIO,"Agios Pharmaceuticals, Inc.",1419533632,Small,Healthcare,United States,US
+1517,OMI,"Owens & Minor, Inc.",1419460686,Small,Healthcare,United States,US
+1518,SHCO,Soho House & Co Inc.,1417893650,Small,Consumer Cyclical,United States,US
+1519,JBI,"Janus International Group, Inc.",1417887151,Small,Industrials,United States,US
+1520,OPK,"OPKO Health, Inc.",1413951345,Small,Healthcare,United States,US
+1521,MNTV,Momentive Global Inc.,1413472200,Small,Technology,United States,US
+1522,CHCO,City Holding Company,1409802552,Small,Financial Services,United States,US
+1523,GERN,Geron Corporation,1404100320,Small,Healthcare,United States,US
+1524,AKR,Acadia Realty Trust,1402348230,Small,Real Estate,United States,US
+1525,ETWO,"E2open Parent Holdings, Inc.",1396515120,Small,Technology,United States,US
+1526,PTGX,"Protagonist Therapeutics, Inc.",1396187712,Small,Healthcare,United States,US
+1527,DK,"Delek US Holdings, Inc.",1395476688,Small,Energy,United States,US
+1528,CLMT,"Calumet Specialty Products Partners, L.P.",1392336352,Small,Energy,United States,US
+1529,PRME,"Prime Medicine, Inc.",1392302096,Small,Healthcare,United States,US
+1530,SKIN,The Beauty Health Company,1391078900,Small,Consumer Defensive,United States,US
+1531,OCSL,Oaktree Specialty Lending Corporation,1390519592,Small,Financial Services,United States,US
+1532,CNNE,"Cannae Holdings, Inc.",1388998545,Small,Consumer Cyclical,United States,US
+1533,LTC,"LTC Properties, Inc.",1385944776,Small,Real Estate,United States,US
+1534,BLDP,Ballard Power Systems Inc.,1385898363,Small,Industrials,Canada,CA
+1535,NMRK,"Newmark Group, Inc.",1382471936,Small,Real Estate,United States,US
+1536,PRG,"PROG Holdings, Inc.",1382220080,Small,Industrials,United States,US
+1537,KRP,"Kimbell Royalty Partners, LP",1379336459,Small,Energy,United States,US
+1538,TRMK,Trustmark Corporation,1377254160,Small,Financial Services,United States,US
+1539,DHT,"DHT Holdings, Inc.",1377240218,Small,Energy,Bermuda,BM
+1540,CHEF,"The Chefs' Warehouse, Inc.",1375195224,Small,Consumer Defensive,United States,US
+1541,ALEX,"Alexander & Baldwin, Inc.",1373474696,Small,Real Estate,United States,US
+1542,SNDX,"Syndax Pharmaceuticals, Inc.",1372958556,Small,Healthcare,United States,US
+1543,MAG,MAG Silver Corp.,1372059020,Small,Basic Materials,Canada,CA
+1544,CODI,Compass Diversified,1371851376,Small,Industrials,United States,US
+1545,SKYW,"SkyWest, Inc.",1369875170,Small,Industrials,United States,US
+1546,AGM,Federal Agricultural Mortgage Corporation,1369740326,Small,Financial Services,United States,US
+1547,RLAY,"Relay Therapeutics, Inc.",1369045790,Small,Healthcare,United States,US
+1548,ERII,"Energy Recovery, Inc.",1364080977,Small,Industrials,United States,US
+1549,LGND,Ligand Pharmaceuticals Incorporated,1362540348,Small,Healthcare,United States,US
+1550,NBTB,NBT Bancorp Inc.,1361353439,Small,Financial Services,United States,US
+1552,SEMR,"Semrush Holdings, Inc.",1360455781,Small,Technology,United States,US
+1553,HBM,Hudbay Minerals Inc.,1360060260,Small,Basic Materials,Canada,CA
+1554,PLRX,"Pliant Therapeutics, Inc.",1357047816,Small,Healthcare,United States,US
+1555,VLRS,"Controladora Vuela Compañía de Aviación, SAB de CV",1356516040,Small,Industrials,Mexico,MX
+1556,EPAC,Enerpac Tool Group Corp.,1354598938,Small,Industrials,United States,US
+1557,BKU,"BankUnited, Inc.",1353761646,Small,Financial Services,United States,US
+1558,HMN,Horace Mann Educators Corporation,1353398475,Small,Financial Services,United States,US
+1559,PRAA,"PRA Group, Inc.",1352609470,Small,Financial Services,United States,US
+1560,WSBC,"WesBanco, Inc.",1352018822,Small,Financial Services,United States,US
+1561,NWBI,"Northwest Bancshares, Inc.",1351971600,Small,Financial Services,United States,US
+1562,ENVA,"Enova International, Inc.",1351856685,Small,Financial Services,United States,US
+1563,ATUS,"Altice USA, Inc.",1350366939,Small,Communication Services,United States,US
+1564,ARVN,"Arvinas, Inc.",1347768950,Small,Healthcare,United States,US
+1565,AMPL,"Amplitude, Inc.",1347499525,Small,Technology,United States,US
+1566,BRDG,Bridge Investment Group Holdings Inc.,1345914437,Small,Financial Services,United States,US
+1567,ARI,"Apollo Commercial Real Estate Finance, Inc.",1345585436,Small,Real Estate,United States,US
+1568,JBSS,"John B. Sanfilippo & Son, Inc.",1344644408,Small,Consumer Defensive,United States,US
+1569,LNN,Lindsay Corporation,1344492835,Small,Industrials,United States,US
+1570,SATS,EchoStar Corporation,1344390928,Small,Technology,United States,US
+1571,EVRI,Everi Holdings Inc.,1343132464,Small,Consumer Cyclical,United States,US
+1572,WRBY,Warby Parker Inc.,1342406285,Small,Healthcare,United States,US
+1573,RVLV,"Revolve Group, Inc.",1341847862,Small,Consumer Cyclical,United States,US
+1574,MDRX,"Allscripts Healthcare Solutions, Inc.",1341712800,Small,Healthcare,United States,US
+1575,VVX,"V2X, Inc.",1337870065,Small,Industrials,United States,US
+1576,CLS,Celestica Inc.,1336340256,Small,Technology,Canada,CA
+1577,KDNY,"Chinook Therapeutics, Inc.",1334044012,Small,Healthcare,United States,US
+1579,BBUC,Brookfield Business Corporation,1329971546,Small,Financial Services,United States,US
+1580,ADUS,Addus HomeCare Corporation,1328104428,Small,Healthcare,United States,US
+1581,TNK,Teekay Tankers Ltd.,1327170605,Small,Energy,Bermuda,BM
+1582,UVV,Universal Corporation,1325991600,Small,Consumer Defensive,United States,US
+1583,ZNTL,"Zentalis Pharmaceuticals, Inc.",1324438365,Small,Healthcare,United States,US
+1584,UDMY,"Udemy, Inc.",1317904800,Small,Consumer Defensive,United States,US
+1585,STRL,"Sterling Infrastructure, Inc.",1315584214,Small,Industrials,United States,US
+1586,MSEX,Middlesex Water Company,1306456479,Small,Utilities,United States,US
+1587,CTS,CTS Corporation,1306071400,Small,Technology,United States,US
+1588,KROS,"Keros Therapeutics, Inc.",1303701880,Small,Healthcare,United States,US
+1589,PRIM,Primoris Services Corporation,1302006784,Small,Industrials,United States,US
+1590,QTWO,"Q2 Holdings, Inc.",1300729770,Small,Technology,United States,US
+1591,IBTX,"Independent Bank Group, Inc.",1299954435,Small,Financial Services,United States,US
+1592,TA,TravelCenters of America Inc.,1299169584,Small,Consumer Cyclical,United States,US
+1593,ALHC,"Alignment Healthcare, Inc.",1297869300,Small,Healthcare,United States,US
+1594,PARR,"Par Pacific Holdings, Inc.",1297625676,Small,Energy,United States,US
+1595,MCRI,"Monarch Casino & Resort, Inc.",1296931164,Small,Consumer Cyclical,United States,US
+1596,CMP,"Compass Minerals International, Inc.",1296249844,Small,Basic Materials,United States,US
+1597,USNA,"USANA Health Sciences, Inc.",1295419302,Small,Consumer Defensive,United States,US
+1598,FDP,Fresh Del Monte Produce Inc.,1292382000,Small,Consumer Defensive,Cayman Islands,KY
+1599,OTLY,Oatly Group AB,1290811166,Small,Consumer Defensive,Sweden,SE
+1600,FIGS,"FIGS, Inc.",1286600723,Small,Consumer Cyclical,United States,US
+1601,PRCT,PROCEPT BioRobotics Corporation,1285407352,Small,Healthcare,United States,US
+1602,BBU,Brookfield Business Partners L.P.,1278112056,Small,Industrials,Bermuda,BM
+1603,CMPR,Cimpress plc,1277482891,Small,Communication Services,Ireland,IE
+1604,MLNK,"MeridianLink, Inc.",1274736163,Small,Technology,United States,US
+1605,ECVT,Ecovyst Inc.,1273314400,Small,Basic Materials,United States,US
+1606,PTVE,Pactiv Evergreen Inc.,1272897723,Small,Consumer Cyclical,United States,US
+1607,COCO,"The Vita Coco Company, Inc.",1272596664,Small,Consumer Defensive,United States,US
+1608,PLMR,"Palomar Holdings, Inc.",1271644200,Small,Financial Services,United States,US
+1609,SA,Seabridge Gold Inc.,1269495536,Small,Basic Materials,Canada,CA
+1610,HSKA,Heska Corporation,1268669920,Small,Healthcare,United States,US
+1612,ANDE,"The Andersons, Inc.",1265883252,Small,Consumer Defensive,United States,US
+1613,FCF,First Commonwealth Financial Corporation,1265146180,Small,Financial Services,United States,US
+1615,UCTT,"Ultra Clean Holdings, Inc.",1262797026,Small,Technology,United States,US
+1616,CDE,"Coeur Mining, Inc.",1257591078,Small,Basic Materials,United States,US
+1617,TH,Target Hospitality Corp.,1257409920,Small,Industrials,United States,US
+1618,KC,Kingsoft Cloud Holdings Limited,1256010780,Small,Technology,China,CN
+1619,SBH,"Sally Beauty Holdings, Inc.",1252529430,Small,Consumer Cyclical,United States,US
+1620,TVTX,"Travere Therapeutics, Inc.",1252347533,Small,Healthcare,United States,US
+1621,BFH,"Bread Financial Holdings, Inc.",1249945414,Small,Financial Services,United States,US
+1622,INFN,Infinera Corporation,1248200605,Small,Technology,United States,US
+1623,DFIN,"Donnelley Financial Solutions, Inc.",1247817750,Small,Financial Services,United States,US
+1624,PRO,"PROS Holdings, Inc.",1246825422,Small,Technology,United States,US
+1625,SPNS,Sapiens International Corporation N.V.,1244907032,Small,Technology,Israel,IL
+1626,HTLF,"Heartland Financial USA, Inc.",1239312256,Small,Financial Services,United States,US
+1627,SCHL,Scholastic Corporation,1236333162,Small,Communication Services,United States,US
+1628,MAXN,"Maxeon Solar Technologies, Ltd.",1234387869,Small,Technology,Singapore,SG
+1629,FBK,FB Financial Corporation,1230324006,Small,Financial Services,United States,US
+1631,MGNI,"Magnite, Inc.",1229848654,Small,Communication Services,United States,US
+1632,GEL,"Genesis Energy, L.P.",1227840780,Small,Energy,United States,US
+1633,LZB,La-Z-Boy Incorporated,1224324552,Small,Consumer Cyclical,United States,US
+1634,MMI,"Marcus & Millichap, Inc.",1223966544,Small,Real Estate,United States,US
+1635,RYI,Ryerson Holding Corporation,1223536199,Small,Industrials,United States,US
+1636,HEES,"H&E Equipment Services, Inc.",1222428480,Small,Industrials,United States,US
+1637,ETNB,"89bio, Inc.",1214704492,Small,Healthcare,United States,US
+1638,CHGG,"Chegg, Inc.",1213027920,Small,Consumer Defensive,United States,US
+1639,LKFN,Lakeland Financial Corporation,1211273767,Small,Financial Services,United States,US
+1640,ANGI,Angi Inc.,1210615728,Small,Communication Services,United States,US
+1642,CASH,"Pathward Financial, Inc.",1208307562,Small,Financial Services,United States,US
+1643,CRNX,"Crinetics Pharmaceuticals, Inc.",1206779310,Small,Healthcare,United States,US
+1644,SABR,Sabre Corporation,1205936281,Small,Consumer Cyclical,United States,US
+1645,CIM,Chimera Investment Corporation,1204562628,Small,Real Estate,United States,US
+1646,NTB,The Bank of N.T. Butterfield & Son Limited,1204362096,Small,Financial Services,Bermuda,BM
+1647,SBGI,"Sinclair Broadcast Group, Inc.",1204197700,Small,Communication Services,United States,US
+1648,MLKN,"MillerKnoll, Inc.",1201079083,Small,Consumer Cyclical,United States,US
+1649,AIV,Apartment Investment and Management Company,1197900686,Small,Real Estate,United States,US
+1650,NOAH,Noah Holdings Limited,1197896276,Small,Financial Services,China,CN
+1651,CAMT,Camtek Ltd.,1197874944,Small,Technology,Israel,IL
+1652,TUYA,Tuya Inc.,1197649490,Small,Technology,China,CN
+1653,GDEN,"Golden Entertainment, Inc.",1197618081,Small,Consumer Cyclical,United States,US
+1654,FBNC,First Bancorp,1195557316,Small,Financial Services,United States,US
+1655,OSW,OneSpaWorld Holdings Limited,1195545994,Small,Consumer Cyclical,Bahamas,BS
+1656,TTMI,"TTM Technologies, Inc.",1195126900,Small,Technology,United States,US
+1657,SMTC,Semtech Corporation,1192488236,Small,Technology,United States,US
+1658,PFS,"Provident Financial Services, Inc.",1190883525,Small,Financial Services,United States,US
+1659,TRUP,"Trupanion, Inc.",1190578000,Small,Financial Services,United States,US
+1660,WWW,"Wolverine World Wide, Inc.",1190525227,Small,Consumer Cyclical,United States,US
+1661,DDD,3D Systems Corporation,1190150280,Small,Technology,United States,US
+1662,DCBO,Docebo Inc.,1189841100,Small,Technology,Canada,CA
+1663,PCT,"PureCycle Technologies, Inc.",1186614808,Small,Industrials,United States,US
+1665,IONQ,"IonQ, Inc.",1185947200,Small,Technology,United States,US
+1666,HTLD,"Heartland Express, Inc.",1184826000,Small,Industrials,United States,US
+1667,HIMX,"Himax Technologies, Inc.",1182547206,Small,Technology,Taiwan,TW
+1668,TDCX,TDCX Inc.,1181081700,Small,Industrials,Singapore,SG
+1669,ARHS,"Arhaus, Inc.",1181079884,Small,Consumer Cyclical,United States,US
+1670,LADR,Ladder Capital Corp,1179356210,Small,Real Estate,United States,US
+1671,MBUU,"Malibu Boats, Inc.",1177404500,Small,Consumer Cyclical,United States,US
+1672,GNL,"Global Net Lease, Inc.",1177137360,Small,Real Estate,United States,US
+1673,INBX,"Inhibrx, Inc.",1176626351,Small,Healthcare,United States,US
+1674,PLUS,ePlus inc.,1176422132,Small,Technology,United States,US
+1675,PX,"P10, Inc.",1175905350,Small,Financial Services,United States,US
+1677,APPS,"Digital Turbine, Inc.",1174493711,Small,Technology,United States,US
+1678,NTST,NETSTREIT Corp.,1172456697,Small,Real Estate,United States,US
+1679,NMFC,New Mountain Finance Corporation,1171878570,Small,Financial Services,United States,US
+1680,CARS,Cars.com Inc.,1166954796,Small,Consumer Cyclical,United States,US
+1681,DO,"Diamond Offshore Drilling, Inc.",1166193200,Small,Energy,United States,US
+1682,MATW,Matthews International Corporation,1159848256,Small,Industrials,United States,US
+1683,CDMO,"Avid Bioservices, Inc.",1159623234,Small,Healthcare,United States,US
+1684,PRM,"Perimeter Solutions, SA",1159577932,Small,Basic Materials,United States,US
+1685,BMEA,"Biomea Fusion, Inc.",1159282716,Small,Healthcare,United States,US
+1686,OPEN,Opendoor Technologies Inc.,1158872807,Small,Real Estate,United States,US
+1687,OFG,OFG Bancorp,1157423410,Small,Financial Services,United States,US
+1688,CYRX,"Cryoport, Inc.",1154742262,Small,Industrials,United States,US
+1689,TASK,"TaskUs, Inc.",1154404512,Small,Technology,United States,US
+1690,AVTA,"Avantax, Inc.",1153933532,Small,Financial Services,United States,US
+1691,DAC,Danaos Corporation,1149961547,Small,Industrials,Greece,GR
+1692,DOLE,Dole plc,1149229312,Small,Consumer Defensive,Ireland,IE
+1693,EWCZ,"European Wax Center, Inc.",1148398473,Small,Consumer Defensive,United States,US
+1695,PBT,Permian Basin Royalty Trust,1147508656,Small,Energy,United States,US
+1696,AVDL,Avadel Pharmaceuticals plc,1147183664,Small,Healthcare,Ireland,IE
+1697,TFIN,"Triumph Financial, Inc.",1147038864,Small,Financial Services,United States,US
+1698,STC,Stewart Information Services Corporation,1145652250,Small,Financial Services,United States,US
+1699,TWO,Two Harbors Investment Corp.,1145472002,Small,Real Estate,United States,US
+1700,COMP,"Compass, Inc.",1142972267,Small,Technology,United States,US
+1701,FSM,Fortuna Silver Mines Inc.,1142419560,Small,Basic Materials,Canada,CA
+1702,ECPG,"Encore Capital Group, Inc.",1140515883,Small,Financial Services,United States,US
+1703,KFRC,Kforce Inc.,1140448192,Small,Industrials,United States,US
+1704,BRCC,BRC Inc.,1138192762,Small,Consumer Defensive,United States,US
+1705,INDI,"indie Semiconductor, Inc.",1138043860,Small,Technology,United States,US
+1706,ANF,Abercrombie & Fitch Co.,1137247328,Small,Consumer Cyclical,United States,US
+1707,MD,"Pediatrix Medical Group, Inc.",1136721770,Small,Healthcare,United States,US
+1708,RC,Ready Capital Corporation,1136253960,Small,Real Estate,United States,US
+1709,WNC,Wabash National Corporation,1135721600,Small,Industrials,United States,US
+1711,VRDN,"Viridian Therapeutics, Inc.",1133764070,Small,Healthcare,United States,US
+1712,CRDO,Credo Technology Group Holding Ltd,1133566271,Small,Technology,United States,US
+1713,MODN,"Model N, Inc.",1132041000,Small,Technology,United States,US
+1714,ALKT,"Alkami Technology, Inc.",1130906959,Small,Technology,United States,US
+1716,DRD,DRDGOLD Limited,1128367212,Small,Basic Materials,South Africa,ZA
+1717,DGII,Digi International Inc.,1125565964,Small,Technology,United States,US
+1718,DH,Definitive Healthcare Corp.,1124764230,Small,Healthcare,United States,US
+1719,PTLO,Portillo's Inc.,1124625034,Small,Consumer Cyclical,United States,US
+1720,FINV,FinVolution Group,1123277222,Small,Financial Services,China,CN
+1721,HCSG,"Healthcare Services Group, Inc.",1121086450,Small,Healthcare,United States,US
+1722,SFL,SFL Corporation Ltd.,1119308460,Small,Industrials,Bermuda,BM
+1723,FVRR,Fiverr International Ltd.,1118594733,Small,Communication Services,Israel,IL
+1724,AVNS,"Avanos Medical, Inc.",1117100277,Small,Healthcare,United States,US
+1725,BGS,"B&G Foods, Inc.",1113682919,Small,Consumer Defensive,United States,US
+1726,DMLP,"Dorchester Minerals, L.P.",1112006070,Small,Energy,United States,US
+1727,NXGN,"NextGen Healthcare, Inc.",1107842448,Small,Healthcare,United States,US
+1729,CWH,"Camping World Holdings, Inc.",1104550344,Small,Consumer Cyclical,United States,US
+1730,TBIO,"Telesis Bio, Inc.",1104234763,Small,Healthcare,United States,US
+1731,OLO,Olo Inc.,1103996820,Small,Technology,United States,US
+1732,BFS,"Saul Centers, Inc.",1102406238,Small,Real Estate,United States,US
+1733,OPAL,OPAL Fuels Inc.,1101395155,Small,Utilities,United States,US
+1736,AHH,"Armada Hoffler Properties, Inc.",1096654547,Small,Real Estate,United States,US
+1737,STER,Sterling Check Corp.,1096154280,Small,Technology,United States,US
+1738,EAF,GrafTech International Ltd.,1096138924,Small,Industrials,United States,US
+1739,NBHC,National Bank Holdings Corporation,1094235498,Small,Financial Services,United States,US
+1740,UPST,"Upstart Holdings, Inc.",1093502192,Small,Financial Services,United States,US
+1741,NXRT,"NexPoint Residential Trust, Inc.",1091991712,Small,Real Estate,United States,US
+1743,IDYA,"IDEAYA Biosciences, Inc.",1091728895,Small,Healthcare,United States,US
+1744,SANA,"Sana Biotechnology, Inc.",1091065546,Small,Healthcare,United States,US
+1745,SPHR,Sphere Entertainment Co.,1085728800,Small,Communication Services,United States,US
+1746,AMSF,"AMERISAFE, Inc.",1082639948,Small,Financial Services,United States,US
+1747,UFPT,"UFP Technologies, Inc.",1080280443,Small,Healthcare,United States,US
+1748,UAN,"CVR Partners, LP",1077570720,Small,Basic Materials,United States,US
+1749,ATSG,"Air Transport Services Group, Inc.",1074695799,Small,Industrials,United States,US
+1750,KIDS,OrthoPediatrics Corp.,1073562019,Small,Healthcare,United States,US
+1751,PL,Planet Labs PBC,1072371401,Small,Industrials,United States,US
+1753,CRNC,Cerence Inc.,1069622635,Small,Technology,United States,US
+1754,MGI,"MoneyGram International, Inc.",1069227464,Small,Financial Services,United States,US
+1755,UPWK,Upwork Inc.,1067736000,Small,Industrials,United States,US
+1756,PLL,Piedmont Lithium Inc.,1066399647,Small,Basic Materials,United States,US
+1757,CCF,Chase Corporation,1064014327,Small,Basic Materials,United States,US
