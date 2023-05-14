@@ -1,0 +1,11 @@
+streamlit 
+pandas 
+numpy 
+plotly.express
+datetime
+os
+time
+pickle
+yfinance
+requests
+
