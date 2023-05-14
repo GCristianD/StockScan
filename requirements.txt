@@ -3,7 +3,6 @@ pandas
 numpy 
 plotly.express
 datetime
-time
 pickle
 yfinance
 requests
