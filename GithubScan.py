@@ -505,7 +505,7 @@ dff = createScanTables(today,capslist,nonUS)
 # Display
 
 
-Bullishscan, Bearishscan, Earningsscan = st.tabs(['Bullish scan', 'Bearish scan', 'Earnings'])
+Bullishscan, Bearishscan, Earningsscan = st.tabs(['Bullish scan', 'Bearish scan', 'Earnings scan'])
 
 with Bullishscan:
     st.table(dff[dff['Symbol'].isin(dic_lists['bull']+dic_lists['bull_rsi'])][['Symbol','Bull Cost cond.','Bullish RSI','Earnings','Cap','Loc','Sector','Sector LT','Sector ST']])
@@ -519,6 +519,7 @@ with Bearishscan:
 
 
 with Earningsscan:
+    st.write("Earnings soon:")
     st.table(dee)
     display_charts(lse,4)
 
