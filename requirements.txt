@@ -6,3 +6,4 @@ datetime
 yfinance
 requests
 yahooquery
+talib
