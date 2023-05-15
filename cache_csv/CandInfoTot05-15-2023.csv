@@ -1,0 +1,39 @@
+,Symbol,Company Name,Market Cap,Cap,Sector,Country,Loc,Bull Cost cond.,Bullish RSI,Bear Cost cond.,Bearish RSI,Earnings,Index,Sector LT,Sector ST
+36,BABA,Alibaba Group Holdin,215331752663,Mega,Consumer Cyclical,China,CN, , , ,✔,05-18,XLY,🟩,🟩
+40,ABT,Abbott Laboratories,193364311660,Large,Healthcare,United States,US,✔, , , ,07-18,XLV,🟩,🟥
+129,CI,Cigna Corporation,77448382334,Large,Healthcare,United States,US, , , , ,08-02,XLV,🟩,🟥
+140,TGT,Target Corporation,72140732650,Large,Consumer Defensive,United States,US, , , ,✔,05-17,XLP,🟩,🟩
+141,BDX,"Becton, Dickinson an",72014585379,Large,Healthcare,United States,US, , , , ,08-02,XLV,🟩,🟥
+181,JD,"JD.com, Inc.",56471891374,Large,Consumer Cyclical,China,CN, , ,✔, ,08-11,XLY,🟩,🟩
+218,KMB,Kimberly-Clark Corpo,48980972419,Large,Consumer Defensive,United States,US,✔, , , ,07-25,XLP,🟩,🟩
+273,YUM,"Yum! Brands, Inc.",40064445898,Large,Consumer Cyclical,United States,US,✔, , , ,08-01,XLY,🟩,🟩
+312,GOLD,Barrick Gold Corpora,35458070323,Large,Basic Materials,Canada,CA, ,✔, , ,08-07,XLB,🟥,🟥
+432,CHD,"Church & Dwight Co.,",23823067920,Large,Consumer Defensive,United States,US,✔, , , ,07-27,XLP,🟩,🟩
+468,RBLX,Roblox Corporation,21395991013,Large,Communication Services,United States,US, , , , ,08-07,XLC,🟩,🟩
+472,ALB,Albemarle Corporatio,21078630300,Large,Basic Materials,United States,US, , ,✔,✔,08-01,XLB,🟥,🟥
+486,BEKE,KE Holdings Inc.,20041027113,Large,Real Estate,China,CN, , , ,✔,05-18,XLRE,🟥,🟩
+588,NET,"Cloudflare, Inc.",14627361972,Large,Technology,United States,US, , , ,✔,08-02,XLK,🟩,🟩
+607,CHWY,"Chewy, Inc.",14140451421,Large,Consumer Cyclical,United States,US, , , , ,05-31,XLY,🟩,🟩
+628,SNAP,Snap Inc.,13574645074,Large,Communication Services,United States,US, , ,✔, ,07-19,XLC,🟩,🟩
+732,NMR,"Nomura Holdings, Inc",10572953600,Large,Financial Services,Japan,JP, , ,✔, ,-,XLF,🟥,🟥
+764,DOCU,"DocuSign, Inc.",9858907020,Mid,Technology,United States,US, , ,✔, ,06-07,XLK,🟩,🟩
+792,RGLD,"Royal Gold, Inc.",9300047280,Mid,Basic Materials,United States,US, ,✔, , ,08-04,XLB,🟥,🟥
+820,CASY,Casey's General Stor,8706755750,Mid,Consumer Cyclical,United States,US,✔, , , ,06-05,XLY,🟩,🟩
+830,BKI,"Black Knight, Inc.",8476175520,Mid,Technology,United States,US, , ,✔, ,08-02,XLK,🟩,🟩
+853,HOOD,"Robinhood Markets, I",8005709761,Mid,Technology,United States,US, , ,✔,✔,05-11,XLK,🟩,🟩
+871,ROKU,"Roku, Inc.",7738950735,Mid,Communication Services,United States,US, , ,✔,✔,07-26,XLC,🟩,🟩
+928,SITE,SiteOne Landscape Su,6880703844,Mid,Industrials,United States,US, ,✔, , ,08-01,XLI,🟩,🟥
+971,ACHC,Acadia Healthcare Co,6366960823,Mid,Healthcare,United States,US, , , ,✔,07-25,XLV,🟩,🟥
+1082,AGI,Alamos Gold Inc.,5453237560,Mid,Basic Materials,Canada,CA, ,✔, , ,07-25,XLB,🟥,🟥
+1083,TNET,"TriNet Group, Inc.",5437057499,Mid,Industrials,United States,US,✔,✔, , ,07-24,XLI,🟩,🟥
+1208,POWI,"Power Integrations, ",4516765842,Mid,Technology,United States,US, , , , ,08-02,XLK,🟩,🟩
+1367,ESTA,Establishment Labs H,1730527090,Small,Healthcare,Costa Rica,CR, , , , ,08-07,XLV,🟩,🟥
+1397,FGEN,"FibroGen, Inc.",1683461761,Small,Healthcare,United States,US, , ,✔, ,08-07,XLV,🟩,🟥
+1545,SKYW,"SkyWest, Inc.",1369875170,Small,Industrials,United States,US, ,✔, , ,07-26,XLI,🟩,🟥
+1587,CTS,CTS Corporation,1306071400,Small,Technology,United States,US, , , ,✔,07-24,XLK,🟩,🟩
+1590,QTWO,"Q2 Holdings, Inc.",1300729770,Small,Technology,United States,US, , , , ,08-01,XLK,🟩,🟩
+1603,CMPR,Cimpress plc,1277482891,Small,Communication Services,Ireland,IE,✔, , , ,07-26,XLC,🟩,🟩
+1648,MLKN,"MillerKnoll, Inc.",1201079083,Small,Consumer Cyclical,United States,US, , ,✔, ,06-27,XLY,🟩,🟩
+1679,NMFC,New Mountain Finance,1171878570,Small,Financial Services,United States,US, , , ,✔,08-07,XLF,🟥,🟥
+1712,CRDO,Credo Technology Gro,1133566271,Small,Technology,United States,US, , , ,✔,03-02,XLK,🟩,🟩
+1722,SFL,SFL Corporation Ltd.,1119308460,Small,Industrials,Bermuda,BM, , ,✔, ,05-31,XLI,🟩,🟥
