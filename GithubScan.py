@@ -242,7 +242,7 @@ def getSectorsTrends(today):
 
 
 
-@st.cache_data
+#@st.cache_data
 def getEarnings(today):
     
     def getdays(datestr):
@@ -260,7 +260,7 @@ def getEarnings(today):
         lse = list(dee['Ticker'])
         return dee, lse
     
-    path = './cache_csv/'+'Earnings.csv'
+    path = './ListOfStocks/'+'Earnings.csv'
     df = pd.read_csv(path,index_col=0)
     df['Days to earnings']=df['Next Earnings Date'].apply(getdays).astype(numpy.int64)
 
@@ -451,14 +451,14 @@ dff = createScanTables(today,capslist,nonUS)
 Bullishscan, Bearishscan, Earningsscan = st.tabs(['Bullish scan', 'Bearish scan', 'Earnings'])
 
 with Bullishscan:
-    st.table(dff[dff['Symbol'].isin(dic_lists['bull']+dic_lists['bull_rsi'])][['Symbol','Loc','Bull Cost cond.','Bullish RSI','Earnings','Cap','Sector','Sector LT','Sector ST']])
+    st.table(dff[dff['Symbol'].isin(dic_lists['bull']+dic_lists['bull_rsi'])][['Symbol','Bull Cost cond.','Bullish RSI','Earnings','Cap','Loc','Sector','Sector LT','Sector ST']])
 
     chartlistbullnow = list(dff[dff['Symbol'].isin(dic_lists['bull']+dic_lists['bull_rsi'])]['Symbol'])
     display_charts(chartlistbullnow,0)
     
 with Bearishscan:
 
-    st.table(dff[dff['Symbol'].isin(dic_lists['bear']+dic_lists['bear_rsi'])][['Symbol','Loc','Company Name','Bear Cost cond.','Bearish RSI','Earnings','Cap','Sector','Sector LT','Sector ST']])
+    st.table(dff[dff['Symbol'].isin(dic_lists['bear']+dic_lists['bear_rsi'])][['Symbol','Bear Cost cond.','Bearish RSI','Earnings','Cap','Loc','Sector','Sector LT','Sector ST']])
 
 
 with Earningsscan:
