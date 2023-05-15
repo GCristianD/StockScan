@@ -6,4 +6,4 @@ datetime
 yfinance
 requests
 yahooquery
-
+ta-lib-bin
