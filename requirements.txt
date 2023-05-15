@@ -7,3 +7,4 @@ yfinance
 requests
 yahooquery
 ta-lib-bin
+matplotlib
