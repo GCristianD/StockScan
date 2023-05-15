@@ -10,6 +10,8 @@ import pickle
 import yfinance as yf
 import requests
 import yahooquery
+import talib
+import matplotlib.dates as mdates
 
 st.set_page_config(page_title='Stock scan', page_icon=':bar_chart:',layout="wide")
 
@@ -85,7 +87,7 @@ def getActionzone(stock):
 def STPhaseIndices(SeriesPrice, Series200SMA, Series8Ema, Series21Ema):
     phase, focus = 'Indeterminate', 'Indeterminate'
     
-    if (SeriesPrice.iloc[-1:] > Series200SMA.iloc[-1:])[0]: LTtrend='UPTREND'
+    if (SeriesPrice.iloc[-1:] > Series200SMA.iloc[-1:]).iloc[0]: LTtrend='UPTREND'
     else: LTtrend='DOWNTREND'
     
     
@@ -124,6 +126,55 @@ def STemoji(index):
     else: emoj = '⬜'
     return emoj
 
+def add_stochastic_oscillator(df, periods=8):
+  high_roll = df["High"].rolling(periods).max()
+  low_roll = df["Low"].rolling(periods).min()
+  # Fast stochastic indicator
+  num = df["Close"] - low_roll
+  denom = high_roll - low_roll
+  df["%K"] = (num / denom) * 100
+  # Slow stochastic indicator
+  df["%D"] = df["%K"].rolling(3).mean()
+
+def add_rsi(df, periods = 2):
+  close_delta = df['Close'].diff()
+  # Make two series: one for lower closes and one for higher closes
+  up = close_delta.clip(lower=0)
+  down = -1 * close_delta.clip(upper=0)
+  ma_up = up.ewm(com = periods - 1, adjust=True, min_periods = periods).mean()
+  ma_down = down.ewm(com = periods - 1, adjust=True, min_periods = periods).mean()
+  rsi = ma_up / ma_down
+  rsi = 100 - (100/(1 + rsi))
+  df['RSI'] = rsi
+
+def add_ADX(df, timeperiod=13):
+    df['ADX'] = talib.ADX(df['High'], df['Low'], df['Close'], timeperiod=13)
+
+def add_MAs(df):
+    ema = [8,21,34,55,89]
+    for x in ema: df["EMA_"+str(x)] = round( df['Close'].ewm(span=x).mean() , 2)
+    sma = [50,100,200]
+    for x in sma: df["SMA_"+str(x)] = round( df['Close'].rolling(x).mean() , 2)
+
+def add_keltner(df):
+    # Compute EMA
+    if 'EMA_21' not in df.keys():
+        df['EMA_21'] = df['Close'].ewm(span=21, adjust=False).mean()
+    # Compute ATR
+    df['ATR'] = talib.ATR(df.High,df.Low,df.Close, timeperiod=21)
+    # Compute Upper and Lower Bands
+    df['UpperBand1'] = round(df['EMA_21'] + 1 * df['ATR'],2)
+    df['LowerBand1'] = round(df['EMA_21'] - 1 * df['ATR'],2)
+
+    df['UpperBand2'] = round(df['EMA_21'] + 2 * df['ATR'],2)
+    df['LowerBand2'] = round(df['EMA_21'] - 2 * df['ATR'],2)
+
+    df['UpperBand3'] = round(df['EMA_21'] + 3 * df['ATR'],2)
+    df['LowerBand3'] = round(df['EMA_21'] - 3 * df['ATR'],2)
+
+    #df['date'] = mdates.date2num(df.index.to_pydatetime())
+    df['date'] = mdates.date2num(pd.DatetimeIndex(df.index).to_pydatetime())
+
 
 #################################
 ######## Dispplay functions #####
@@ -148,9 +199,9 @@ def displayStockListoptions():
 
 def displayTrend():
     if LTtrend=='UPTREND':
-        st.write(f"S&P500 (vs its 200SMA) is in a long-term: :green[{LTtrend}]. Is market overextended: ... ")
+        st.write(f"S&P500 (vs its 200SMA) is in a long-term: :green[{LTtrend}]. Is market overextended: {OE} ")
     else:
-        st.write(f"S&P500 (vs its 200SMA) is in a long-term: :red[{LTtrend}].")
+        st.write(f"S&P500 (vs its 200SMA) is in a long-term: :red[{LTtrend}]. Is market overextended: {OE} ")
 
     if phase in ['BULL phase - Strong Uptrend','BULL phase - Uptrend']:
         st.write(f"Short-term (8 vs 21 EMAs): :green[{phase}].  "+f' The focus is: :green[{focus}]')
@@ -197,8 +248,13 @@ def getSP500(today):
         df=pd.read_csv(path,index_col=0)
     else: 
         df = yf.download('^GSPC', start_date, today)
-        df['200SMA']= round(df['Close'].rolling(200).mean(), 2)
-        for x in [8,21]: df["EMA_"+str(x)] = round( df['Close'].ewm(span=x).mean() , 2)
+        add_stochastic_oscillator(df)
+        add_rsi(df)
+        add_ADX(df)
+        add_MAs(df)
+        add_keltner(df)
+        df.reset_index(inplace=True)
+        
         df.to_csv(path)
     return df
 
@@ -284,7 +340,8 @@ def getEarnings(today):
 
 @st.cache_data
 def getTrendPhaseFocus(today):
-    return STPhaseIndices(dm['Close'],dm['200SMA'],dm['EMA_8'],dm['EMA_21'])
+    LTtrend, phase, focus  =  STPhaseIndices(dm['Close'],dm['SMA_200'],dm['EMA_8'],dm['EMA_21'])  
+    return LTtrend, phase, focus, dm['Close'].iloc[-1] >= dm['UpperBand2'].iloc[-1]
 
 @st.cache_data
 def get_earn(stock):
@@ -430,7 +487,7 @@ dee, lse = getEarnings(today)
 
 #Get S&P500, market trend and focus
 dm = getSP500(today)
-LTtrend, phase, focus = getTrendPhaseFocus(today)
+LTtrend, phase, focus, OE = getTrendPhaseFocus(today)
 
 # Display Market trend
 displayTrend()
