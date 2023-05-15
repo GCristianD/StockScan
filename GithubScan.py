@@ -517,6 +517,8 @@ with Bearishscan:
 
     st.table(dff[dff['Symbol'].isin(dic_lists['bear']+dic_lists['bear_rsi'])][['Symbol','Bear Cost cond.','Bearish RSI','Earnings','Cap','Loc','Sector','Sector LT','Sector ST']])
 
+    chartlistbearnow = list(dff[dff['Symbol'].isin(dic_lists['bear']+dic_lists['bear_rsi'])]['Symbol'])
+    display_charts(chartlistbearnow,1)
 
 with Earningsscan:
     st.write("Earnings soon:")
