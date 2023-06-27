@@ -255,7 +255,7 @@ with SqueezeScan:
 
     with Bearishsqueeze:
         st.caption('In squeeze, \u2001 8 EMA < 34 EMA < 200 SMA, \u2001 Squeeze momentum histogram <0 \u2001 and weekly: ADX ≥ 20, DI+ < DI- ')
-        st.table(dsqfilt_bear[['Symbol','Squeeze days','ATRs vs mean','% of 52w high', 'Bear Rainow %',  #'Days to earnings',
+        st.table(dsqfilt_bear[['Symbol','Squeeze days','Wkl sq fired','ATRs vs mean','% of 52w high', 'Bear Rainow %',  #'Days to earnings',
                                'Cap','Sector','Sector LT','Sector ST','Loc']].style.format({'ATRs vs mean': "{:.2f}",'Bear Rainow %': "{:.0f}" }))
 
         lsSqbear = list(dsqfilt_bear['Symbol'])
