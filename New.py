@@ -168,6 +168,8 @@ with BounceScan:
             with Bullfigtabs[i]:
                 ticker = lsbull[i]
                 st.write(dfbull.iloc[i]['Company Name'])
+                #st.table(dfbull.iloc[i,:][['Symbol','Bull Cost cond.','Bullish RSI','In Squeeze','ATRs vs mean','% of 52w high', 'Bull Rainow %',
+                #         'Cap','Sector','Sector LT','Sector ST','Loc']].to_frame().T)
                 df = dic_scaned[ticker]
                 fig = make_charts(df,ticker)
                 #fig = figs_bounce[ticker]
@@ -199,7 +201,7 @@ with Bounce200:
     Bullish200, Bearish200 = st.tabs(['Bullish Bounce 200','Bearish Bounce 200'])
     with Bullish200:
         st.caption('High > 200 SMA > Low, \u2001 50 SMA > 200 SMA, \u2001 Stochastics %K (8,3) ≤ 40')
-        st.table(dbull200[['Symbol','In Squeeze','ATRs vs mean','% of 52w high', 'Bull Rainow %',
+        st.table(dbull200[['Symbol','In Squeeze','Countertrend bullish','ATRs vs mean','% of 52w high', 'Bull Rainow %',
                          'Cap','Sector','Sector LT','Sector ST','Loc']].style.format({'ATRs vs mean': "{:.2f}",'Bull Rainow %': "{:.0f}", 'Bull Rainow All %': "{:.1f}" }))
 
         lsbull200 = list(dbull200['Symbol'])
@@ -215,7 +217,7 @@ with Bounce200:
 
     with Bearish200:
         st.caption('High > 200 SMA > Low, \u2001 50 SMA < 200 SMA, \u2001 Stochastics %K (8,3) ≥ 60')
-        st.table(dbear200[['Symbol','In Squeeze','ATRs vs mean','% of 52w high', 'Bear Rainow %',
+        st.table(dbear200[['Symbol','In Squeeze','Countertrend bearish','ATRs vs mean','% of 52w high', 'Bear Rainow %',
                            'Cap','Sector','Sector LT','Sector ST','Loc']].style.format({'ATRs vs mean': "{:.2f}",'Bear Rainow %': "{:.0f}" }))
 
         lsbear200 = list(dbear200['Symbol'])
