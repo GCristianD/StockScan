@@ -84,7 +84,7 @@ def createTables():
     with open(path, 'rb') as handle:
         rez = pickle.load(handle)
 
-    return rez[0], rez[1], rez[2], rez[3],  rez[4], rez[5], rez[6], rez[7], rez[8], rez[9], rez[10], rez[11], rez[12], rez[13], rez[14], rez[15]
+    return rez[0], rez[1], rez[2], rez[3],  rez[4], rez[5], rez[6], rez[7], rez[8], rez[9], rez[10], rez[11], rez[12], rez[13], rez[14], rez[15], rez[16]
 
 
 #################################
@@ -98,7 +98,7 @@ dic_scaned = loadPrices()
 #Load tables
 dbear, dbull, dbull200, dbear200,   dsqfilt2_bull, dsqfilt3_bull, dsqfilt_bear, \
 d_bullsetup_bulltrend_conservative, d_bullsetup_beartrend_conservative, d_bearsetup_bulltrend_conservative, d_bearsetup_beartrend_conservative, \
-d_bullsetup_bulltrend_aggresive, d_bullsetup_beartrend_aggresive, d_bearsetup_bulltrend_aggresive, d_bearsetup_beartrend_aggresive, lastday = createTables()
+d_bullsetup_bulltrend_aggresive, d_bullsetup_beartrend_aggresive, d_bearsetup_bulltrend_aggresive, d_bearsetup_beartrend_aggresive, df_sectors, lastday = createTables()
 
 
 #Display Stock Universe options
@@ -154,7 +154,7 @@ if not nonUS:
 
 
 # Make tabs
-BounceScan, Bounce200,  Earningsscan, SqueezeScan, CountertrendScan  = st.tabs(['Bounce scan','Bounce 200', 'Earnings', 'Squeezes', 'Countertrend scan'])
+BounceScan, Bounce200, SqueezeScan, CountertrendScan  = st.tabs(['Bounce scan','Bounce 200', 'Squeezes', 'Countertrend scan'])
 
 with BounceScan:
     Bullishscan, Bearishscan = st.tabs(['Bullish scan','Bearish scan'])
