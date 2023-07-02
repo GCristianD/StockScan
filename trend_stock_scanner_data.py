@@ -69,7 +69,7 @@ def _filter_relevant_artifact(job: dict) -> bool:
 
 def _created_at_timestamp(obj: dict) -> datetime:
     created_at_str = obj.get("created_at")
-    if created_at_str is not None and isinstance(str, created_at_str):
+    if created_at_str is not None and isinstance(created_at_str, str):
         return datetime.fromisoformat(created_at_str)
     return datetime.utcnow()
 
