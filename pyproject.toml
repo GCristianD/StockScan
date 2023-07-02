@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "trend-stock-scanner-app"
+version = "0.1.0"
+description = "Web application (Streamlit) for the trend stock scanner"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "trend_stock_scanner_app", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+plotly = "^5.15.0"
+numpy = "^1.25.0"
+datetime = "^5.1"
+streamlit = "^1.24.0"
+pandas = "<2"
+
+
+[tool.poetry.group.dev.dependencies]
+watchdog = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
