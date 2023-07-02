@@ -68,7 +68,10 @@ def _filter_relevant_artifact(job: dict) -> bool:
 
 
 def _created_at_timestamp(obj: dict) -> datetime:
-    return datetime.fromisoformat(obj["created_at"])
+    created_at_str = obj.get("created_at")
+    if created_at_str is not None and isinstance(str, created_at_str):
+        return datetime.fromisoformat(created_at_str)
+    return datetime.utcnow()
 
 
 def _get_most_recent_successful_job(http: urllib3.PoolManager):
