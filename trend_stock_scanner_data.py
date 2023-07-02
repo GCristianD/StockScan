@@ -1,15 +1,18 @@
 import pickle
 from datetime import datetime, timedelta
 from pathlib import Path
+from time import sleep
 from zipfile import ZipFile
 from pandas import DataFrame
 
 import urllib3
 import streamlit as st
 
+from logger import app_log as log
+
 GITLAB_USER_SECRET = "GITLAB_USER_ID"
 GITLAB_TOKEN_SECRET = "GITLAB_ACCESS_TOKEN"
-GITLAB_BASE_URL = "https://gitlab.com/api/v4/"
+GITLAB_BASE_URL = "https://gitlab.com/api/v4"
 GITLAB_PROJECT_ID = "47320184"
 
 HTTP_REQUEST_RETRIES = 3
@@ -44,60 +47,81 @@ def _download_file(http: urllib3.PoolManager, url: str, out_dir: Path) -> Path:
         "GET", url, retries=HTTP_REQUEST_RETRIES, timeout=HTTP_REQUEST_TIMEOUT_SECONDS, preload_content=False
     )
     assert response.status == 200
+    file_path = out_dir / DOWNLOADED_FILE_NAME
     try:
-        file_path = out_dir / DOWNLOADED_FILE_NAME
+        log.info("download start (%s)", file_path)
         with open(file_path, "wb") as file:
             while True:
                 data = response.read(HTTP_RESPONSE_BUFFER_SIZE)
                 if not data:
                     break
                 file.write(data)
+        log.info("downloaded successful (%s)", file_path)
         return file_path
+    except Exception as exc:
+        log.error("download error (%s)", file_path, exc_info=exc)
     finally:
         response.release_conn()
 
 
-def _filter_relevant_artifact(job: dict) -> bool:
-    artifacts = job["artifacts"]
-    if len(artifacts) < 1:
-        return False
-    for artifact in artifacts:
-        if artifact["file_type"] == "archive" and artifact["filename"] == DOWNLOADED_FILE_NAME:
-            return True
-    return False
+def _is_market_data_schedule(obj: dict) -> bool:
+    return obj["ref"] == "main" and obj["description"] == "Update Market Data"
 
 
-def _created_at_timestamp(obj: dict) -> datetime:
-    created_at_str = obj.get("created_at")
-    if created_at_str is not None and isinstance(created_at_str, str):
-        try:
-            return datetime.fromisoformat(created_at_str)
-        except ValueError:
-            return datetime.utcnow()
-    return datetime.utcnow()
-
-
-def _get_most_recent_successful_job(http: urllib3.PoolManager):
-    resp = _get(http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs?scope=success")
+def _get_update_market_data_schedule(http: urllib3.PoolManager) -> dict:
+    resp = _get(http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipeline_schedules")
     assert resp.status == 200
-    jobs = resp.json()
-    assert len(jobs) > 0
+    schedules = list(filter(_is_market_data_schedule, resp.json()))
+    assert len(schedules) == 1
+    resp = _get(http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipeline_schedules/{schedules[0]['id']}")
+    assert resp.status == 200
+    return resp.json()
 
-    job_projections = [
-        {
-            key: job[key]
-            for key in {"id", "name", "artifacts", "created_at"}
-        }
-        for job in jobs
-        if _filter_relevant_artifact(job)
-    ]
-    return max(job_projections, key=_created_at_timestamp)
+
+def _get_pipeline_details(http: urllib3.PoolManager, pipeline_id: int) -> dict:
+    resp = _get(http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipelines/{pipeline_id}")
+    assert resp.status == 200
+    return resp.json()
+
+
+def _is_get_data_job(obj: dict) -> bool:
+    return obj["name"] == "get-data" and len(obj["artifacts"]) > 0
+
+
+def _get_pipeline_get_data_job(http: urllib3.PoolManager, pipeline_id: int) -> dict:
+    log.info("fetch info about get-data job in pipeline %d", pipeline_id)
+    resp = _get(http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipelines/{pipeline_id}/jobs")
+    assert resp.status == 200
+    jobs = list(filter(_is_get_data_job, resp.json()))
+    assert len(jobs) > 0
+    log.info("got job id: %(id)d, url: %(web_url)s", jobs[0])
+    return jobs[0]
+
+
+def _wait_last_pipeline_success(http: urllib3.PoolManager, pipeline_schedule: dict) -> int:
+    log.info("waiting for '%(description)s' latest pipeline to finish successfully", pipeline_schedule)
+    now = datetime.utcnow()
+    timeout = timedelta(seconds=600)
+    last_pipeline = pipeline_schedule["last_pipeline"]
+    piepline_details = _get_pipeline_details(http, last_pipeline["id"])
+    while datetime.utcnow() - now < timeout and piepline_details["status"] != "success":
+        sleep(1.0)
+        piepline_details = _get_pipeline_details(http, last_pipeline["id"])
+    if piepline_details["status"] != "success":
+        raise ValueError(f"pipeline {piepline_details['id']} is in status {piepline_details['status']} after {timeout}")
+    log.info("'%(description)s' latest pipeline completed successfully", pipeline_schedule)
+    return piepline_details["id"]
 
 
 def _fetch_gitlab_artifacts(out_dir: Path) -> Path:
     http = _create_request_pool()
-    job = _get_most_recent_successful_job(http)
-    return _download_file(http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs/{job['id']}/artifacts", out_dir)
+    pipeline_schedule = _get_update_market_data_schedule(http)
+    pipeline_id = _wait_last_pipeline_success(http, pipeline_schedule)
+    get_data_job = _get_pipeline_get_data_job(http, pipeline_id)
+
+    return _download_file(
+        http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs/{get_data_job['id']}/artifacts", out_dir
+    )
 
 
 @st.cache_resource(ttl=timedelta(hours=24), show_spinner="Downloading market data ...")
