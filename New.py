@@ -4,7 +4,7 @@ import numpy
 from datetime import datetime
 import pickle
 from makefigures import make_charts, makefig_squeeze
-from trend_stock_scanner_app.data import load_prices, load_tables
+from trend_stock_scanner_data import load_prices, load_tables
 
 st.set_page_config(page_title='Stock scan', page_icon=':bar_chart:',layout="wide")
 

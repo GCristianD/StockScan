@@ -16,7 +16,7 @@ HTTP_REQUEST_RETRIES = 3
 HTTP_REQUEST_TIMEOUT_SECONDS = 15
 HTTP_RESPONSE_BUFFER_SIZE = 1048576
 
-OUT_DIR = Path(__file__).parent.parent.parent
+OUT_DIR = Path(__file__).parent
 DOWNLOADED_FILE_NAME = "artifacts.zip"
 TABLES_PICKLE = "tables.pickle"
 SCANNED_PICKLE = "scanned.pickle"
