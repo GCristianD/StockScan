@@ -4,6 +4,7 @@ import numpy
 from datetime import datetime
 import pickle
 from makefigures import make_charts, makefig_squeeze
+from trend_stock_scanner_app.data import load_prices, load_tables
 
 st.set_page_config(page_title='Stock scan', page_icon=':bar_chart:',layout="wide")
 
@@ -72,7 +73,7 @@ def displayStockListoptions(lastday):
 
 @st.cache_data
 def loadPrices():
-    path = 'scanned.pickle'
+    path = SCANNED_PICKLE
     with open(path, 'rb') as handle:
         dic_scaned = pickle.load(handle)
     return dic_scaned
@@ -80,7 +81,7 @@ def loadPrices():
 
 @st.cache_data
 def createTables():
-    path = 'tables.pickle'
+    path = TABLES_PICKLE
     with open(path, 'rb') as handle:
         rez = pickle.load(handle)
 
@@ -92,13 +93,13 @@ def createTables():
 #################################
 
 # Load price data for the creation of the figures
-dic_scaned = loadPrices()
+dic_scaned = load_prices()
 
 
 #Load tables
 dbear, dbull, dbull200, dbear200,   dsqfilt2_bull, dsqfilt3_bull, dsqfilt_bear, \
 d_bullsetup_bulltrend_conservative, d_bullsetup_beartrend_conservative, d_bearsetup_bulltrend_conservative, d_bearsetup_beartrend_conservative, \
-d_bullsetup_bulltrend_aggresive, d_bullsetup_beartrend_aggresive, d_bearsetup_bulltrend_aggresive, d_bearsetup_beartrend_aggresive, df_sectors, lastday = createTables()
+d_bullsetup_bulltrend_aggresive, d_bullsetup_beartrend_aggresive, d_bearsetup_bulltrend_aggresive, d_bearsetup_beartrend_aggresive, df_sectors, lastday = load_tables()
 
 
 #Display Stock Universe options
@@ -150,7 +151,7 @@ if not nonUS:
 ##path = 'figs.pickle'
 ##with open(path, 'rb') as handle:
 ##    rez = pickle.load(handle)
-##    figs_bounce,figs_squeeze = rez[0], rez[1]
+    ##    figs_bounce,figs_squeeze = rez[0], rez[1]
 
 
 # Make tabs
