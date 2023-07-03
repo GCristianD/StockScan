@@ -124,17 +124,15 @@ def _fetch_gitlab_artifacts(out_dir: Path) -> Path:
     )
 
 
-@st.cache_resource(ttl=timedelta(hours=24), show_spinner="Downloading market data ...")
+@st.cache_resource(ttl=timedelta(seconds=10), show_spinner="Downloading market data ...")
 def download_pickle_files(file_names: list[str]) -> dict:
     if len(file_names) < 1:
         return {}
-    should_download = any(not (OUT_DIR / file_name).exists() for file_name in file_names)
-    if should_download:
-        local_artifacts_file_path = _fetch_gitlab_artifacts(out_dir=OUT_DIR)
-        assert local_artifacts_file_path.exists() and local_artifacts_file_path.is_file()
-        with ZipFile(local_artifacts_file_path, "r") as artifacts_zip:
-            artifacts_zip.extractall(OUT_DIR, file_names)
-        local_artifacts_file_path.unlink()
+    local_artifacts_file_path = _fetch_gitlab_artifacts(out_dir=OUT_DIR)
+    assert local_artifacts_file_path.exists() and local_artifacts_file_path.is_file()
+    with ZipFile(local_artifacts_file_path, "r") as artifacts_zip:
+        artifacts_zip.extractall(OUT_DIR, file_names)
+    local_artifacts_file_path.unlink()
 
     result = {}
     for key in file_names:
