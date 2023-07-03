@@ -11,7 +11,7 @@ from plotly.subplots import make_subplots
 #################################
 
 def make_charts(df, ticker):
-    fig = make_subplots(rows=4, cols=1, vertical_spacing=0.005, subplot_titles=("ticker","Stochastic Oscillator","RSI","Kelner channels"), shared_xaxes=True, row_heights=[0.6, 0.1,0.1,0.6])
+    fig = make_subplots(rows=4, cols=1, vertical_spacing=0.01, subplot_titles=(ticker,"Stochastic Oscillator","RSI","Kelner channels"), shared_xaxes=True, row_heights=[0.6, 0.1,0.1,0.6])
 
     fig.add_trace(go.Candlestick(x=df['Date'],
                 open=df['Open'],
