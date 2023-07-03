@@ -57,8 +57,8 @@ def make_charts(df, ticker):
 
     fig.update_layout(height=1600) 
 
-    fig.update_layout(
-        title_text=ticker)
+    #fig.update_layout(
+    #    title_text=ticker)
 
     fig.update_layout(
         xaxis=dict(
