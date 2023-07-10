@@ -124,7 +124,7 @@ def _fetch_gitlab_artifacts(out_dir: Path) -> Path:
     )
 
 
-@st.cache_resource(ttl=timedelta(seconds=10), show_spinner="Downloading market data ...")
+@st.cache_resource(ttl=timedelta(minutes=10), show_spinner="Downloading market data ...")
 def download_pickle_files(file_names: list[str]) -> dict:
     if len(file_names) < 1:
         return {}
@@ -141,13 +141,13 @@ def download_pickle_files(file_names: list[str]) -> dict:
     return result
 
 
-@st.cache_data(ttl=timedelta(hours=24), show_spinner="Loading prices ...")
+@st.cache_data(ttl=timedelta(minutes=10), show_spinner="Loading prices ...")
 def load_prices() -> DataFrame:
     pickle_files = download_pickle_files(DEFAULT_FILE_LIST)
     return pickle_files[SCANNED_PICKLE]
 
 
-@st.cache_data(ttl=timedelta(hours=24), show_spinner="Loading tables ...")
+@st.cache_data(ttl=timedelta(minutes=10), show_spinner="Loading tables ...")
 def load_tables() -> DataFrame:
     pickle_files = download_pickle_files(DEFAULT_FILE_LIST)
     return pickle_files[TABLES_PICKLE]
