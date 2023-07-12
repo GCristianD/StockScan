@@ -151,3 +151,8 @@ def load_prices() -> DataFrame:
 def load_tables() -> DataFrame:
     pickle_files = download_pickle_files(DEFAULT_FILE_LIST)
     return pickle_files[TABLES_PICKLE]
+
+@st.cache_data(ttl=timedelta(minutes=10), show_spinner="Loading tables ...")
+def load_market_internals() -> DataFrame:
+    pickle_files = download_pickle_files(DEFAULT_FILE_LIST)
+    return pickle_files[EXTRAS_PICKLE]
