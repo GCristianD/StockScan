@@ -1,6 +1,7 @@
 import streamlit as st
-from makefigures import make_charts, makefig_squeeze
-from trend_stock_scanner_data import load_prices, load_tables
+from makefigures import make_charts, makefig_squeeze, maketotfig, make_spy_fig, make_vix_fig, make_dxy_fig, colorsect
+from trend_stock_scanner_data import load_prices, load_tables, load_market_internals
+import plotly.express as px
 
 st.set_page_config(page_title='Stock scan', page_icon=':bar_chart:', layout="wide")
 
@@ -66,10 +67,14 @@ def displayStockListoptions(lastday):
 # Load price data for the creation of the figures
 dic_scaned = load_prices()
 
-# Load tables
+# Load the tables containing the results of the scans
 dbear, dbull, dbull200, dbear200, dsqfilt2_bull, dsqfilt3_bull, dsqfilt_bear, \
     d_bullsetup_bulltrend_conservative, d_bullsetup_beartrend_conservative, d_bearsetup_bulltrend_conservative, d_bearsetup_beartrend_conservative, \
     d_bullsetup_bulltrend_aggresive, d_bullsetup_beartrend_aggresive, d_bearsetup_bulltrend_aggresive, d_bearsetup_beartrend_aggresive, df_sectors, lastday = load_tables()
+
+# Load market internals data
+dftot, dvug, ddd, dm, dyvix, dl, tableInt, dicSectorsfig = load_market_internals()
+
 
 # Display Stock Universe options
 totaloptions, nonUS, capslist = displayStockListoptions(lastday)
@@ -295,3 +300,55 @@ with CountertrendScan:
             st.caption('**Bear trend:**   Price < 200 SMA')
             st.caption('New 21-day high. Wilder RSI(13) > 70')
             st.table(d_bearsetup_beartrend_aggresive[['Symbol', 'Cap', 'Sector', 'Loc']])
+
+with MktInt:
+    clm1, clm2, clm3 = st.columns(3)
+
+    with clm2:
+        st.dataframe(tableInt)
+
+    bigpicture, sptab, liqtab, vixtab, skewtab, pctab, dxytab, rottab  = st.tabs(['Big picture','S&P 500', 'Liquidity', 'VIX', 'SKEW', 'PC ratio', 'DXY','VUG/VTV', ])
+
+    with bigpicture:
+        fig = maketotfig(dftot.iloc[150:])
+        st.plotly_chart(fig,theme=None, use_container_width=True)
+
+    with liqtab:
+        st.write('S&P 500 and Liquidity starting from 0 since 2021-03-17. \u2001 Liquidity = Federal Reserve balance sheet - Treasury TGA balance - Reverse repo agreements')
+        st.caption("Weeklydata from FRED economic data - St. Louis Fed")
+
+        fig = px.line(dl[['liq','SP norm']])
+        st.plotly_chart(fig,theme=None, use_container_width=True)
+        
+
+    with sptab:
+        fig = make_spy_fig(dm[200:])
+        st.plotly_chart( fig, theme=None, use_container_width=True)
+
+    with vixtab:
+        fig = make_vix_fig(dyvix)
+        st.plotly_chart(fig, theme=None, use_container_width=True)
+
+    with skewtab:
+        fig = px.line(x=dftot.index, y=dftot['SKEW'], title = 'CBOE SKEW Index')
+        fig.add_hline(y=135, line_width=2,  line_color="red", name='135')
+        fig.add_hline(y=115, line_width=2,  line_color="green", name='115')
+        fig.update_layout(xaxis_title = '', yaxis_title="SKEW")
+        st.plotly_chart(fig,theme=None, use_container_width=True)
+        
+    with pctab:
+        st.caption("Daily total data from the Options Clearing Corporation")
+        
+        fig = px.line(dftot['PC_SMA10'], title = 'Put Call ratio 10 day simple moving average')
+        fig.add_hline(y=0.8, line_width=2,  line_color="red", name='0.8')
+        fig.add_hline(y=1, line_width=2,  line_color="green", name='1')
+        st.plotly_chart(fig,theme=None, use_container_width=True)
+        
+    with dxytab:
+        fig = make_dxy_fig(ddd)
+        st.plotly_chart( fig, theme=None, use_container_width=True)
+                         
+    with rottab:
+        fig = px.line(dvug['VUG/VTV'], title = 'Growth VUG/ value VTV')
+        st.plotly_chart(fig,theme=None, use_container_width=True)
+
