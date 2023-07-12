@@ -50,7 +50,7 @@ def displayStockListoptions(lastday):
         with c21:
             st.write('')
             st.write('')
-            nonUS = st.checkbox('Include non-US stocks', value=True)
+            nonUS = st.checkbox('Include non-US/CA stocks', value=False)
         with c22:
             st.write('')
             st.write('')
@@ -100,37 +100,29 @@ dbull200 = dbull200[dbull200['Cap'].isin(capslist)]
 dbear200 = dbear200[dbear200['Cap'].isin(capslist)]
 
 if not nonUS:
-    dfbull = dfbull[dfbull['Loc'] == 'US']
-    dfbear = dfbear[dfbear['Loc'] == 'US']
-    dsqfilt_bear = dsqfilt_bear[dsqfilt_bear['Loc'] == 'US']
-    dsqfilt2_bull = dsqfilt2_bull[dsqfilt2_bull['Loc'] == 'US']
-    dsqfilt3_bull = dsqfilt3_bull[dsqfilt3_bull['Loc'] == 'US']
+    dfbull = dfbull[(dfbull['Loc'] == 'US') | (dfbull['Loc'] == 'CA') ]
+    dfbear = dfbear[(dfbear['Loc'] == 'US') | (dfbear['Loc'] == 'CA')]
+    dsqfilt_bear = dsqfilt_bear[(dsqfilt_bear['Loc'] == 'US') | (dsqfilt_bear['Loc'] == 'CA')  ]
+    dsqfilt2_bull = dsqfilt2_bull[(dsqfilt2_bull['Loc'] == 'US') | (dsqfilt2_bull['Loc'] == 'CA')]
+    dsqfilt3_bull = dsqfilt3_bull[(dsqfilt3_bull['Loc'] == 'US') | (dsqfilt3_bull['Loc'] == 'CA') ]
 
-    d_bullsetup_bulltrend_conservative = d_bullsetup_bulltrend_conservative[
-        d_bullsetup_bulltrend_conservative['Loc'] == 'US']
-    d_bullsetup_beartrend_conservative = d_bullsetup_beartrend_conservative[
-        d_bullsetup_beartrend_conservative['Loc'] == 'US']
-    d_bearsetup_bulltrend_conservative = d_bearsetup_bulltrend_conservative[
-        d_bearsetup_bulltrend_conservative['Loc'] == 'US']
-    d_bearsetup_beartrend_conservative = d_bearsetup_beartrend_conservative[
-        d_bearsetup_beartrend_conservative['Loc'] == 'US']
-    d_bullsetup_bulltrend_aggresive = d_bullsetup_bulltrend_aggresive[d_bullsetup_bulltrend_aggresive['Loc'] == 'US']
-    d_bullsetup_beartrend_aggresive = d_bullsetup_beartrend_aggresive[d_bullsetup_beartrend_aggresive['Loc'] == 'US']
-    d_bearsetup_bulltrend_aggresive = d_bearsetup_bulltrend_aggresive[d_bearsetup_bulltrend_aggresive['Loc'] == 'US']
-    d_bearsetup_beartrend_aggresive = d_bearsetup_beartrend_aggresive[d_bearsetup_beartrend_aggresive['Loc'] == 'US']
+    d_bullsetup_bulltrend_conservative = d_bullsetup_bulltrend_conservative[(d_bullsetup_bulltrend_conservative['Loc'] == 'US') |(d_bullsetup_bulltrend_conservative['Loc'] == 'CA')]
+    d_bullsetup_beartrend_conservative = d_bullsetup_beartrend_conservative[(d_bullsetup_beartrend_conservative['Loc'] == 'US') |(d_bullsetup_beartrend_conservative['Loc'] == 'CA')]
+    d_bearsetup_bulltrend_conservative = d_bearsetup_bulltrend_conservative[(d_bearsetup_bulltrend_conservative['Loc'] == 'US') |(d_bearsetup_bulltrend_conservative['Loc'] == 'CA')]
+    d_bearsetup_beartrend_conservative = d_bearsetup_beartrend_conservative[(d_bearsetup_beartrend_conservative['Loc'] == 'US') |(d_bearsetup_beartrend_conservative['Loc'] == 'CA')]
+    d_bullsetup_bulltrend_aggresive = d_bullsetup_bulltrend_aggresive[(d_bullsetup_bulltrend_aggresive['Loc'] == 'US')|(d_bullsetup_bulltrend_aggresive['Loc'] == 'CA')]
+    d_bullsetup_beartrend_aggresive = d_bullsetup_beartrend_aggresive[(d_bullsetup_beartrend_aggresive['Loc'] == 'US')|(d_bullsetup_beartrend_aggresive['Loc'] == 'CA')]
+    d_bearsetup_bulltrend_aggresive = d_bearsetup_bulltrend_aggresive[(d_bearsetup_bulltrend_aggresive['Loc'] == 'US')|(d_bearsetup_bulltrend_aggresive['Loc'] == 'CA')]
+    d_bearsetup_beartrend_aggresive = d_bearsetup_beartrend_aggresive[(d_bearsetup_beartrend_aggresive['Loc'] == 'US')|(d_bearsetup_beartrend_aggresive['Loc'] == 'CA')]
 
-    dbull200 = dbull200[dbull200['Loc'] == 'US']
-    dbear200 = dbear200[dbear200['Loc'] == 'US']
-
-##path = 'figs.pickle'
-##with open(path, 'rb') as handle:
-##    rez = pickle.load(handle)
-##    figs_bounce,figs_squeeze = rez[0], rez[1]
+    dbull200 = dbull200[(dbull200['Loc'] == 'US') | (dbull200['Loc'] == 'CA') ]
+    dbear200 = dbear200[(dbear200['Loc'] == 'US') |  (dbear200['Loc'] == 'CA') ]
 
 
 # Make tabs
-BounceScan, Bounce200, SqueezeScan, CountertrendScan = st.tabs(
-    ['Bounce scan', 'Bounce 200', 'Squeezes', 'Countertrend scan'])
+BounceScan, Bounce200, SqueezeScan, CountertrendScan,  MktInt, Sectors  = st.tabs(['Bounce scan','Bounce 200',  
+            'Squeezes', 'Countertrend scan \u2001 \u2001 \u2001 \u2001 \u2001 \u2001 \u2001 \u2001 \u2001', "\u2001 \u2001 \u2001 \u2001 \u2001 \u2001 \u2001 \u2001 \u2001 Market internals",'Sectors'])
+
 
 with BounceScan:
     Bullishscan, Bearishscan = st.tabs(['Bullish scan', 'Bearish scan'])
@@ -147,11 +139,8 @@ with BounceScan:
             with Bullfigtabs[i]:
                 ticker = lsbull[i]
                 st.write(dfbull.iloc[i]['Company Name'])
-                # st.table(dfbull.iloc[i,:][['Symbol','Bull Cost cond.','Bullish RSI','In Squeeze','ATRs vs mean','% of 52w high', 'Bull Rainow %',
-                #         'Cap','Sector','Sector LT','Sector ST','Loc']].to_frame().T)
                 df = dic_scaned[ticker]
                 fig = make_charts(df, ticker)
-                # fig = figs_bounce[ticker]
                 st.plotly_chart(fig, theme=None, use_container_width=True)
 
     with Bearishscan:
@@ -176,7 +165,6 @@ with BounceScan:
                 st.write(dfbear.iloc[i]['Company Name'])
                 df = dic_scaned[ticker]
                 fig = make_charts(df, ticker)
-                # fig = dic_figs[ticker]
                 st.plotly_chart(fig, theme=None, use_container_width=True)
 
 with Bounce200:
@@ -218,14 +206,13 @@ with Bounce200:
 with SqueezeScan:
     Bullishsqueeze, Bearishsqueeze = st.tabs(['Bullish squeeze', 'Bearish squeeze'])
     with Bullishsqueeze:
-        st.caption(
-            'In squeeze, \u2001 8 EMA > 34 EMA, \u2001 Price within 10% of 52w high, \u2001 Squeeze momentum histogram > was 2 bars ago \u2001 and weekly: ADX ≥ 20, DI+ > DI- ')
+        st.caption('In squeeze, \u2001 8 EMA > 34 EMA, \u2001 Price within 10% of 52w high, \u2001 Squeeze momentum histogram > was 2 bars ago \u2001 and weekly: both ADX ≥ 20 & DI+ > DI- ')
         st.table(dsqfilt2_bull[
-            ['Symbol', 'Squeeze days', 'Wkl ADX', 'Wkl DI±', 'Wkl 10S> 34E', 'Wkl sq fired', 'ATRs vs mean',
+            ['Symbol', 'Squeeze days', 'Wkl 10S> 34E', 'Wkl sq fired', 'ATRs vs mean',
              '% of 52w high', 'Bull Rainow %',
-             # 'Days to earnings',
              'Cap', 'Sector', 'Sector LT', 'Sector ST', 'Loc']].style.format(
             {'ATRs vs mean': "{:.2f}", 'Bull Rainow %': "{:.2f}", 'Bull Rainow All %': "{:.2f}"}))
+        st.caption('Weekly conditions relaxed:')
         st.table(dsqfilt3_bull[
             ['Symbol', 'Squeeze days', 'Wkl ADX', 'Wkl DI±', 'Wkl 10S> 34E', 'Wkl sq fired', 'ATRs vs mean',
              '% of 52w high', 'Bull Rainow %',  # 'Days to earnings',
