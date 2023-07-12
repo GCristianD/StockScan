@@ -352,3 +352,15 @@ with MktInt:
         fig = px.line(dvug['VUG/VTV'], title = 'Growth VUG/ value VTV')
         st.plotly_chart(fig,theme=None, use_container_width=True)
 
+with Sectors:
+    st.write('Sector long term: in UPTREND if price > 200 SMA, otherwise in DOWNTREND')
+    st.write('Sector short term: price vs 21 EMA vs 8 EMA')
+    st.table(df_sectors.style.applymap(colorsect))
+
+    symbols = list(df_sectors['Index'])
+    tabs = st.tabs(symbols)
+
+    for i in range(0,len(symbols)):
+        with tabs[i]:
+            st.plotly_chart(dicSectorsfig[symbols[i]],theme=None, use_container_width=True)
+
