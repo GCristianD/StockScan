@@ -2,6 +2,7 @@ import pickle
 from datetime import datetime, timedelta
 from pathlib import Path
 from time import sleep
+from typing import Callable
 from zipfile import ZipFile
 from pandas import DataFrame
 
@@ -84,15 +85,23 @@ def _get_pipeline_details(http: urllib3.PoolManager, pipeline_id: int) -> dict:
     return resp.json()
 
 
-def _is_get_data_job(obj: dict) -> bool:
-    return obj["name"] == "get-data" and len(obj["artifacts"]) > 0
+def _has_name(obj: dict, name: str) -> bool:
+    return obj["name"] == name and len(obj["artifacts"]) > 0
 
 
-def _get_pipeline_get_data_job(http: urllib3.PoolManager, pipeline_id: int) -> dict:
+def _is_scan_market_job(obj: dict) -> bool:
+    return _has_name(obj, "scan-market")
+
+
+def _is_market_internals_job(obj: dict) -> bool:
+    return _has_name(obj, "market-internals")
+
+
+def _get_pipeline_job(http: urllib3.PoolManager, pipeline_id: int, predicate: Callable[[dict], bool]) -> dict:
     log.info("fetch info about get-data job in pipeline %d", pipeline_id)
     resp = _get(http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipelines/{pipeline_id}/jobs")
     assert resp.status == 200
-    jobs = list(filter(_is_get_data_job, resp.json()))
+    jobs = list(filter(predicate, resp.json()))
     assert len(jobs) > 0
     log.info("got job id: %(id)d, url: %(web_url)s", jobs[0])
     return jobs[0]
@@ -103,36 +112,45 @@ def _wait_last_pipeline_success(http: urllib3.PoolManager, pipeline_schedule: di
     now = datetime.utcnow()
     timeout = timedelta(seconds=600)
     last_pipeline = pipeline_schedule["last_pipeline"]
-    piepline_details = _get_pipeline_details(http, last_pipeline["id"])
-    while datetime.utcnow() - now < timeout and piepline_details["status"] != "success":
+    pipeline_details = _get_pipeline_details(http, last_pipeline["id"])
+    if pipeline_details["status"] == "failed":
+        raise ValueError("last pipeline is failed. can't download market data")
+    while datetime.utcnow() - now < timeout and pipeline_details["status"] != "success":
         sleep(1.0)
-        piepline_details = _get_pipeline_details(http, last_pipeline["id"])
-    if piepline_details["status"] != "success":
-        raise ValueError(f"pipeline {piepline_details['id']} is in status {piepline_details['status']} after {timeout}")
+        pipeline_details = _get_pipeline_details(http, last_pipeline["id"])
+    if pipeline_details["status"] != "success":
+        raise ValueError(f"pipeline {pipeline_details['id']} is in status {pipeline_details['status']} after {timeout}")
     log.info("'%(description)s' latest pipeline completed successfully", pipeline_schedule)
-    return piepline_details["id"]
+    return pipeline_details["id"]
 
 
-def _fetch_gitlab_artifacts(out_dir: Path) -> Path:
+def _fetch_gitlab_artifacts(out_dir: Path) -> list[Path]:
     http = _create_request_pool()
     pipeline_schedule = _get_update_market_data_schedule(http)
     pipeline_id = _wait_last_pipeline_success(http, pipeline_schedule)
-    get_data_job = _get_pipeline_get_data_job(http, pipeline_id)
+    scan_market_job = _get_pipeline_job(http, pipeline_id, _is_scan_market_job)
+    market_internals_job = _get_pipeline_job(http, pipeline_id, _is_market_internals_job)
 
-    return _download_file(
-        http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs/{get_data_job['id']}/artifacts", out_dir
-    )
+    return [
+        _download_file(
+            http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs/{scan_market_job['id']}/artifacts", out_dir
+        ),
+        _download_file(
+            http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs/{market_internals_job['id']}/artifacts", out_dir
+        )
+    ]
 
 
 @st.cache_resource(ttl=timedelta(minutes=10), show_spinner="Downloading market data ...")
 def download_pickle_files(file_names: list[str]) -> dict:
     if len(file_names) < 1:
         return {}
-    local_artifacts_file_path = _fetch_gitlab_artifacts(out_dir=OUT_DIR)
-    assert local_artifacts_file_path.exists() and local_artifacts_file_path.is_file()
-    with ZipFile(local_artifacts_file_path, "r") as artifacts_zip:
-        artifacts_zip.extractall(OUT_DIR, file_names)
-    local_artifacts_file_path.unlink()
+    local_artifacts_file_paths = _fetch_gitlab_artifacts(out_dir=OUT_DIR)
+    for path in local_artifacts_file_paths:
+        assert path.exists() and path.is_file()
+        with ZipFile(path, "r") as artifacts_zip:
+            artifacts_zip.extractall(OUT_DIR, file_names)
+        path.unlink()
 
     result = {}
     for key in file_names:
@@ -151,6 +169,7 @@ def load_prices() -> DataFrame:
 def load_tables() -> DataFrame:
     pickle_files = download_pickle_files(DEFAULT_FILE_LIST)
     return pickle_files[TABLES_PICKLE]
+
 
 @st.cache_data(ttl=timedelta(minutes=10), show_spinner="Loading tables ...")
 def load_market_internals() -> DataFrame:
