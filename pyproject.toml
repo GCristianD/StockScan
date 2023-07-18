@@ -13,10 +13,12 @@ numpy = "^1.25.0"
 datetime = "^5.1"
 streamlit = "^1.24.0"
 pandas = "<2"
+boto3 = "^1.28.4"
 
 
 [tool.poetry.group.dev.dependencies]
 watchdog = "^3.0.0"
+boto3-stubs = {version = "^1.28.4", extras = ["s3"]}
 
 [build-system]
 requires = ["poetry-core"]

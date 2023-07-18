@@ -1,184 +1,70 @@
 import pickle
-from datetime import datetime, timedelta
+from datetime import timedelta
 from pathlib import Path
-from time import sleep
-from typing import Callable
-from zipfile import ZipFile
 from pandas import DataFrame
 
-import urllib3
+import boto3
 import streamlit as st
 
 from logger import app_log as log
 
-GITLAB_USER_SECRET = "GITLAB_USER_ID"
-GITLAB_TOKEN_SECRET = "GITLAB_ACCESS_TOKEN"
-GITLAB_BASE_URL = "https://gitlab.com/api/v4"
-GITLAB_PROJECT_ID = "47320184"
+AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID"
+AWS_SECRET_ACCESS_KEY = "AWS_SECRET_ACCESS_KEY"
+AWS_REGION = "eu-central-1"
+AWS_BUCKET_NAME = "trend-stock-scanner-data"
 
 HTTP_REQUEST_RETRIES = 3
 HTTP_REQUEST_TIMEOUT_SECONDS = 15
 HTTP_RESPONSE_BUFFER_SIZE = 1048576
 
 OUT_DIR = Path(__file__).parent
-DOWNLOADED_FILE_NAME = "artifacts.zip"
 TABLES_PICKLE = "tables.pickle"
 SCANNED_PICKLE = "scanned.pickle"
 EXTRAS_PICKLE = "extras.pickle"
-
 DEFAULT_FILE_LIST = [TABLES_PICKLE, SCANNED_PICKLE, EXTRAS_PICKLE]
 
+session = boto3.Session(
+    aws_access_key_id=st.secrets[AWS_ACCESS_KEY_ID],
+    aws_secret_access_key=st.secrets[AWS_SECRET_ACCESS_KEY],
+    region_name=AWS_REGION,
+)
 
-def _create_request_pool() -> urllib3.PoolManager:
-    password = st.secrets[GITLAB_TOKEN_SECRET]
-    request_headers = {"Authorization": f"Bearer {password}"}
-    return urllib3.PoolManager(headers=request_headers)
 
-
-def _get(http: urllib3.PoolManager, url: str) -> urllib3.BaseHTTPResponse:
-    return http.request(
-        "GET", url, retries=HTTP_REQUEST_RETRIES, timeout=HTTP_REQUEST_TIMEOUT_SECONDS
+def _download_file(file_name, transfer_callback=None):
+    downloaded_file_path = OUT_DIR / file_name
+    s3 = session.resource("s3")
+    s3.Bucket(AWS_BUCKET_NAME).Object(file_name).download_file(
+        downloaded_file_path, Callback=transfer_callback
     )
+    return downloaded_file_path
 
 
-def _download_file(http: urllib3.PoolManager, url: str, out_file_path: Path) -> Path:
-    response = http.request(
-        "GET",
-        url,
-        retries=HTTP_REQUEST_RETRIES,
-        timeout=HTTP_REQUEST_TIMEOUT_SECONDS,
-        preload_content=False,
-    )
-    assert response.status == 200
-    try:
-        log.info("download start (%s)", out_file_path)
-        with open(out_file_path, "wb") as file:
-            while True:
-                data = response.read(HTTP_RESPONSE_BUFFER_SIZE)
-                if not data:
-                    break
-                file.write(data)
-        log.info("downloaded successful (%s)", out_file_path)
-        return out_file_path
-    except Exception as exc:
-        log.error("download error (%s)", out_file_path, exc_info=exc)
-    finally:
-        response.release_conn()
+def _get_file_size(file_name):
+    s3 = session.client("s3")
+    resp = s3.get_object(Bucket=AWS_BUCKET_NAME, Key=file_name)
+    return resp["ContentLength"]
 
 
-def _is_market_data_schedule(obj: dict) -> bool:
-    return obj["ref"] == "main" and obj["description"] == "Update Market Data"
-
-
-def _get_update_market_data_schedule(http: urllib3.PoolManager) -> dict:
-    resp = _get(
-        http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipeline_schedules"
-    )
-    assert resp.status == 200
-    schedules = list(filter(_is_market_data_schedule, resp.json()))
-    assert len(schedules) == 1
-    resp = _get(
-        http,
-        f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipeline_schedules/{schedules[0]['id']}",
-    )
-    assert resp.status == 200
-    return resp.json()
-
-
-def _get_pipeline_details(http: urllib3.PoolManager, pipeline_id: int) -> dict:
-    resp = _get(
-        http, f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipelines/{pipeline_id}"
-    )
-    assert resp.status == 200
-    return resp.json()
-
-
-def _has_name(obj: dict, name: str) -> bool:
-    return obj["name"] == name and len(obj["artifacts"]) > 0
-
-
-def _is_scan_market_job(obj: dict) -> bool:
-    return _has_name(obj, "scan-market")
-
-
-def _is_market_internals_job(obj: dict) -> bool:
-    return _has_name(obj, "market-internals")
-
-
-def _get_pipeline_job(
-    http: urllib3.PoolManager, pipeline_id: int, predicate: Callable[[dict], bool]
-) -> dict:
-    log.info("fetch info about get-data job in pipeline %d", pipeline_id)
-    resp = _get(
-        http,
-        f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/pipelines/{pipeline_id}/jobs",
-    )
-    assert resp.status == 200
-    jobs = list(filter(predicate, resp.json()))
-    assert len(jobs) > 0
-    log.info("got job id: %(id)d, url: %(web_url)s", jobs[0])
-    return jobs[0]
-
-
-def _wait_last_pipeline_success(
-    http: urllib3.PoolManager, pipeline_schedule: dict
-) -> int:
-    log.info(
-        "waiting for '%(description)s' latest pipeline to finish successfully",
-        pipeline_schedule,
-    )
-    now = datetime.utcnow()
-    timeout = timedelta(seconds=600)
-    last_pipeline = pipeline_schedule["last_pipeline"]
-    pipeline_details = _get_pipeline_details(http, last_pipeline["id"])
-    if pipeline_details["status"] == "failed":
-        raise ValueError("last pipeline is failed. can't download market data")
-    while datetime.utcnow() - now < timeout and pipeline_details["status"] != "success":
-        sleep(1.0)
-        pipeline_details = _get_pipeline_details(http, last_pipeline["id"])
-    if pipeline_details["status"] != "success":
-        raise ValueError(
-            f"pipeline {pipeline_details['id']} is in status {pipeline_details['status']} after {timeout}"
+def _progress_tracker(file_name, total_size_bytes):
+    def track_progress(bytes_downloaded):
+        log.debug(
+            "Downloaded [%d/%d] bytes of file %s",
+            bytes_downloaded,
+            total_size_bytes,
+            file_name
         )
-    log.info(
-        "'%(description)s' latest pipeline completed successfully", pipeline_schedule
-    )
-    return pipeline_details["id"]
-
-
-def _fetch_gitlab_artifacts(out_dir: Path) -> list[Path]:
-    http = _create_request_pool()
-    pipeline_schedule = _get_update_market_data_schedule(http)
-    pipeline_id = _wait_last_pipeline_success(http, pipeline_schedule)
-    scan_market_job = _get_pipeline_job(http, pipeline_id, _is_scan_market_job)
-    market_internals_job = _get_pipeline_job(
-        http, pipeline_id, _is_market_internals_job
-    )
-
-    return [
-        _download_file(
-            http,
-            f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs/{scan_market_job['id']}/artifacts",
-            out_dir / "scan-markets.zip",
-        ),
-        _download_file(
-            http,
-            f"{GITLAB_BASE_URL}/projects/{GITLAB_PROJECT_ID}/jobs/{market_internals_job['id']}/artifacts",
-            out_dir / "market-internals.zip",
-        ),
-    ]
+    return track_progress
 
 
 @st.cache_resource(
     ttl=timedelta(minutes=10), show_spinner="Downloading market data ..."
 )
 def download_pickle_files() -> dict:
-    local_artifacts_file_paths = _fetch_gitlab_artifacts(out_dir=OUT_DIR)
-    for path in local_artifacts_file_paths:
-        assert path.exists() and path.is_file()
-        with ZipFile(path, "r") as artifacts_zip:
-            artifacts_zip.extractall(OUT_DIR)
-        path.unlink()
+    for file_name in DEFAULT_FILE_LIST:
+        log.info("Downloading file %s", file_name)
+        total_file_size = _get_file_size(file_name)
+        _download_file(file_name, _progress_tracker(file_name, total_file_size))
+        log.info("Downloaded file %s", file_name)
 
     result = {}
     for key in DEFAULT_FILE_LIST:
