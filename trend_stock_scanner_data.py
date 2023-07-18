@@ -47,7 +47,7 @@ def _get_file_size(file_name):
 
 def _progress_tracker(file_name, total_size_bytes):
     def track_progress(bytes_downloaded):
-        log.debug(
+        log.info(
             "Downloaded [%d/%d] bytes of file %s",
             bytes_downloaded,
             total_size_bytes,
