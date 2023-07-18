@@ -8,6 +8,7 @@ import streamlit as st
 
 from logger import app_log as log
 
+# for local development create .streamlit/secrets.toml
 AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID"
 AWS_SECRET_ACCESS_KEY = "AWS_SECRET_ACCESS_KEY"
 AWS_REGION = "eu-central-1"
