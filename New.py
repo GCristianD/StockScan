@@ -155,53 +155,53 @@ dbull200 = dbull200[dbull200["Cap"].isin(capslist)]
 dbear200 = dbear200[dbear200["Cap"].isin(capslist)]
 
 if not nonUS:
-    dfbull = dfbull[(dfbull["Loc"] == "US") | (dfbull["Loc"] == "CA")]
-    dfbear = dfbear[(dfbear["Loc"] == "US") | (dfbear["Loc"] == "CA")]
+    dfbull = dfbull[(dfbull["Country"] == "United States") | (dfbull["Country"] == "Canada")]
+    dfbear = dfbear[(dfbear["Country"] == "United States") | (dfbear["Country"] == "Canada")]
     dsqfilt_bear = dsqfilt_bear[
-        (dsqfilt_bear["Loc"] == "US") | (dsqfilt_bear["Loc"] == "CA")
+        (dsqfilt_bear["Country"] == "United States") | (dsqfilt_bear["Country"] == "Canada")
     ]
     dsqfilt2_bull = dsqfilt2_bull[
-        (dsqfilt2_bull["Loc"] == "US") | (dsqfilt2_bull["Loc"] == "CA")
+        (dsqfilt2_bull["Country"] == "United States") | (dsqfilt2_bull["Country"] == "Canada")
     ]
     dsqfilt3_bull = dsqfilt3_bull[
-        (dsqfilt3_bull["Loc"] == "US") | (dsqfilt3_bull["Loc"] == "CA")
+        (dsqfilt3_bull["Country"] == "United States") | (dsqfilt3_bull["Country"] == "Canada")
     ]
 
     d_bullsetup_bulltrend_conservative = d_bullsetup_bulltrend_conservative[
-        (d_bullsetup_bulltrend_conservative["Loc"] == "US")
-        | (d_bullsetup_bulltrend_conservative["Loc"] == "CA")
+        (d_bullsetup_bulltrend_conservative["Country"] == "United States")
+        | (d_bullsetup_bulltrend_conservative["Country"] == "Canada")
     ]
     d_bullsetup_beartrend_conservative = d_bullsetup_beartrend_conservative[
-        (d_bullsetup_beartrend_conservative["Loc"] == "US")
-        | (d_bullsetup_beartrend_conservative["Loc"] == "CA")
+        (d_bullsetup_beartrend_conservative["Country"] == "United States")
+        | (d_bullsetup_beartrend_conservative["Country"] == "Canada")
     ]
     d_bearsetup_bulltrend_conservative = d_bearsetup_bulltrend_conservative[
-        (d_bearsetup_bulltrend_conservative["Loc"] == "US")
-        | (d_bearsetup_bulltrend_conservative["Loc"] == "CA")
+        (d_bearsetup_bulltrend_conservative["Country"] == "United States")
+        | (d_bearsetup_bulltrend_conservative["Country"] == "Canada")
     ]
     d_bearsetup_beartrend_conservative = d_bearsetup_beartrend_conservative[
-        (d_bearsetup_beartrend_conservative["Loc"] == "US")
-        | (d_bearsetup_beartrend_conservative["Loc"] == "CA")
+        (d_bearsetup_beartrend_conservative["Country"] == "United States")
+        | (d_bearsetup_beartrend_conservative["Country"] == "Canada")
     ]
     d_bullsetup_bulltrend_aggresive = d_bullsetup_bulltrend_aggresive[
-        (d_bullsetup_bulltrend_aggresive["Loc"] == "US")
-        | (d_bullsetup_bulltrend_aggresive["Loc"] == "CA")
+        (d_bullsetup_bulltrend_aggresive["Country"] == "United States")
+        | (d_bullsetup_bulltrend_aggresive["Country"] == "Canada")
     ]
     d_bullsetup_beartrend_aggresive = d_bullsetup_beartrend_aggresive[
-        (d_bullsetup_beartrend_aggresive["Loc"] == "US")
-        | (d_bullsetup_beartrend_aggresive["Loc"] == "CA")
+        (d_bullsetup_beartrend_aggresive["Country"] == "United States")
+        | (d_bullsetup_beartrend_aggresive["Country"] == "Canada")
     ]
     d_bearsetup_bulltrend_aggresive = d_bearsetup_bulltrend_aggresive[
-        (d_bearsetup_bulltrend_aggresive["Loc"] == "US")
-        | (d_bearsetup_bulltrend_aggresive["Loc"] == "CA")
+        (d_bearsetup_bulltrend_aggresive["Country"] == "United States")
+        | (d_bearsetup_bulltrend_aggresive["Country"] == "Canada")
     ]
     d_bearsetup_beartrend_aggresive = d_bearsetup_beartrend_aggresive[
-        (d_bearsetup_beartrend_aggresive["Loc"] == "US")
-        | (d_bearsetup_beartrend_aggresive["Loc"] == "CA")
+        (d_bearsetup_beartrend_aggresive["Country"] == "United States")
+        | (d_bearsetup_beartrend_aggresive["Country"] == "Canada")
     ]
 
-    dbull200 = dbull200[(dbull200["Loc"] == "US") | (dbull200["Loc"] == "CA")]
-    dbear200 = dbear200[(dbear200["Loc"] == "US") | (dbear200["Loc"] == "CA")]
+    dbull200 = dbull200[(dbull200["Country"] == "United States") | (dbull200["Country"] == "Canada")]
+    dbear200 = dbear200[(dbear200["Country"] == "United States") | (dbear200["Country"] == "Canada")]
 
 
 # Make tabs
@@ -237,7 +237,7 @@ with BounceScan:
                     "Sector",
                     "Sector LT",
                     "Sector ST",
-                    "Loc",
+                    "Country",
                 ]
             ].style.format(
                 {
@@ -277,7 +277,7 @@ with BounceScan:
                     "Sector",
                     "Sector LT",
                     "Sector ST",
-                    "Loc",
+                    "Country",
                 ]
             ].style.format({"ATRs vs mean": "{:.2f}", "Bear Rainow %": "{:.0f}"})
         )
@@ -316,7 +316,7 @@ with Bounce200:
                     "Sector",
                     "Sector LT",
                     "Sector ST",
-                    "Loc",
+                    "Country",
                 ]
             ].style.format(
                 {
@@ -355,7 +355,7 @@ with Bounce200:
                     "Sector",
                     "Sector LT",
                     "Sector ST",
-                    "Loc",
+                    "Country",
                 ]
             ].style.format({"ATRs vs mean": "{:.2f}", "Bear Rainow %": "{:.0f}"})
         )
@@ -391,7 +391,7 @@ with SqueezeScan:
                     "Sector",
                     "Sector LT",
                     "Sector ST",
-                    "Loc",
+                    "Country",
                 ]
             ].style.format(
                 {
@@ -418,7 +418,7 @@ with SqueezeScan:
                     "Sector",
                     "Sector LT",
                     "Sector ST",
-                    "Loc",
+                    "Country",
                 ]
             ].style.format(
                 {
@@ -459,7 +459,7 @@ with SqueezeScan:
                     "Sector",
                     "Sector LT",
                     "Sector ST",
-                    "Loc",
+                    "Country",
                 ]
             ].style.format({"ATRs vs mean": "{:.2f}", "Bear Rainow %": "{:.0f}"})
         )
@@ -499,7 +499,7 @@ with CountertrendScan:
                 "New 21-day low on second-last bar. Last close > previous day high"
             )
             st.table(
-                d_bullsetup_bulltrend_conservative[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bullsetup_bulltrend_conservative[["Symbol", "Cap", "Sector", "Country"]]
             )
         with col02:
             st.caption(
@@ -509,7 +509,7 @@ with CountertrendScan:
                 "New 21-day low on second-last bar. Last close > previous day high"
             )
             st.table(
-                d_bullsetup_beartrend_conservative[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bullsetup_beartrend_conservative[["Symbol", "Cap", "Sector", "Country"]]
             )
 
     with BullishAggresive:
@@ -517,14 +517,14 @@ with CountertrendScan:
         with col11:
             st.caption("**Bull trend:**   Price > 200 SMA. New 21-day low")
             st.table(
-                d_bullsetup_bulltrend_aggresive[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bullsetup_bulltrend_aggresive[["Symbol", "Cap", "Sector", "Country"]]
             )
         with col12:
             st.caption(
                 "**Bear trend:**   Price < 200 SMA. New 21-day low. Wilder RSI(13) < 30"
             )
             st.table(
-                d_bullsetup_beartrend_aggresive[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bullsetup_beartrend_aggresive[["Symbol", "Cap", "Sector", "Country"]]
             )
 
     with BearishConservative:
@@ -537,7 +537,7 @@ with CountertrendScan:
                 "New 21-day high on second-last bar. Last close < previous day low"
             )
             st.table(
-                d_bearsetup_bulltrend_conservative[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bearsetup_bulltrend_conservative[["Symbol", "Cap", "Sector", "Country"]]
             )
         with cl02:
             st.caption("**Bear trend:**   Price < 200 SMA")
@@ -545,7 +545,7 @@ with CountertrendScan:
                 "New 21-day high on second-last bar. Last close < previous day low"
             )
             st.table(
-                d_bearsetup_beartrend_conservative[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bearsetup_beartrend_conservative[["Symbol", "Cap", "Sector", "Country"]]
             )
 
     with BearishAggresive:
@@ -554,13 +554,13 @@ with CountertrendScan:
             st.caption("**Bull trend:**   Price > 200 SMA")
             st.caption("New 21-day high. Wilder RSI(13) > 70")
             st.table(
-                d_bearsetup_bulltrend_aggresive[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bearsetup_bulltrend_aggresive[["Symbol", "Cap", "Sector", "Country"]]
             )
         with cl12:
             st.caption("**Bear trend:**   Price < 200 SMA")
             st.caption("New 21-day high. Wilder RSI(13) > 70")
             st.table(
-                d_bearsetup_beartrend_aggresive[["Symbol", "Cap", "Sector", "Loc"]]
+                d_bearsetup_beartrend_aggresive[["Symbol", "Cap", "Sector", "Country"]]
             )
 
 with MktInt:
